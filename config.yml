@@ -1,0 +1,24 @@
+url: "http://www.alextruesdale.net"
+gems:
+  - jekyll-sitemap
+
+markdown: kramdown
+
+assets:
+  css_compressor:
+  js_compressor:
+  sources:
+    - css
+    - scripts
+    - _assets
+    - _assets/scss
+    - _assets/js
+
+exclude:
+  - node_modules
+  - package.json
+  - gulpfile.js
+  - README.md
+  - _assets
+
+tolerate_liquid_errors: false
