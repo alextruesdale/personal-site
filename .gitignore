@@ -8,3 +8,5 @@ _site
 ._site
 /.config
 node_modules/
+gemfile
+gemfile.lock

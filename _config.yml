@@ -13,6 +13,9 @@ assets:
     - _assets/js
 
 exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
   - node_modules
   - package.json
   - gulpfile.js
