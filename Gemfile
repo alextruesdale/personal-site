@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'jekyll', '~> 3.0.0'
+gem 'jekyll-assets', '~> 1.0.0'
+gem 'coffee-script', '~> 2.4.1'
+gem 'json', '~> 1.8.3'
+gem 'uglifier', '~> 2.7.2'
