@@ -1,0 +1,252 @@
+/*MOBILE MENU*/
+
+
+#mobilenav, .mobilemenu {
+	display: none;
+	position: absolute;
+	position: fixed;
+
+	z-index: 990;
+}
+#mobilenav {
+	height: 70px;
+	width: 100vw;
+	position: fixed;
+
+	background-color: white;
+	box-shadow: 0 1px 2px 0px #F3F3F3;
+
+	@media screen and (max-width: 1000px) {
+		#mobilenav {
+			display: block;
+			position: fixed;
+		}
+	}
+}
+.mobilemenu {
+	position: absolute;
+	top: 14px;
+	left: 13px;
+
+	width: 52px;
+	height: 40px;
+
+	cursor: pointer;
+	transition: background 0.3s;
+
+	@media screen and (max-width: 1000px) {
+		.mobilemenu {
+			display: block;
+			position: fixed;
+		}
+	}
+}
+.mobilemenu span {
+	display: block;
+	position: absolute;
+	top: 19.5px;
+	left: 7px;
+
+	width: 37px;
+	height: 2.3px;
+	border-radius: 3px;
+
+	background: #2193A2;
+}
+.mobilemenu span::before,
+.mobilemenu span::after {
+	position: absolute;
+	display: block;
+
+	width: 37px;
+	height: 2.3px;
+	border-radius: 3px;
+	content: "";
+}
+.mobilemenu span::before {
+	top: -9px;
+	background-color: #2175A6;
+}
+.mobilemenu span::after {
+	bottom: -9px;
+	background-color: #818386;
+}
+.mm-htx span::before,
+.mm-htx span::after {
+	transition-duration: 0.3s, 0.3s;
+	transition-delay: 0.1s, 0s;
+}
+.mm-htx span::before {
+	transition-property: top, transform;
+}
+.mm-htx span::after {
+	transition-property: bottom, transform;
+}
+.mm-htx.active span {
+	background: none;
+}
+.mm-htx.active span::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+.mm-htx.active span::after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+.mm-htx.active span::before,
+.mm-htx.active span::after {
+	transition-delay: 0s, 0.1s;
+}
+.show {
+	opacity: 1;
+}
+.hide {
+	opacity: 0;
+}
+
+
+/*DESKTOP MENU*/
+
+
+nav {
+	height: 75px;
+	width: 100vw;
+
+	position: absolute;
+	position: fixed;
+	z-index: 990;
+
+	background-color: white;
+	box-shadow: 0 1px 2px 0px #F3F3F3;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	@media screen and (max-width: 1000px) {
+		nav {
+			pointer-events: none;
+			position: absolute;
+			position: fixed;
+			z-index: 960;
+
+			opacity: 0;
+			width: 100vw;
+			height: 100vh;
+
+			padding: 10px 0;
+			background-color: #F8F8F8;
+		}
+	}
+	@media screen and (min-width: 2000px) {
+		nav {
+			height: 120px;
+		}
+	}
+}
+nav
+  ul
+    li {
+    	font-size: 1em;
+    	list-style: none;
+    	display: inline-block;
+    	position: relative;
+    	font-weight: 300;
+    	margin: 0 2.2vw 0 2.2vw;
+
+      transition: all .18s ease-in-out;
+
+			@media screen and (max-width: 1000px) {
+				li {
+					font-size: 8vw;
+					text-align: center;
+					font-weight: 300;
+					color: #5A5B5D;
+
+					display: block;
+					position: relative;
+
+					margin: 30px 2.2vw 0px 2.2vw;
+				}
+			}
+			@media screen and (min-width: 2000px) {
+				li {
+					font-size: 1.9em;
+					margin: 0 2.6vw 0 2.6vw;
+				}
+			}
+    }
+    li:hover {
+    	color: #2a88b5;
+    	cursor: pointer;
+    }
+  }
+}
+#menuname {
+	font-size: 1.6em;
+	font-weight: 200;
+	margin-left: -40px;
+
+	@media screen and (max-width: 1000px) {
+		#menuname {
+			display: none;
+		}
+	}
+	@media screen and (min-width: 2000px) {
+		#menuname {
+			font-size: 2.8em;
+		}
+	}
+}
+#divline {
+	font-size: 1.6em;
+	font-weight: 100;
+	color: #696969;
+	margin: 0 -170px 0 -150px;
+	padding: 0;
+
+	@media screen and (max-width: 1000px) {
+		#divline {
+			display: none;
+		}
+	}
+	@media screen and (min-width: 2000px) {
+		#divline {
+			font-size: 2.6em;
+			font-weight: 200;
+			margin: 0 -200px 0 -150px;
+		}
+	}
+}
+#menubird {
+	position: absolute;
+	position: fixed;
+
+	z-index: 1000;
+
+	top: 10px;
+	right: 8px;
+	width: 55px;
+	height: auto;
+
+	transition: all .17s ease-in-out;
+	filter: saturate(0%) brightness(160%) contrast(80%);
+
+	@media screen and (max-width: 1000px) {
+		#menubird {
+			position: fixed;
+			top: 10px;
+			right: 5px;
+			width: 55px;
+		}
+	}
+	@media screen and (min-width: 2000px) {
+		#menubird {
+			width: 95px;
+		}
+	}
+}
+#menubird:hover {
+	cursor: pointer;
+  filter: saturate(100%) brightness(100%) contrast(100%);
+}

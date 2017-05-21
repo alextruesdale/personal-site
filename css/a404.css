@@ -15,31 +15,39 @@ html{
 	@-moz-keyframes fadein {from {opacity: 0;} to {opacity: 1;}}
 	@-o-keyframes fadein {from {opacity: 0;} to {opacity: 1;}}
 	@keyframes fadein {from {opacity: 0;} to {opacity: 1;}}
+#container{
+	display: flex;
+	display: -webkit-flex;
 
+	align-items: center;
+	-webkit-align-items: center;
+	
+	justify-content: center;
+	-webkit-justify-content: center;
+}
 h1{
-	font-family: 'Muli', sans-serif; 
-	font-size: 7.7em;
-	color: #ffffff;
-	padding: 0px;
-	margin: 50px 0px 0px 0px;
-	letter-spacing: .05em;
+	font-family: 'Muli', sans-serif;
 	text-align: center;
+	margin: 0;
+	font-size: 12vw;
+	letter-spacing: .05em;
+	color: #ffffff;
 }
 p{
 	font-family: 'Muli', serif; 
-	font-size: 1.1em;
+	font-size: 1.8vw;
 	color: #ffffff;
 	letter-spacing: .05em;
 	text-align: center;
 }
 .homepage{
  	text-align:center;
-	padding-top: 40px;
+	padding-top: 100px;
 
 }
 .homepage a{
 	font-family: 'Muli', sans-serif;
-	font-size: .9em;
+	font-size: 1.3vw;
 	color: #fff;
 	text-decoration: none;
 	-webkit-transition: all .22s ease-in;
@@ -48,22 +56,44 @@ p{
     transition: all .22s ease-in;
 }
 a:hover{
-	font-size: .935em;
 	color: #2a88b5;
-	line-height: .83em;
 }
 
 /*MEDIA -> SMARTPHONE*/
 
-@media only screen and (max-width: 480px){ 
+@media screen and (max-width: 680px) {
 	html{
 		background: url(../images/404small.png) no-repeat;
 		background-size: 118%;
 	}
+	h1{
+		font-size: 37vw;
+	}
+	p{
+		font-size: 5.5vw;
+	}
+	.homepage{
+		padding-top: 70px;
+	}
+	.homepage a{
+		font-size: 5.1vw;
+	}
 }
 
-
-
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+	h1{
+		font-size: 25vw;
+	}
+	p{
+		font-size: 4.5vw;
+	}
+	.homepage{
+		padding-top: 190px;
+	}
+	.homepage a{
+		font-size: 4.1vw;
+	}
+}
 
 
 
