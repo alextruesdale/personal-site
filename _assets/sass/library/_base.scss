@@ -1,0 +1,22 @@
+$breakpoints: (
+  'phone': 320px,
+  'phone-lg': 375px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'large': 1440px
+) !default;
+
+// $grid: (
+//   'columns': 12,
+//   'column-width': 8.33333333%,
+//   'gutters': 'inside',
+//   'gutter-width': 1.45454545%,
+//   'max-width': 1042px,
+//   'type': float
+// ) !default;
+
+$font-family-body: "Muli", sans-serif;
+$font-family-emphasis: "OpenSans Web", verdana, sans-serif;
+
+// $color-primary: #007DC3;
+// $color-secondary: #0C234C;

@@ -7,5 +7,5 @@ assets:
     - css
     - scripts
     - _assets
-    - _assets/scss
+    - _assets/sass
     - _assets/js
