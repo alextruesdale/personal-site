@@ -57,7 +57,7 @@ gulp.task('watch', function() {
   ], ['sass']);
 
   gulp.watch([
-    '_assets/scripts/**/*.js'
+    '_assets/js/**/*.js'
   ], ['build:scripts']);
 });
 
