@@ -1,0 +1,11 @@
+<title>
+  {% if page.title %}{{ page.title }} | Alex Truesdale{% else %}{{ site.data.meta.title }}{% endif %}
+</title>
+
+{% if page.description %}
+  <meta name="description" content="{{ page.description | strip_newlines }}">
+{% endif %}
+
+{% if page.canonical %}
+  <link rel="canonical" href="{{ page.canonical }}">
+{% endif %}

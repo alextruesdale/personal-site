@@ -1,4 +1,10 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alextruesdale/personal-site"
+  },
+  "license": "1.0.0",
+  "private": true,
   "devDependencies": {
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.11",
@@ -7,6 +13,9 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-shell": "^0.6.3",
-    "gulp-sourcemaps": "^2.6.0"
+    "gulp-sourcemaps": "^2.6.0",
+    "include-media": "^1.4.9",
+    "jquery": "^3.2.1",
+    "jquery-ui-dist": "^1.12.1"
   }
 }

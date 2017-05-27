@@ -1,0 +1,27 @@
+<meta property="og:title"
+      content="{% if page.title %}{{ page.title }}{% else %}{{ site.data.meta.title }}{% endif %}">
+
+<meta property="og:description"
+      content="{% if page.description %}{{ page.description | strip_newlines }}{% else %}{{ site.data.meta.description }}{% endif %}">
+
+<meta property="og:url"
+      content="{{ page.url | replace:'index.html','' |  prepend: site.url }}">
+
+{% if page.thumbnail %}
+  <meta property="og:image"
+        content="{{ page.thumbnail | prepend: site.url }}">
+{% endif %}
+
+{% for thumb in site.data.meta.thumbnails %}
+  <meta property="og:image"
+        content="{{ thumb.image | prepend: site.url }}">
+
+  <meta property="og:image:type"
+        content="{{ thumb.type }}">
+
+  <meta property="og:image:width"
+        content="{{ thumb.width }}">
+
+  <meta property="og:image:height"
+        content="{{ thumb.height }}">
+{% endfor %}

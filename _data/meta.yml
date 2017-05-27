@@ -1,0 +1,13 @@
+title: Alex Truesdale | Design & Development
+
+description: I have a background in web design and front-end development, now studying data science/analytics
+
+thumbnails:
+  - image: /images/og_images/og_image_square.png
+    type: image/png
+    width: 600
+    height: 600
+  - image: /images/og_images/og_image_rect.png
+    type: image/png
+    width: 1200
+    height: 630
