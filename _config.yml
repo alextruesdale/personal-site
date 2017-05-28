@@ -2,6 +2,7 @@ url: "http://www.alextruesdale.net"
 baseurl: ""
 
 markdown: kramdown
+permalink: pretty
 
 assets:
   css_compressor: sass

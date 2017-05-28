@@ -1,0 +1,17 @@
+- url: /
+  copy: Homepage
+
+- url: /about
+  copy: About
+
+- url: /resume
+  copy: Résumé
+
+- url: "#site-footer"
+  copy: Social
+
+- url: /design
+  copy: Design
+
+- url: /photography
+  copy: Photography

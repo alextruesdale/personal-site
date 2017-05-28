@@ -1,14 +1,14 @@
 /*MOBILE MENU*/
 
 
-#mobilenav, .mobilemenu {
+.mobile-nav, .mobile-menu {
 	display: none;
 	position: absolute;
 	position: fixed;
 
 	z-index: 990;
 }
-#mobilenav {
+.mobile-nav {
 	height: 70px;
 	width: 100vw;
 	position: fixed;
@@ -16,14 +16,14 @@
 	background-color: white;
 	box-shadow: 0 1px 2px 0px #F3F3F3;
 
-	@media screen and (max-width: 1000px) {
-		#mobilenav {
+	@include media('<1000px') {
+		.mobile-nav {
 			display: block;
 			position: fixed;
 		}
 	}
 }
-.mobilemenu {
+.mobile-menu {
 	position: absolute;
 	top: 14px;
 	left: 13px;
@@ -34,14 +34,14 @@
 	cursor: pointer;
 	transition: background 0.3s;
 
-	@media screen and (max-width: 1000px) {
-		.mobilemenu {
+	@include media('<1000px') {
+		.mobile-menu {
 			display: block;
 			position: fixed;
 		}
 	}
 }
-.mobilemenu span {
+.mobile-menu span {
 	display: block;
 	position: absolute;
 	top: 19.5px;
@@ -53,8 +53,8 @@
 
 	background: #2193A2;
 }
-.mobilemenu span::before,
-.mobilemenu span::after {
+.mobile-menu span::before,
+.mobile-menu span::after {
 	position: absolute;
 	display: block;
 
@@ -63,38 +63,38 @@
 	border-radius: 3px;
 	content: "";
 }
-.mobilemenu span::before {
+.mobile-menu span::before {
 	top: -9px;
 	background-color: #2175A6;
 }
-.mobilemenu span::after {
+.mobile-menu span::after {
 	bottom: -9px;
 	background-color: #818386;
 }
-.mm-htx span::before,
-.mm-htx span::after {
+.mm-layer span::before,
+.mm-layer span::after {
 	transition-duration: 0.3s, 0.3s;
 	transition-delay: 0.1s, 0s;
 }
-.mm-htx span::before {
+.mm-layer span::before {
 	transition-property: top, transform;
 }
-.mm-htx span::after {
+.mm-layer span::after {
 	transition-property: bottom, transform;
 }
-.mm-htx.active span {
+.mm-layer.active span {
 	background: none;
 }
-.mm-htx.active span::before {
+.mm-layer.active span::before {
 	top: 0;
 	transform: rotate(45deg);
 }
-.mm-htx.active span::after {
+.mm-layer.active span::after {
 	bottom: 0;
 	transform: rotate(-45deg);
 }
-.mm-htx.active span::before,
-.mm-htx.active span::after {
+.mm-layer.active span::before,
+.mm-layer.active span::after {
 	transition-delay: 0s, 0.1s;
 }
 .show {
@@ -123,7 +123,7 @@ nav {
 	align-items: center;
 	justify-content: space-around;
 
-	@media screen and (max-width: 1000px) {
+	@include media('<1000px') {
 		nav {
 			pointer-events: none;
 			position: absolute;
@@ -138,7 +138,7 @@ nav {
 			background-color: #F8F8F8;
 		}
 	}
-	@media screen and (min-width: 2000px) {
+	@include media('>2000px') {
 		nav {
 			height: 120px;
 		}
@@ -156,7 +156,7 @@ nav {
 
       transition: all .18s ease-in-out;
 
-			@media screen and (max-width: 1000px) {
+			@include media('<1000px') {
 				li {
 					font-size: 8vw;
 					text-align: center;
@@ -169,7 +169,7 @@ nav {
 					margin: 30px 2.2vw 0px 2.2vw;
 				}
 			}
-			@media screen and (min-width: 2000px) {
+			@include media('>2000px') {
 				li {
 					font-size: 1.9em;
 					margin: 0 2.6vw 0 2.6vw;
@@ -182,43 +182,43 @@ nav {
     }
   }
 }
-#menuname {
+.menu-name {
 	font-size: 1.6em;
 	font-weight: 200;
 	margin-left: -40px;
 
-	@media screen and (max-width: 1000px) {
-		#menuname {
+	@include media('<1000px') {
+		.menu-name {
 			display: none;
 		}
 	}
-	@media screen and (min-width: 2000px) {
-		#menuname {
+	@include media('>2000px') {
+		.menu-name {
 			font-size: 2.8em;
 		}
 	}
 }
-#divline {
+.menu-divider {
 	font-size: 1.6em;
 	font-weight: 100;
 	color: #696969;
-	margin: 0 -170px 0 -150px;
+	margin: 0 -205px 0 -150px;
 	padding: 0;
 
-	@media screen and (max-width: 1000px) {
-		#divline {
+	@include media('<1000px') {
+		.menu-divider {
 			display: none;
 		}
 	}
-	@media screen and (min-width: 2000px) {
-		#divline {
+	@include media('>2000px') {
+		.menu-divider {
 			font-size: 2.6em;
 			font-weight: 200;
 			margin: 0 -200px 0 -150px;
 		}
 	}
 }
-#menubird {
+.menu-bird {
 	position: absolute;
 	position: fixed;
 
@@ -232,21 +232,21 @@ nav {
 	transition: all .17s ease-in-out;
 	filter: saturate(0%) brightness(160%) contrast(80%);
 
-	@media screen and (max-width: 1000px) {
-		#menubird {
+	@include media('<1000px') {
+		.menu-bird {
 			position: fixed;
 			top: 10px;
 			right: 5px;
 			width: 55px;
 		}
 	}
-	@media screen and (min-width: 2000px) {
-		#menubird {
+	@include media('>2000px') {
+		.menu-bird {
 			width: 95px;
 		}
 	}
 }
-#menubird:hover {
+.menu-bird:hover {
 	cursor: pointer;
   filter: saturate(100%) brightness(100%) contrast(100%);
 }

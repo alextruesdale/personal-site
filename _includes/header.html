@@ -1,18 +1,17 @@
-<div id="mobilenav"></div>
-<div class="mobilemenu mm-htx">
-  <span></span>
-</div>
-<img id="menubird" src="images/birdsmall.png">
-<nav>
-  <div id="menuname">Alex Truesdale</div>
-  <div id="divline">|</div>
+<header class="site-header">
+  <div class="mobile-nav"></div>
+  <div class="mobile-menu mm-layer">
+    <span></span>
+  </div>
+  <a href="/"><img class="menu-bird" src="{{ "/images/menubird.png" | prepend: site.baseurl }}" alt="Menu Logo"></a>
+  <nav>
+    <div class="menu-name"><a href="/">Alex Truesdale</a></div>
+    <div class="menu-divider">|</div>
 
-  <ul>
-    <li><a href="/">Homepage</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/resume">Résumé</a></li>
-    <li><a id="soc" href="#footerg">Social</a></li>
-    <li><a href="/design">Design Work</a></li>
-    <li><a href="/photography">Photography</a></li>
-  </ul>
-</nav>
+    <ul>
+      {% for menu_item in site.data.menu %}
+        <li><a class="menu-{{ menu_item.copy | slugify }}" href="{{ menu_item.url }}">{{ menu_item.copy }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

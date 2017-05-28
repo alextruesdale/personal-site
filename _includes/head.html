@@ -1,15 +1,15 @@
 <head>
 
-  {% include html/default.html %}
-  {% include html/mobile-icons.html %}
-  {% include html/og.html %}
+  {% include head/default.html %}
+  {% include head/mobile-icons.html %}
+  {% include head/og.html %}
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/gif" href="icon.png">
+  <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
 
   <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

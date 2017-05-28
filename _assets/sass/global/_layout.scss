@@ -11,3 +11,17 @@ body {
 img {
   max-width: 100%;
 }
+
+.site {
+  display: flex;
+  min-height: 100vw;
+  flex-direction: column;
+}
+
+.site-header, .site-content, .site-footer {
+  display: flex;
+}
+
+.site-header { order: 1; }
+.site-content { order: 2; }
+.site-footer {order: 3; }
