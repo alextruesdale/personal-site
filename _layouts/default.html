@@ -2,8 +2,8 @@
 <html lang="en">
   {% include head.html %}
   <body class="site">
+    {% include header.html %}
     <div class="site-content content-{{ page.url | slugify }}">
-      {% include header.html %}
       <div class="wrapper clearfix">
         {{ content }}
       </div>

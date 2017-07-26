@@ -220,7 +220,7 @@ footer {
   -webkit-box-shadow: 0 1px 2px 0px #F3F3F3;
           box-shadow: 0 1px 2px 0px #F3F3F3; }
   @media (max-width: 999px) {
-    .mobile-nav .mobile-nav {
+    .mobile-nav {
       display: block;
       position: fixed; } }
 
@@ -234,7 +234,7 @@ footer {
   -webkit-transition: background 0.3s;
   transition: background 0.3s; }
   @media (max-width: 999px) {
-    .mobile-menu .mobile-menu {
+    .mobile-menu {
       display: block;
       position: fixed; } }
 
@@ -329,7 +329,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   @media (max-width: 999px) {
-    nav nav {
+    nav {
       pointer-events: none;
       position: absolute;
       position: fixed;
@@ -340,7 +340,7 @@ nav {
       padding: 10px 0;
       background-color: #F8F8F8; } }
   @media (min-width: 2001px) {
-    nav nav {
+    nav {
       height: 120px; } }
 
 nav ul li {
@@ -353,7 +353,7 @@ nav ul li {
   -webkit-transition: all .18s ease-in-out;
   transition: all .18s ease-in-out; }
   @media (max-width: 999px) {
-    nav ul li li {
+    nav ul li {
       font-size: 8vw;
       text-align: center;
       font-weight: 300;
@@ -362,7 +362,7 @@ nav ul li {
       position: relative;
       margin: 30px 2.2vw 0px 2.2vw; } }
   @media (min-width: 2001px) {
-    nav ul li li {
+    nav ul li {
       font-size: 1.9em;
       margin: 0 2.6vw 0 2.6vw; } }
 
@@ -375,10 +375,10 @@ nav ul li:hover {
   font-weight: 200;
   margin-left: -40px; }
   @media (max-width: 999px) {
-    .menu-name .menu-name {
+    .menu-name {
       display: none; } }
   @media (min-width: 2001px) {
-    .menu-name .menu-name {
+    .menu-name {
       font-size: 2.8em; } }
 
 .menu-divider {
@@ -388,10 +388,10 @@ nav ul li:hover {
   margin: 0 -205px 0 -150px;
   padding: 0; }
   @media (max-width: 999px) {
-    .menu-divider .menu-divider {
+    .menu-divider {
       display: none; } }
   @media (min-width: 2001px) {
-    .menu-divider .menu-divider {
+    .menu-divider {
       font-size: 2.6em;
       font-weight: 200;
       margin: 0 -200px 0 -150px; } }
@@ -409,13 +409,13 @@ nav ul li:hover {
   -webkit-filter: saturate(0%) brightness(160%) contrast(80%);
           filter: saturate(0%) brightness(160%) contrast(80%); }
   @media (max-width: 999px) {
-    .menu-bird .menu-bird {
+    .menu-bird {
       position: fixed;
       top: 10px;
       right: 5px;
       width: 55px; } }
   @media (min-width: 2001px) {
-    .menu-bird .menu-bird {
+    .menu-bird {
       width: 95px; } }
 
 .menu-bird:hover {
