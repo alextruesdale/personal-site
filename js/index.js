@@ -7,7 +7,9 @@ var imageFiles = [
 	"images/backgroundred2.png",
 	"images/backgroundred1.png",
 	"images/404small.png",
-	"images/404.png"
+	"images/404.png",
+	"images/about_bkgd.png",
+	"images/photo_bkgd.png"
 ];
 
 function preload(imageFiles) {
