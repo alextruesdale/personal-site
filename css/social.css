@@ -345,6 +345,9 @@ nav > ul > li:hover{
 		right: 5px;
 		width: 55px;
 	}
+	.mobile_shift{
+    		margin-top: -25px;
+  	}
 
 
 	/*CONTENT*/
