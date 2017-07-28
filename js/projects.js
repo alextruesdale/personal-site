@@ -1,11 +1,3 @@
-// SCROLL TOP
-
-if ($(window).width() < 960) {
-	$(document).ready(function(){
-		$("html,body").scrollTop(55);
-	});
-}
-
 // SMOOTH SCROLL
 
 
