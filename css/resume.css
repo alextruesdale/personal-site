@@ -644,7 +644,7 @@ footer{
 		width: 90%;
 		text-align: center;
 		margin-top: 20px;
-
+		margin-left: 0px;
 
 		display: flex;
 		display: -webkit-flex;
