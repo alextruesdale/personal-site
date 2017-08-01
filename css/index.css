@@ -176,7 +176,8 @@ li, a{
 	text-decoration: none;
 	list-style: none;
 	color: #696969;
-	font-weight: 500;
+	font-size: 1.1em;
+	font-weight: 400;
 	margin-right: 10px;
 
 	-webkit-transition: all .18s ease-in-out;
