@@ -1,5 +1,6 @@
+
 $(function() {
-  var toggles = document.querySelectorAll(".mobilemenu");
+  var toggles = document.querySelectorAll(".mobile-menu");
 
   for (var i = toggles.length - 1; i >= 0; i--) {
     var toggle = toggles[i];
@@ -19,19 +20,9 @@ $(function() {
 });
 
 $(function() {
-  $(".mobilemenu").click(function() {
+  $(".mobile-menu").click(function() {
     $("#container").toggleClass("hide", [1000]);
     $("nav").toggleClass("show", [1000]);
-    $("#icons").removeClass("mobilesoc");
-    $("#icons").css({
-      "position" : "",
-      "top" : "",
-      "left" : ""
-    });
-    $(".socicon").css({
-      "width" : "",
-      "margin-top" : ""
-    });
     hasShow();
   });
 });

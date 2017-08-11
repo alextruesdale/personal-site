@@ -7,11 +7,11 @@
 - url: /resume
   copy: Résumé
 
-- url: "#site-footer"
-  copy: Social
-
 - url: /design
   copy: Design
 
 - url: /photography
   copy: Photography
+
+- url: "/contact"
+  copy: Contact

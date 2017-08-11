@@ -14,7 +14,7 @@ require('./nodes/smooth_scroll');
 "use strict";
 
 $(function () {
-  var toggles = document.querySelectorAll(".mobilemenu");
+  var toggles = document.querySelectorAll(".mobile-menu");
 
   for (var i = toggles.length - 1; i >= 0; i--) {
     var toggle = toggles[i];
@@ -34,19 +34,9 @@ $(function () {
 });
 
 $(function () {
-  $(".mobilemenu").click(function () {
+  $(".mobile-menu").click(function () {
     $("#container").toggleClass("hide", [1000]);
     $("nav").toggleClass("show", [1000]);
-    $("#icons").removeClass("mobilesoc");
-    $("#icons").css({
-      "position": "",
-      "top": "",
-      "left": ""
-    });
-    $(".socicon").css({
-      "width": "",
-      "margin-top": ""
-    });
     hasShow();
   });
 });
@@ -77,6 +67,21 @@ $(function () {
 });
 
 },{}],4:[function(require,module,exports){
-"use strict";
+'use strict';
+
+$(function () {
+	$('a[href*="#"]:not([href="#"])').click(function () {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			};
+		};
+	});
+});
 
 },{}]},{},[1]);

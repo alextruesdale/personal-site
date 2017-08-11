@@ -1,4 +1,6 @@
 *, *::after, *::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,7 +16,7 @@ img {
 
 .site {
   display: flex;
-  min-height: 100vw;
+  min-height: 100vh;
   flex-direction: column;
 }
 
@@ -22,6 +24,19 @@ img {
   display: flex;
 }
 
-.site-header { order: 1; }
-.site-content { order: 2; }
-.site-footer {order: 3; }
+.site-header {
+  order: 1;
+  height: 75px;
+
+  @include media('<1000px') {
+    height: 70px;
+  }
+}
+.site-content {
+  order: 2;
+  min-height: 100vh;
+  background-color: blue;
+}
+.site-footer {
+  order: 3;
+}

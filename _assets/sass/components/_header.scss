@@ -1,14 +1,22 @@
-/*MOBILE MENU*/
+header{
+	a{
+		color: #696969;
+	}
+}
 
-
-.mobile-nav, .mobile-menu {
+.mobile-nav, .mobile-menu{
 	display: none;
 	position: absolute;
 	position: fixed;
 
 	z-index: 990;
+
+	@include media('<1100px'){
+		display: block;
+		position: fixed;
+	}
 }
-.mobile-nav {
+.mobile-nav{
 	height: 70px;
 	width: 100vw;
 	position: fixed;
@@ -16,13 +24,11 @@
 	background-color: white;
 	box-shadow: 0 1px 2px 0px #F3F3F3;
 
-	@include media('<1000px') {
-		display: block;
-		position: fixed;
+	@include media('>750px', '<1100px'){
+		height: 100px;
 	}
 }
-.mobile-menu {
-	position: absolute;
+.mobile-menu{
 	top: 14px;
 	left: 13px;
 
@@ -32,9 +38,11 @@
 	cursor: pointer;
 	transition: background 0.3s;
 
-	@include media('<1000px') {
-		display: block;
-		position: fixed;
+	@include media('>750px', '<1100px'){
+		top: 30px;
+		left: 26px;
+		width: 70px;
+		height: 50px;
 	}
 }
 .mobile-menu span {
@@ -48,6 +56,11 @@
 	border-radius: 3px;
 
 	background: #2193A2;
+
+	@include media('>750px', '<1100px'){
+		width: 60px;
+		height: 3px;
+	}
 }
 .mobile-menu span::before,
 .mobile-menu span::after {
@@ -58,14 +71,27 @@
 	height: 2.3px;
 	border-radius: 3px;
 	content: "";
+
+	@include media('>750px', '<1100px'){
+		width: 60px;
+		height: 3px;
+	}
 }
 .mobile-menu span::before {
 	top: -9px;
 	background-color: #2175A6;
+
+	@include media('>750px', '<1100px'){
+		top: -14px;
+	}
 }
 .mobile-menu span::after {
 	bottom: -9px;
 	background-color: #818386;
+
+	@include media('>750px', '<1100px'){
+		top: 14px;
+	}
 }
 .mm-layer span::before,
 .mm-layer span::after {
@@ -88,15 +114,19 @@
 .mm-layer.active span::after {
 	bottom: 0;
 	transform: rotate(-45deg);
+
+	@include media('>750px', '<1100px'){
+		top: -1px;
+	}
 }
 .mm-layer.active span::before,
 .mm-layer.active span::after {
 	transition-delay: 0s, 0.1s;
 }
-.show {
+.show{
 	opacity: 1;
 }
-.hide {
+.hide{
 	opacity: 0;
 }
 
@@ -104,7 +134,7 @@
 /*DESKTOP MENU*/
 
 
-nav {
+nav{
 	height: 75px;
 	width: 100vw;
 
@@ -119,7 +149,7 @@ nav {
 	align-items: center;
 	justify-content: space-around;
 
-	@include media('<1000px') {
+	@include media('<1100px'){
 		pointer-events: none;
 		position: absolute;
 		position: fixed;
@@ -132,23 +162,23 @@ nav {
 		padding: 10px 0;
 		background-color: #F8F8F8;
 	}
-	@include media('>2000px') {
+	@include media('>2000px'){
 		height: 120px;
 	}
 }
-nav {
-  ul {
-    li {
-    	font-size: 1em;
-    	list-style: none;
-    	display: inline-block;
-    	position: relative;
-    	font-weight: 300;
-    	margin: 0 2.2vw 0 2.2vw;
 
-      transition: all .18s ease-in-out;
+nav{
+	ul{
+	  li{
+			font-size: 1em;
+			list-style: none;
+			display: inline-block;
+			position: relative;
+			margin: 0 2.2vw 0 2.2vw;
 
-			@include media('<1000px') {
+		  transition: all .18s ease-in-out;
+
+			@include media('<1100px'){
 				font-size: 8vw;
 				text-align: center;
 				font-weight: 300;
@@ -159,46 +189,50 @@ nav {
 
 				margin: 30px 2.2vw 0px 2.2vw;
 			}
-			@include media('>2000px') {
+			@include media('>750px', '<1100px'){
+				margin: 45px 2.2vw 0px 2.2vw;
+			}
+			@include media('>2000px'){
 				font-size: 1.9em;
 				margin: 0 2.6vw 0 2.6vw;
 			}
-    }
-    li:hover {
-    	color: #2a88b5;
-    	cursor: pointer;
-    }
-  }
+
+			li:hover{
+				color: #2a88b5;
+				cursor: pointer;
+			}
+		}
+	}
 }
-.menu-name {
+.menu-name{
 	font-size: 1.6em;
-	font-weight: 200;
+	font-weight: 300;
 	margin-left: -40px;
 
-	@include media('<1000px') {
+	@include media('<1100px'){
 		display: none;
 	}
-	@include media('>2000px') {
+	@include media('>2000px'){
 		font-size: 2.8em;
 	}
 }
-.menu-divider {
+.menu-divider{
 	font-size: 1.6em;
 	font-weight: 100;
 	color: #696969;
-	margin: 0 -205px 0 -150px;
+	margin: 0 -170px 0 -150px;
 	padding: 0;
 
-	@include media('<1000px') {
+	@include media('<1100px'){
 		display: none;
 	}
-	@include media('>2000px') {
+	@include media('>2000px'){
 		font-size: 2.6em;
 		font-weight: 200;
 		margin: 0 -200px 0 -150px;
 	}
 }
-.menu-bird {
+.menu-bird{
 	position: absolute;
 	position: fixed;
 
@@ -210,19 +244,22 @@ nav {
 	height: auto;
 
 	transition: all .17s ease-in-out;
-	filter: saturate(0%) brightness(160%) contrast(80%);
+  filter: saturate(0%) brightness(160%) contrast(80%);
 
-	@include media('<1000px') {
+	@include media('<1100px'){
 		position: fixed;
 		top: 10px;
 		right: 5px;
 		width: 55px;
 	}
-	@include media('>2000px') {
+	@include media('>750px', '<1100px'){
+		width: 95px;
+	}
+	@include media('>2000px'){
 		width: 95px;
 	}
 }
-.menu-bird:hover {
+.menu-bird:hover{
 	cursor: pointer;
   filter: saturate(100%) brightness(100%) contrast(100%);
 }
