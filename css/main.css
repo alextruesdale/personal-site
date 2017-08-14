@@ -8,7 +8,20 @@
 body {
   margin: 0;
   padding: 0;
-  -webkit-text-size-adjust: none; }
+  -webkit-animation: fadein 1.5s;
+          animation: fadein 1.5s; }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 img {
   max-width: 100%; }
@@ -53,6 +66,7 @@ html, body {
   font-family: "Muli", sans-serif;
   font-size: 100%;
   font-weight: 500;
+  -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -69,8 +83,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: .6875rem; }
 
 a {
-  color: #007DC3;
-  text-decoration: none; }
+  color: #696969;
+  text-decoration: none;
+  -webkit-transition: all .18s ease-in-out;
+  transition: all .18s ease-in-out; }
+
+a:hover {
+  color: #2a88b5;
+  cursor: pointer; }
 
 .text-center {
   text-align: center !important; }
@@ -234,9 +254,6 @@ footer {
 .soc-icon:hover {
   -webkit-filter: brightness(120%);
           filter: brightness(120%); }
-
-header a {
-  color: #696969; }
 
 .mobile-nav, .mobile-menu {
   display: none;
@@ -409,9 +426,7 @@ nav ul li {
   list-style: none;
   display: inline-block;
   position: relative;
-  margin: 0 2.2vw 0 2.2vw;
-  -webkit-transition: all .18s ease-in-out;
-  transition: all .18s ease-in-out; }
+  margin: 0 2.2vw 0 2.2vw; }
   @media (max-width: 1099px) {
     nav ul li {
       font-size: 8vw;
@@ -429,9 +444,6 @@ nav ul li {
     nav ul li {
       font-size: 1.9em;
       margin: 0 2.6vw 0 2.6vw; } }
-  nav ul li li:hover {
-    color: #2a88b5;
-    cursor: pointer; }
 
 .menu-name {
   font-size: 1.6em;
