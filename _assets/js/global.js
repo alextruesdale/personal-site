@@ -1,4 +1,5 @@
-// import './vendor/lightbox.js';
+import './nodes/resume_button_exp';
+import './nodes/about_bkg_fade';
 import './nodes/menu_toggle';
 import './nodes/gallery_side_menu';
 import './nodes/smooth_scroll';

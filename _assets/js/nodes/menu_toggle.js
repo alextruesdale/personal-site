@@ -21,7 +21,7 @@ $(function() {
 
 $(function() {
   $(".mobile-menu").click(function() {
-    $("#container").toggleClass("hide", [1000]);
+    $(".container").toggleClass("hide", [1000]);
     $("nav").toggleClass("show", [1000]);
     hasShow();
   });
@@ -34,20 +34,3 @@ function hasShow() {
     $("nav").css("pointer-events", "auto");
   };
 };
-
-$(function() {
-  if ($(window).width() < 1000) {
-    $("#soc").click(function() {
-      $("#icons").toggleClass("mobilesoc", [1000]);
-      $("#icons").css({
-        "position" : "absolute",
-        "top" : "0",
-        "left" : "0"
-      });
-      $(".socicon").css({
-        "width" : "65px",
-        "margin-top" : "15px"
-      });
-    });
-  };
-});

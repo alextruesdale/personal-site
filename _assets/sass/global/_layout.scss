@@ -5,15 +5,8 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-
   animation: fadein 1.5s;
   @keyframes fadein {from {opacity: 0;} to {opacity: 1;}}
-}
-
-img {
-  max-width: 100%;
 }
 
 .site {
@@ -37,7 +30,6 @@ img {
 .site-content {
   order: 2;
   min-height: 100vh;
-  background-color: blue;
 }
 .site-footer {
   order: 3;

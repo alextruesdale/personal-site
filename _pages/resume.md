@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
+title: Résumé
 description: Alex Truesdale | Development, data science, and analytics. Pursuing growth with boundless, interminable curiosity.
-permalink: /about/
+permalink: /resume/
 ---
-{% include about.html %}
+{% include resume.html %}

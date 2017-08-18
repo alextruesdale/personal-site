@@ -1,0 +1,204 @@
+{% assign resume = site.data.resume %}
+
+<div class="container">
+  <div class="resume-header">
+    <div class="reshead-images">
+      <img class="reshead-graphic" src="{{ "/images/resume_images/resumeleft.png" | prepend: site.baseurl }}">
+      <img class="reshead-profile" src="{{ "/images/resume_images/resumehead.png" | prepend: site.baseurl }}">
+    </div>
+
+    <div class="reshead-text">
+      <h1>{{ resume.head.name }}</h1>
+      <ul class="reshead-areas">
+        {% for item in resume.head.areas %}
+          {% if forloop.index < 3 %}
+            <li class="areas-item">{{ item }}</li>
+            <li><div class="divider-cube"></div></li>
+          {% else %}
+            <li class="areas-item">{{ item }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div id="leftcolumn">
+    <div class="summary">
+      <p class="sum_p">
+        I am looking to further develop skills in the area of data science and business analytics
+        following two years of experience in digital marketing, working with technical systems in
+        professional business environments.
+      </p>
+    </div>
+    <div id="experience">
+      <h2>Experience</h2>
+      <h3>Data Science Research Assistant – Team Lead</h3>
+      <p><span class="bold">ctrl QS GmbH</span><span class="unbold"> – May 2016 to December 2016 </span></p>
+      <h5>Boulder, CO | United States</h5>
+
+      <div class="btnwrapper">
+        <div id="datascibtn" class="expbutton">
+          Expand
+        </div>
+      </div>
+      <div id="datasci" class="responsibilities inner">
+
+        <p class="job_sum">
+          Preparation of open-source Kaggle datasets as case studies to be used as learning examples in and upcoming
+          machine learning publication using the web application DataRobot.
+        </p>
+
+        <div class="hs2"></div>Clean datasets with missing / incomplete data within Alteryx <br>
+        <div class="hs2"></div>Write case briefs for each dataset, guiding readers through exercises <br>
+        <div class="hs2"></div>Organise team project deliverable specifications and deadlines <br>
+      </div>
+
+      <h3>Digital Marketing & Web Development Intern</h3>
+      <p><span class="bold">LogRhythm, inc.</span><span class="unbold"> – February 2017 to June 2017 </span></p>
+      <h5>Boulder, CO | United States</h5>
+
+      <div class="btnwrapper">
+        <div id="logrhybtn" class="expbutton">
+          Expand
+        </div>
+      </div>
+      <div id="logrhy" class="responsibilities inner">
+
+        <p class="job_sum">
+          Part of a small digital team working with marketing sub-units (content, product, ops). Operational
+          focus on website admin and scalable site architecture to accommodate business growth and market expansion.
+        </p>
+
+        <div class="hs2"></div>Web development technologies used: HTML, CSS, Jekyll, Liquid, Git <br>
+        <div class="hs2"></div>Web analytics and tracking in Google Analytics / Tag Manager <br>
+        <div class="hs2"></div>Workflow managed in Trello and weekly cross-functional scrums <br>
+      </div>
+
+      <h3>Digital Marketing & Project Management Intern</h3>
+      <p><span class="bold">ctrl QS GmbH</span><span class="unbold"> – May 2016 to December 2016 </span></p>
+      <h5>Berlin, Berlin | Germany</h5>
+
+      <div class="btnwrapper">
+        <div id="ctrlqsbtn" class="expbutton">
+          Expand
+        </div>
+      </div>
+      <div id="ctrlqs" class="responsibilities inner">
+
+        <p class="job_sum">
+          Member of an international, multi-lingual team managing global digital marketing operations for NIVEA
+          (Beiersdorf). Business focus on project management and client brand stewardship across 30+ markets globally.
+        </p>
+
+        <div class="hs2"></div>Provided support for digital marketing systems to markets world-wide <br>
+        <div class="hs2"></div>Project management communications involved aligning multiple stakeholders for high-budget projects; corporate client, partner agencies <br>
+      </div>
+
+      <h3>Digital Marketing Assistant</h3>
+      <p><span class="bold">Center for Education on Social Responsibility</span><span class="unbold"> – May 2016 to December 2016</span></p>
+      <h5>Boulder, CO | United States</h5>
+
+      <div class="btnwrapper">
+        <div id="cesrbtn" class="expbutton">
+          Expand
+        </div>
+      </div>
+      <div id="cesr" class="responsibilities inner">
+
+        <p class="job_sum">
+          Partnered with marketing director to develop initial digital marketing presence, increasing
+          content volume and overall campaign integration.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="rightcolumn">
+    <div id="education">
+      <h2>Education</h2>
+      <h3>University of Colorado, Boulder</h3>
+      <h5>Boulder, CO | United States</h5>
+
+      <div class="btnwrapper">
+        <div id="edubtn" class="expbutton">
+          Expand
+        </div>
+      </div>
+      <div id="eduinfo" class="inner">
+        <div class="school">
+          <p><span class="bold">Leeds School of Business</span><span class="unbold ub1"> – Grad. December 2017</span></p>
+          <p>Double BS-BA | Marketing & Information Management</p>
+          <p><span class="bold">GPA</span><span class="unbold"> | 3.65</span></p>
+        </div>
+
+        <div class="school">
+          <p><span class="bold">ATLAS Institute for Design</span><span class="unbold ub1"> – Completed May 2016</span></p>
+          <p>Certificate | Technology, Arts & Media</p>
+        </div>
+      </div>
+
+      <h3>University of Wollongong</h3>
+      <p>Wollongong, NSW | Australia</p>
+      <p><span class="bold">Semester Abroad</span><span class="unbold"> – February 2014 to July 2014</span></p>
+
+      <h3>World Trade Center Denver</h3>
+      <p>Denver, CO | United States</p>
+      <p><span class="bold">International Trade Certificate</span><span class="unbold"> – Completed May 2016</span></p>
+    </div>
+    <div id="complang">
+      <h2>Computer & Language</h2>
+
+      <div class="btnwrapper">
+        <div id="compbtn" class="expbutton">
+          Expand
+        </div>
+      </div>
+      <div id="compinfo" class="inner">
+        <p><span class="bold">Adobe Photoshop  </span><span class="unbold">advanced</span></p>
+        <p><span class="bold">Adobe Illustrator  </span><span class="unbold">advanced</span></p>
+        <p><span class="bold">HTML  </span><span class="unbold">advanced</span></p>
+        <p><span class="bold">CSS (SCSS)  </span><span class="unbold">advanced</span></p>
+        <p><span class="bold">Jekyll / Liquid  </span><span class="unbold">advanced</span></p>
+        <p><span class="bold">Javascript  </span><span class="unbold">basic-working</span></p>
+        <p><span class="bold">Google Analytics Certification</span></p>
+
+        <br>
+
+        <p><span class="bold">Alteryx (R-based VPL)  </span><span class="unbold">intermediate</span></p>
+        <p><span class="bold">DataRobot (Machine Learning App)  </span><span class="unbold">intermediate</span></p>
+        <p><span class="bold">Python  </span><span class="unbold">basic-working</span></p>
+        <p><span class="bold">SQL  </span><span class="unbold">basic-working</span></p>
+
+        <br>
+
+        <p><span class="bold">English  </span><span class="unbold">native-speaker</span></p>
+        <p><span class="bold">German  </span><span class="unbold">intermediate (B1)</span></p>
+      </div>
+    </div>
+    <div id="personaldata">
+      <h2>Personal Data</h2>
+      <h3 class="extrabr">Website | <a href="http://www.alextruesdale.net">www.alextruesdale.net</a></h3>
+
+      <div class="btnwrapper">
+        <div id="persbtn" class="expbutton">
+          Expand
+        </div>
+      </div>
+      <div id="persinfo" class="inner">
+        <p><span class="bold">Date of Birth  </span><span class="unbold"> 08 October, 1993</span></p>
+        <p><span class="bold">Nationality  </span><span class="unbold"> United States</span></p>
+        <p><span class="bold">Address  </span><span class="unbold"> 1711 W. Barberry Cir. | 80027 Louisville, CO, USA</span></p>
+        <p><span class="bold">Phone  </span><span class="unbold"> EU +44 07957 528587 </span><span class="hs1-min"></span><span class="unbold"> US +1 303 594 5068</span></p>
+        <p><span class="bold">Email  </span><span class="unbold"> alex.truesdale@colorado.edu</span></p>
+        <p><span class="bold">Skype  </span><span class="unbold"> awtruesdale</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="dcont">
+  <a href="images/Résumé.pdf" target="blank"><div id="download">
+    <p id="dlp">Download</p>
+    <div id="dldiv"></div>
+    <img id="dlarrow" src="{{ "/images/resume_images/download.png" | prepend: site.baseurl }}">
+  </div></a>
+</div>
