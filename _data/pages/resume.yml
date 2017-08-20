@@ -1,0 +1,58 @@
+head:
+  name: Alex Truesdale
+  areas:
+    - Data Science
+    - Analytics
+    - Development
+
+meta_summary: I am looking to further develop skills in the area of data science and business analytics following two years of experience in digital marketing, working with technical systems in professional business environments.
+
+experience:
+  section_title: Experience
+
+  positions:
+    - pos_title: "Data Science Research Assistant – Team Lead"
+      company: "CU Boulder, Leeds School of Business"
+      duration: " – May 2016 to December 2016"
+      location: "Boulder, CO | United States"
+      job_sum: "Preparation of open-source Kaggle datasets as case studies to be used as learning examples in and upcoming machine learning publication using the web application DataRobot."
+      tasks:
+        - "Clean datasets with missing / incomplete data within Alteryx"
+        - "Write case briefs for each dataset, guiding readers through exercises"
+        - "Organise team project deliverable specifications and deadlines"
+
+      mobile_expand: datascience
+
+    - pos_title: "Digital Marketing & Web Development Intern"
+      company: "LogRhythm, inc."
+      duration: " – February 2017 to June 2017"
+      location: "Boulder, CO | United States"
+      job_sum: "Part of a small digital team working with marketing sub-units (content, product, ops). Operational focus on website admin and scalable site architecture to accommodate business growth and market expansion."
+      tasks:
+        - "Web development technologies used: HTML, CSS, Jekyll, Liquid, Git"
+        - "Web analytics and tracking in Google Analytics / Tag Manager"
+        - "Workflow managed in Trello and weekly cross-functional scrums"
+
+      mobile_expand: logrhythm
+
+    - pos_title: "Digital Marketing & Project Management Intern"
+      company: "ctrl QS, GmbH"
+      duration: " – May 2016 to December 2016"
+      location: "Berlin, Berlin | Germany"
+      job_sum: "Member of an international, multi-lingual team managing global digital marketing operations for NIVEA (Beiersdorf). Business focus on project management and client brand stewardship across 30+ markets globally."
+      tasks:
+        - "Provided support for digital marketing systems to markets world-wide"
+        - "Project management communications involved aligning multiple stakeholders for high-budget projects; corporate client, partner agencies"
+
+      mobile_expand: ctrlqs
+
+    - pos_title: "Digital Marketing Assistant"
+      company: "Center for Education on Social Responsibility"
+      duration: " – May 2016 to December 2016"
+      location: "Boulder, CO | United States"
+      job_sum: "Partnered with marketing director to develop initial digital marketing presence, increasing content volume and overall campaign integration."
+
+      mobile_expand: cesr
+
+education:
+  

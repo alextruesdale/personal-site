@@ -1,4 +1,4 @@
-{% assign resume = site.data.resume %}
+{% assign resume = site.data.pages.resume %}
 
 <div class="container">
   <div class="resume-header">
@@ -22,99 +22,35 @@
     </div>
   </div>
 
-  <div id="leftcolumn">
-    <div class="summary">
-      <p class="sum_p">
-        I am looking to further develop skills in the area of data science and business analytics
-        following two years of experience in digital marketing, working with technical systems in
-        professional business environments.
-      </p>
+  <div class="leftcolumn">
+    <div class="meta-summary">
+      <p class="metasum-p">{{ resume.meta_summary }}</p>
     </div>
-    <div id="experience">
-      <h2>Experience</h2>
-      <h3>Data Science Research Assistant – Team Lead</h3>
-      <p><span class="bold">ctrl QS GmbH</span><span class="unbold"> – May 2016 to December 2016 </span></p>
-      <h5>Boulder, CO | United States</h5>
+    <div class="experience">
+      <h2 class="section-title">{{ resume.experience.section_title }}</h2>
 
-      <div class="btnwrapper">
-        <div id="datascibtn" class="expbutton">
-          Expand
+      {% for position in resume.experience.positions %}
+        <h3 class="resume-h3">{{ position.pos_title }}</h3>
+        <p><span class="resume-bold">{{ position.company }}</span><span class="resume-unbold">{{ position.duration }}</span></p>
+        <h5>{{ position.location }}</h5>
+
+        <div class="btn-wrapper">
+          <div id="{{ mobile_expand }}btn" class="expbutton">
+            Expand
+          </div>
         </div>
-      </div>
-      <div id="datasci" class="responsibilities inner">
 
-        <p class="job_sum">
-          Preparation of open-source Kaggle datasets as case studies to be used as learning examples in and upcoming
-          machine learning publication using the web application DataRobot.
-        </p>
-
-        <div class="hs2"></div>Clean datasets with missing / incomplete data within Alteryx <br>
-        <div class="hs2"></div>Write case briefs for each dataset, guiding readers through exercises <br>
-        <div class="hs2"></div>Organise team project deliverable specifications and deadlines <br>
-      </div>
-
-      <h3>Digital Marketing & Web Development Intern</h3>
-      <p><span class="bold">LogRhythm, inc.</span><span class="unbold"> – February 2017 to June 2017 </span></p>
-      <h5>Boulder, CO | United States</h5>
-
-      <div class="btnwrapper">
-        <div id="logrhybtn" class="expbutton">
-          Expand
+        <div id="{{ mobile_expand }}" class="responsibilities inner">
+          <p class="job_sum">{{ position.job_sum }}</p>
+          {% for task in position.tasks %}
+            <div class="bullet-diamond"></div>{{ task }} <br>
+          {% endfor %}
         </div>
-      </div>
-      <div id="logrhy" class="responsibilities inner">
+      {% endfor%}
 
-        <p class="job_sum">
-          Part of a small digital team working with marketing sub-units (content, product, ops). Operational
-          focus on website admin and scalable site architecture to accommodate business growth and market expansion.
-        </p>
-
-        <div class="hs2"></div>Web development technologies used: HTML, CSS, Jekyll, Liquid, Git <br>
-        <div class="hs2"></div>Web analytics and tracking in Google Analytics / Tag Manager <br>
-        <div class="hs2"></div>Workflow managed in Trello and weekly cross-functional scrums <br>
-      </div>
-
-      <h3>Digital Marketing & Project Management Intern</h3>
-      <p><span class="bold">ctrl QS GmbH</span><span class="unbold"> – May 2016 to December 2016 </span></p>
-      <h5>Berlin, Berlin | Germany</h5>
-
-      <div class="btnwrapper">
-        <div id="ctrlqsbtn" class="expbutton">
-          Expand
-        </div>
-      </div>
-      <div id="ctrlqs" class="responsibilities inner">
-
-        <p class="job_sum">
-          Member of an international, multi-lingual team managing global digital marketing operations for NIVEA
-          (Beiersdorf). Business focus on project management and client brand stewardship across 30+ markets globally.
-        </p>
-
-        <div class="hs2"></div>Provided support for digital marketing systems to markets world-wide <br>
-        <div class="hs2"></div>Project management communications involved aligning multiple stakeholders for high-budget projects; corporate client, partner agencies <br>
-      </div>
-
-      <h3>Digital Marketing Assistant</h3>
-      <p><span class="bold">Center for Education on Social Responsibility</span><span class="unbold"> – May 2016 to December 2016</span></p>
-      <h5>Boulder, CO | United States</h5>
-
-      <div class="btnwrapper">
-        <div id="cesrbtn" class="expbutton">
-          Expand
-        </div>
-      </div>
-      <div id="cesr" class="responsibilities inner">
-
-        <p class="job_sum">
-          Partnered with marketing director to develop initial digital marketing presence, increasing
-          content volume and overall campaign integration.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div id="rightcolumn">
-    <div id="education">
-      <h2>Education</h2>
+  <div class="rightcolumn">
+    <div class="education">
+      <h2 class="section_title">Education</h2>
       <h3>University of Colorado, Boulder</h3>
       <h5>Boulder, CO | United States</h5>
 

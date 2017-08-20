@@ -4,4 +4,4 @@ title: Résumé
 description: Alex Truesdale | Development, data science, and analytics. Pursuing growth with boundless, interminable curiosity.
 permalink: /resume/
 ---
-{% include resume.html %}
+{% include pages/resume.html %}
