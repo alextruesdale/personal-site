@@ -16,7 +16,7 @@ require('./nodes/smooth_scroll');
 
 $(window).scroll(function () {
   var scrollVar = $(window).scrollTop() / 10;
-  $(".fullbkgd").css({ 'opacity': (100 - scrollVar) / 100 });
+  $(".fullbkgd-about").css({ 'opacity': (100 - scrollVar) / 100 });
 });
 
 },{}],3:[function(require,module,exports){

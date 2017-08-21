@@ -1,0 +1,265 @@
+/*BACKGROUND*/
+
+
+.fullbkgd-projects{
+	position: fixed;
+	width: 100%;
+
+	z-index: -100;
+	bottom: 0;
+}
+
+
+/*INTRO CONTENT*/
+
+
+.wrapper-intro-projects{
+	margin-top: 75px;
+	width: 100vw;
+	height: 100%;
+
+	display: flex;
+	justify-content: flex-end;
+}
+.container-intro-projects{
+	z-index: 900;
+	margin-right: 50px;
+
+	width: 48vw;
+	height: 95vh;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.wrapper-inner-projects{
+	width: 83%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.intro-header-projects{
+	font-weight: 300;
+	font-size: 6.5vw;
+	margin: 2vw 0 0 1.75vw;
+}
+.intro-leadtext-projects{
+	font-size: 1.8vw;
+	letter-spacing: .03em;
+	line-height: 1.3em;
+	margin: 1.5vw 0 2vw 2vw;
+}
+.intro-bodytext-projects{
+	font-size: 1.4vw;
+	font-weight: 300;
+
+	line-height: 1.4em;
+	margin: 0 0 0 2vw;
+}
+.scrollwrapper{
+	margin: 2.25vw 0 0 1.75vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.arrow{
+	width: 4.5vw;
+	transition: ease-in-out .4s;
+}
+.arrow-projects{
+	filter: brightness(70%);
+}
+.arrow-projects:hover{
+	transform: translateY(5px);
+	filter: brightness(100%);
+}
+.scrollspan{
+	font-size: 1.3vw;
+	margin: -.25vw 0 0 .75vw;
+	color: #595959;
+}
+.anchor{
+  display: block;
+  visibility: hidden;
+}
+.anchor-projects{
+  height: 20px;
+  margin-top: 40px;
+}
+
+
+/*PAGE CONTENT*/
+
+
+.spin_bkgd{
+	position: relative;
+	width: 45%;
+	z-index: -9999;
+
+	animation-name: rotate;
+  animation-duration: 200s;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+
+	@-webkit-keyframes rotate {
+  	from {transform: rotate(0deg);}
+  	to {transform: rotate(3600deg);}
+  }
+
+  @include media('<1100px'){
+    position: relative;
+    width: 90%;
+  }
+}
+#comingsoon{
+	font-size: 4.5vw;
+	padding: 50vh 0 50vh 0;
+	font-weight: 300;
+	color: #595959;
+}
+.wrapper2{
+	position: relative;
+	z-index: 970;
+
+	margin: 200px 0 50px 0;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	display: -webkit-flex;
+
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+#secondcontent{
+	width: 95%;
+
+	display: flex;
+	display: -webkit-flex;
+
+	align-items: center;
+	-webkit-align-items: center;
+
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+}
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 1100px) {
+
+	#container{
+		width: 100vw;
+	}
+	.fullbkgd{
+		z-index: -100;
+
+		zoom: .9;
+    	margin-left: -380px;
+    	width: auto;
+	}
+	.wrapper{
+		margin-top: 70px;
+	}
+	.contentcontainer{
+		background-color: rgba(0, 0, 0, 0.05);
+		z-index: 980;
+		margin: 0;
+
+		width: 100vw;
+		height: 120vh;
+
+		display: flex;
+		display: -webkit-flex;
+
+		align-items: flex-start;
+		-webkit-align-items: flex-start;
+
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
+	.innerwrapper{
+		width: 87vw;
+	}
+	.h1{
+		font-weight: 300;
+		font-size: 14vw;
+		margin: 5vw 0 6vw 0;
+	}
+	.leadtext{
+		font-size: 5vw;
+		letter-spacing: .03em;
+		line-height: 1.3em;
+		margin: 0 1vw 6vw 0vw;
+	}
+	.bodytext{
+		font-size: 4.2vw;
+		font-weight: 300;
+
+		line-height: 1.4em;
+		margin: 0 0 4vw 0;
+	}
+	.scrollwrapper{
+		margin: 39vw 0 0 0;
+
+		align-self: center;
+		-webkit-align-self: center;
+	}
+	.arrow{
+		width: 14vw;
+	}
+	#scrollspan{
+		display: none;
+	}
+	.anchor{
+	  height: 110px;
+	  margin-top: -110px;
+	}
+
+
+	/*PAGE CONTENT*/
+
+
+	#comingsoon{
+		font-size: 7.5vw;
+		padding: 8vh 0 0vh 0;
+		font-weight: 300;
+		color: #595959;
+	}
+	.wrapper2{
+		position: relative;
+		z-index: 970;
+
+		margin: 200px 0 120px 0;
+		width: 100%;
+		height: 100%;
+
+		display: flex;
+		display: -webkit-flex;
+
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
+	#secondcontent{
+		width: 87%;
+
+		display: flex;
+		display: -webkit-flex;
+
+		flex-direction: column;
+		-webkit-flex-direction: column;
+
+		align-items: center;
+		-webkit-align-items: center;
+
+		justify-content: flex-start;
+		-webkit-justify-content: flex-start;
+	}
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px){
+	.fullbkgd{
+		zoom: 0;
+	}
+}

@@ -6,20 +6,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-%heading-placeholder {
-  font-family: $font-family-emphasis;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-top: .83em;
-  padding: 0;
-}
-
-@for $i from 1 through 6 {
-  h#{$i}, .h#{$i} {
-    @extend %heading-placeholder
-  }
-}
-
 .sub-header {
   font-size: 1.125rem;
 }

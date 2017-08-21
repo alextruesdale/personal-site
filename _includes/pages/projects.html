@@ -1,0 +1,27 @@
+{% assign projects = site.data.pages.projects %}
+
+<div class="container-projects">
+	<div>
+		<img class="fullbkgd-projects" src="{{ "/images/design_images/slope.png" | prepend: site.baseurl }}">
+	</div>
+	<div class="wrapper-intro-projects">
+		<div class="container-intro-projects">
+			<div class="wrapper-inner-projects">
+				<h1 class="intro-header-projects">{{ projects.intro.header }}</h1>
+				<p class="intro-leadtext-projects">{{ projects.intro.leadtext }}</p>
+				<p class="intro-bodytext-projects">{{ projects.intro.bodytext }}</p>
+				<div class="scrollwrapper">
+					<a href="#section1"><img id="down_arrow" class="arrow arrow-projects" src="{{ "/images/down_arrow.png" | prepend: site.baseurl }}"></a>
+					<span class="scrollspan">scroll down</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-content-projects">
+		<span class="anchor projects-anchor" id="section1"></span>
+		<div class="content-main-projects">
+			<img class="spin-bkgd" src="{{ "/images/design_images/spin_image.png" | prepend: site.baseurl }}">
+			<span class="spin-text">{{ projects.content.spin_text[0] }}<br>{{ projects.content.spin_text[1] }}</span>
+		</div>
+	</div>
+</div>

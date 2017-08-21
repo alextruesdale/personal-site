@@ -1,4 +1,4 @@
-.fullbkgd{
+.fullbkgd-about{
 	position: fixed;
 	width: 100%;
 	z-index: -100;
@@ -13,16 +13,16 @@
 		zoom: 0;
 	}
 }
-.container{
+.container-about{
 	@include media('<1100px'){
 		width: 100vw;
 	}
 }
-.wrapper-intro{
+.wrapper-intro-about{
 	display: flex;
 	justify-content: flex-end;
 }
-.container-intro{
+.container-intro-about{
 	z-index: 900;
 	margin-right: 50px;
 
@@ -42,7 +42,7 @@
 		justify-content: center;
 	}
 }
-.wrapper-inner{
+.wrapper-inner-about{
 	width: 85%;
 
 	display: flex;
@@ -54,7 +54,7 @@
 		width: 87vw;
 	}
 }
-.intro-header{
+.intro-header-about{
 	font-family: 'Muli' sans-serif;
 	color: #D5D5D5;
 	font-weight: 400;
@@ -66,7 +66,7 @@
 		margin: 5vw 0 6vw 0;
 	}
 }
-.intro-leadtext{
+.intro-leadtext-about{
 	color: white;
 	font-size: 1.8vw;
 	letter-spacing: .03em;
@@ -79,7 +79,7 @@
 		margin: 0 1vw 6vw 0vw;
 	}
 }
-.intro-bodytext{
+.intro-bodytext-about{
 	color: white;
 	font-size: 1.4vw;
 	font-weight: 300;
@@ -163,7 +163,7 @@
 /*PAGE CONTENT*/
 
 
-.wrapper-content{
+.wrapper-content-about{
 	position: relative;
 	z-index: 970;
 	margin: 200px 0 50px 0;
@@ -175,7 +175,7 @@
 		margin: 50px 0 50px 0;
 	}
 }
-.content-main{
+.content-main-about{
 	width: 95%;
 
 	display: flex;

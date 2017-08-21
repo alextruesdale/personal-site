@@ -1,6 +1,6 @@
 {% assign resume = site.data.pages.resume %}
 
-<div class="container">
+<div class="container-resume">
   <div class="resume-header">
     <div class="reshead-images">
       <img class="reshead-graphic" src="{{ "/images/resume_images/resumeleft.png" | prepend: site.baseurl }}">
@@ -8,14 +8,14 @@
     </div>
 
     <div class="reshead-text">
-      <h1>{{ resume.head.name }}</h1>
+      <h1 class="resume-name">{{ resume.head.name }}</h1>
       <ul class="reshead-areas">
         {% for item in resume.head.areas %}
           {% if forloop.index < 3 %}
-            <li class="areas-item">{{ item }}</li>
+            <li>{{ item }}</li>
             <li><div class="divider-cube"></div></li>
           {% else %}
-            <li class="areas-item">{{ item }}</li>
+            <li>{{ item }}</li>
           {% endif %}
         {% endfor %}
       </ul>
@@ -32,21 +32,23 @@
       {% for position in resume.experience.positions %}
         <h3 class="resume-h3">{{ position.pos_title }}</h3>
         <p><span class="resume-bold">{{ position.company }}</span><span class="resume-unbold">{{ position.duration }}</span></p>
-        <h5>{{ position.location }}</h5>
+        <h5 class="resume-h5">{{ position.location }}</h5>
 
         <div class="btn-wrapper">
-          <div id="{{ mobile_expand }}btn" class="expbutton">
+          <div id="{{ position.mobile_expand }}btn" class="expbutton">
             Expand
           </div>
         </div>
 
-        <div id="{{ mobile_expand }}" class="responsibilities inner">
-          <p class="job_sum">{{ position.job_sum }}</p>
+        <div id="{{ position.mobile_expand }}" class="responsibilities inner">
+          <p class="job-summary">{{ position.job_sum }}</p>
           {% for task in position.tasks %}
             <div class="bullet-diamond"></div>{{ task }} <br>
           {% endfor %}
         </div>
       {% endfor%}
+    </div>
+  </div>
 
   <div class="rightcolumn">
     <div class="education">
@@ -55,7 +57,7 @@
       <h5 class="resume-h5">{{ resume.education.cu_boulder.location }}</h5>
 
       <div class="btn-wrapper">
-        <div id="edubtn" class="expbutton">
+        <div id="eduinfobtn" class="expbutton">
           Expand
         </div>
       </div>
@@ -63,7 +65,7 @@
       <div id="eduinfo" class="inner">
         {% for uni in resume.education.cu_boulder.school_data %}
           <div class="school">
-            <p><span class="resume-bold">{{ uni.school }}</span><span class="resmue-unbold {% if uni.linebreak %}ub-linebreak{% endif %}">{{ uni.duration }}</span></p>
+            <p><span class="resume-bold">{{ uni.school }}</span><span class="resume-unbold {% if uni.linebreak %}ub-linebreak{% endif %}">{{ uni.duration }}</span></p>
             <p>{{ uni.degree }}</p>
 
             {% if uni.gpa %}
@@ -80,11 +82,11 @@
       {% endfor %}
     </div>
 
-    <div id="complang">
-      <h2>{{ resume.comp_lang.section_title }}</h2>
+    <div class="complang">
+      <h2 class="section-title">{{ resume.comp_lang.section_title }}</h2>
 
       <div class="btn-wrapper">
-        <div id="compbtn" class="expbutton">
+        <div id="compinfobtn" class="expbutton">
           Expand
         </div>
       </div>
@@ -103,12 +105,12 @@
         {% endfor %}
       </div>
     </div>
-    <div id="personaldata">
-      <h2>{{ resume.personal_data.section_title }}</h2>
+    <div class="personaldata">
+      <h2 class="section-title">{{ resume.personal_data.section_title }}</h2>
       <h3 class="resume-h3 extra-br">{{ resume.personal_data.website.lead }}<a href="http://{{ resume.personal_data.website.url }}">{{ resume.personal_data.website.url }}</a></h3>
 
       <div class="btn-wrapper">
-        <div id="persbtn" class="expbutton">
+        <div id="persinfobtn" class="expbutton">
           Expand
         </div>
       </div>
@@ -121,10 +123,11 @@
   </div>
 </div>
 
-<div id="dcont">
-  <a href="images/Résumé.pdf" target="blank"><div id="download">
-    <p id="dlp">Download</p>
-    <div id="dldiv"></div>
-    <img id="dlarrow" src="{{ "/images/resume_images/download.png" | prepend: site.baseurl }}">
+<div class="container-download">
+  <a href="{{ "/images/resume_images/Résumé.pdf" | prepend: site.baseurl }}" target="blank">
+  <div class="download">
+    <p class="dl-text">Download</p>
+    <div class="dl-div"></div>
+    <img class="dl-arrow" src="{{ "/images/resume_images/download.png" | prepend: site.baseurl }}">
   </div></a>
 </div>
