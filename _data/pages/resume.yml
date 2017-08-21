@@ -55,4 +55,93 @@ experience:
       mobile_expand: cesr
 
 education:
-  
+  section_title: Experience
+
+  cu_boulder:
+    university: "University of Colorado, Boulder"
+    location: "Boulder, CO | United States"
+
+    school_data:
+      - school: "Leeds School of Business"
+        duration: " – Grad. December 2017"
+        degree: "Double BS-BA | Marketing & Information Management"
+        gpa:
+          gpa_text: "GPA"
+          gpa_num: " | 3.65"
+
+        linebreak: true
+
+      - school: "ATLAS Institute for Design"
+        duration: " – Completed May 2016"
+        degree: "Certificate | Technology, Arts & Media"
+
+        linebreak: true
+
+  other_edu:
+    - school: "University of Wollongong"
+      location: "Wollongong, NSW | Australia"
+      desc: "Semester Abroad"
+      duration: " – February 2014 to July 2014"
+      linebreak: true
+
+    - school: "World Trade Center Denver"
+      location: "Denver, CO | United States"
+      desc: "International Trade Certificate"
+      duration: " – Completed May 2016"
+
+comp_lang:
+  section_title: "Computer & Language"
+
+  skills:
+    digital:
+      - skill: "Adobe Photoshop  "
+        level: "advanced"
+      - skill: "Adobe Illustrator  "
+        level: "advanced"
+      - skill: "HTML  "
+        level: "advanced"
+      - skill: "CSS (SCSS)  "
+        level: "advanced"
+      - skill: "Jekyll / Liquid  "
+        level: "advanced"
+      - skill: "Javascript  "
+        level: "basic-working"
+      - skill: "Google Analytics Certification"
+        level: false
+
+    data_prog:
+      - skill: "Alteryx (R-based VPL)  "
+        level: "intermediate"
+      - skill: "DataRobot (Machine Learning App)  "
+        level: "intermediate"
+      - skill: "Python  "
+        level: "basic-working"
+      - skill: "SQL  "
+        level: "basic-working"
+
+    lang:
+      - skill: "English  "
+        level: "native-speaker"
+      - skill: "German  "
+        level: "intermediate (B1)"
+
+personal_data:
+  section_title: "Personal Data"
+  website:
+    lead: "Website | "
+    url: "www.alextruesdale.net"
+
+  data:
+    - data: "Date of Birth  "
+      content: " 08 October, 1993"
+    - data: "Nationality  "
+      content: "  United States"
+    - data: "Address  "
+      content: " 1711 W. Barberry Cir. | 80027 Louisville, CO, USA"
+    - data: "Phone  "
+      content: " EU +44 07957 528587"
+      content_second: " US +1 303 594 5068"
+    - data: "Email  "
+      content: " alex.truesdale@colorado.edu"
+    - data: "Skype  "
+      content: " awtruesdale"

@@ -897,7 +897,7 @@ h1 {
   background-color: #D9D9D9;
   display: inline-block; }
 
-.hs1-min {
+.bullet-diamond-min {
   width: 6px;
   height: 6px;
   margin: 0px 3px 2px 4px;
@@ -1136,7 +1136,7 @@ h5 {
     margin: 0px 10px 0 0px; }
   br {
     line-height: 2em; }
-  .ub1:before {
+  .ub-linebreak:before {
     content: "\a";
     white-space: pre; }
   .job_sum {
