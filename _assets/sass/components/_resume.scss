@@ -297,7 +297,7 @@
 		margin: 0px 10px 0 0px;
 	}
 }
-br{
+.container-resume br{
 	@include media('<1100px'){
 		line-height: 2em;
 	}

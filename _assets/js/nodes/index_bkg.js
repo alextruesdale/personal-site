@@ -1,23 +1,3 @@
-// PRELOAD
-
-var images = new Array();
-var imageFiles = [
-	"images/backgroundblue2.png",
-	"images/backgroundblue1.png",
-	"images/backgroundred2.png",
-	"images/backgroundred1.png",
-	"images/404small.png",
-	"images/404.png"
-];
-
-function preload(imageFiles) {
-	for (i = 0; i < imageFiles.length; i++) {
-		images[i] = new Image()
-		images[i].src = imageFiles[i];
-	};
-};
-
-preload(imageFiles);
 $(attachClickHandlers);
 
 // GET STYLE
@@ -30,10 +10,10 @@ function getStyle(id, name) {
 // HANDLECLICK
 
 var background = [
-	'background', 
-	'backgroundblue1', 
-	'backgroundblue2', 
-	'backgroundred1', 
+	'background',
+	'backgroundblue1',
+	'backgroundblue2',
+	'backgroundred1',
 	'backgroundred2'
 ];
 
@@ -75,12 +55,10 @@ function handleClick() {
 	var itemHide = getStyle(backgroundKey[targetid], 'display')
 	var fin = "#" + backgroundKey[targetid];
 
-	console.log(itemHide);
-
 	if (itemHide === "none") {
 		$(fin).hide().css('visibility', 'visible').fadeIn(100);
 	};
-};	
+};
 
 
 // ATTACH CLICK HANDLERS
@@ -92,7 +70,3 @@ function attachClickHandlers() {
 	$("#darkblue").click(handleClick);
 	$("#lightblue").click(handleClick);
 }
-
-
-
-

@@ -1,7 +1,7 @@
 {% assign about = site.data.pages.about %}
 
-<div class="container-about">
-	<div><img class="fullbkgd-about" src="{{ "/images/about_images/about_bkgd.png" | prepend: site.baseurl }}"></div>
+<div class="container container-about">
+	<div><img class="fullbkgd-about" src="/images/about_images/about_bkgd.png"></div>
 	<div class="wrapper-intro-about">
 		<div class="container-intro-about">
 			<div class="wrapper-inner-about">
@@ -13,9 +13,9 @@
 						<li>{{ item }}</li>
 					{% endfor %}
 		    </ol>
-				<div class="scrollwrapper">
-					<a href="#section1"><img class="arrow" src="{{ "/images/down_arrow.png" | prepend: site.baseurl }}"></a>
-					<span class="scrollspan">scroll down</span>
+				<div class="scrollwrapper-about">
+					<a href="#section1"><img class="arrow arrow-about" src="/images/down_arrow.png"></a>
+					<span class="scrollspan-about">scroll down</span>
 				</div>
 			</div>
 		</div>
@@ -23,7 +23,7 @@
 	<div class="wrapper-content-about">
 		<span class="anchor about-anchor" id="section1"></span>
 		<div class="content-main-about">
-			<div><img class="portrait" src="{{ "/images/about_images/portrait.png" | prepend: site.baseurl }}"></div>
+			<div><img class="portrait" src="/images/about_images/portrait.png"></div>
 			<div class="bio-content">
 				{% for section in about.content %}
 					<div>

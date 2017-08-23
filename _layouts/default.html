@@ -6,7 +6,7 @@
     <div class="site-content content-{{ page.url | slugify }}">
       {{ content }}
     </div>
-    {% include footer.html %}
-    {% include foot.html %}
+    {% unless page.footer == false %}{% include footer.html %}{% endunless %}
   </body>
+  {% include foot.html %}
 </html>

@@ -1,0 +1,19 @@
+{% assign contact = site.data.pages.contact %}
+
+<div class="container container-contact">
+  <div class="wrapper-contact">
+    <div class="wrapper-inner-contact">
+      <div class="icon-links">
+        {% for icon in contact.icons %}
+          <a href="{{ icon.url }}" target="blank"><img class="social-icon-full" src="{{ icon.src }}" alt="{{ icon.alt }}"></a>
+        {% endfor %}
+      </div>
+      <div class="contact-information">
+        <h1 class="contact-h1">{{ contact.section_title }}</h1>
+        {% for link in contact.contact_links %}
+          <p class="contact-bodytext contact-black contact-link"><span class="contact-greyspan">{{ link.lead }}</span><br><a href="{{ link.url }}">{{ link.text }}</a></p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+background_images:
+  - id: "background"
+    src: "/images/index_background/background.png"
+  - id: "backgroundblue1"
+    src: "/images/index_background/backgroundblue1.png"
+  - id: "backgroundblue2"
+    src: "/images/index_background/backgroundblue2.png"
+  - id: "backgroundred1"
+    src: "/images/index_background/backgroundred1.png"
+  - id: "backgroundred2"
+    src: "/images/index_background/backgroundred2.png"
+
+palette:
+  - group_id: darkred
+    items:
+      - id: red1
+      - id: red2
+      - id: red3
+      - id: red4
+  - group_id: lightred
+    items:
+      - id: red5
+      - id: red6
+      - id: red7
+      - id: red8
+  - group_id: darkblue
+    items:
+      - id: blue1
+      - id: blue2
+      - id: blue3
+  - group_id: lightblue
+    items:
+      - id: blue4
+      - id: blue5
+      - id: blue6
+
+menu:
+  name: "Alex Truesdale"
+  links:
+    - url: "/about"
+      text: "About."
+    - url: "/resume"
+      text: "Résumé."
+    - url: "/design"
+      text: "Design Work."
+    - url: "/photography"
+      text: "Photography."
+    - url: "/contact"
+      text: "Contact."

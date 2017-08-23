@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   animation: fadein 1.5s;
   @keyframes fadein {
@@ -11,17 +10,14 @@ body {
     to {opacity: 1;}
   }
 }
-
 .site {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
-
 .site-header, .site-content, .site-footer {
   display: flex;
 }
-
 .site-header {
   order: 1;
   height: 75px;
