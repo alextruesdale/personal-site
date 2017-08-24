@@ -1,24 +1,23 @@
-<div id="container">
+{% assign photo = site.data.pages.photography %}
+
+
+<div class="container container-photography">
   <div>
-    <img class="fullbkgd" src="images/photo_bkgd.png">
+    <img class="fullbkgd" src="/images/gallery_images/photo_bkgd.png">
   </div>
   <div class="wrapper">
     <div class="contentcontainer">
       <div class="innerwrapper">
-        <h1 class="h1">Photography.</h1>
-        <p class="leadtext">
-          While living and working in Berlin, I did some traveling and amateur photo-taking.
-        </p>
-        <p class="bodytext" id="cameras">
-          I brought three cameras with me to Europe:
-        </p>
+        <h1 class="h1">{{ photo.intro.header }}</h1>
+        <p class="leadtext">{{ photo.intro.leadtext[0] }}<br>{{ photo.intro.leadtext[1] }}</p>
+        <p class="bodytext" id="cameras">{{ photo.intro.bodytext }}</p>
         <p class="bodytext">
-          Minolta x-700 (35mm SLR) <br>
-          Minolta 7s-ii (35mm Rangefinder) <br>
-          Rolleicord V (Middle Format TLR) <br>
+          {% for item in photo.intro.list %}
+            {{ item }} <br>
+          {% endfor %}
         </p>
         <div class="scrollwrapper">
-          <a href="#section1"><img id="down_arrow" class="arrow" src="images/down_arrow.png"></a>
+          <a href="#section1"><img id="down_arrow" class="arrow" src="/images/down_arrow.png"></a>
           <span id="scrollspan">scroll down</span>
         </div>
       </div>
@@ -40,7 +39,7 @@
       <li class="locationitem"><a href="#section9" class="locbtn">Bergen/Oslo</a></li>
       <li class="locationitem"><a href="#section10" class="locbtn">Brugge/Antwerp</a></li>
       <li class="locationitem"><a href="#section11" class="locbtn">Paris</a></li>
-      <li class="locationitem"><img class="locbtn" id="close" src="images/close_arrow.png"></li>
+      <li class="locationitem"><img class="locbtn" id="close" src="/images/gallery_images/close_arrow.png"></li>
     </ul>
   </div>
   <div class="wrapper2">
@@ -59,7 +58,7 @@
       </div>
       <div class="gallerywrapper" id="g2">
         <span class="anchor" id="section2"></span>
-        <img class="fwbackground" id="berlinbgd" src="images/photography/teaser/Berlin.png">
+        <img class="fwbackground" id="berlinbgd" src="/images/photography/teaser/Berlin.png">
         <div class="titlebar">
           <div class="titlecontent">
             <h1 class="phototitle">Berlin</h1>
@@ -72,7 +71,7 @@
       </div>
       <div class="gallerywrapper" id="g3">
         <span class="anchor" id="section3"></span>
-        <img class="fwbackground" id="leipzigbgd" src="images/photography/teaser/Leipzig.png">
+        <img class="fwbackground" id="leipzigbgd" src="/images/photography/teaser/Leipzig.png">
         <div class="titlebar">
           <div class="titlecontent">
             <h1 class="phototitle">Leipzig</h1>
@@ -85,7 +84,7 @@
       </div>
       <div class="gallerywrapper" id="g4">
         <span class="anchor" id="section4"></span>
-        <img class="fwbackground" id="dresdenbgd" src="images/photography/teaser/Dresden.png">
+        <img class="fwbackground" id="dresdenbgd" src="/images/photography/teaser/Dresden.png">
         <div class="titlebar">
           <div class="titlecontent">
             <h1 class="phototitle">Dresden</h1>
@@ -98,7 +97,7 @@
       </div>
       <div class="gallerywrapper" id="g5">
         <span class="anchor" id="section5"></span>
-        <img class="fwbackground" id="praguebgd" src="images/photography/teaser/Prague.png">
+        <img class="fwbackground" id="praguebgd" src="/images/photography/teaser/Prague.png">
         <div class="titlebar">
           <div class="titlecontent">
             <h1 class="phototitle">Prague</h1>
@@ -111,7 +110,7 @@
       </div>
       <div class="gallerywrapper" id="g6">
         <span class="anchor" id="section6"></span>
-        <img class="fwbackground" id="stralsundbgd" src="images/photography/teaser/Stralsund.png">
+        <img class="fwbackground" id="stralsundbgd" src="/images/photography/teaser/Stralsund.png">
         <div class="titlebar">
           <div class="titlecontent">
             <h1 class="phototitle">Stralsund</h1>
@@ -124,7 +123,7 @@
       </div>
       <div class="gallerywrapper" id="g7">
         <span class="anchor" id="section7"></span>
-        <img class="fwbackground" id="hamburgbgd" src="images/photography/teaser/Hamburg.png">
+        <img class="fwbackground" id="hamburgbgd" src="/images/photography/teaser/Hamburg.png">
         <div class="titlebar">
           <div class="titlecontent">
             <h1 class="phototitle">Hamburg</h1>
@@ -137,7 +136,7 @@
       </div>
       <div class="gallerywrapper" id="g8">
         <span class="anchor" id="section8"></span>
-        <img class="fwbackground" id="copenhagenbgd" src="images/photography/teaser/Copenhagen.png">
+        <img class="fwbackground" id="copenhagenbgd" src="/images/photography/teaser/Copenhagen.png">
         <div class="titlebar">
           <div class="titlecontent">
             <h1 class="phototitle">Copenhagen</h1>
@@ -150,7 +149,7 @@
       </div>
       <div class="gallerywrapper" id="g9">
         <span class="anchor" id="section9"></span>
-        <img class="fwbackground" id="bergenoslobgd" src="images/photography/teaser/Norway.png">
+        <img class="fwbackground" id="bergenoslobgd" src="/images/photography/teaser/Norway.png">
         <div class="titlebar">
           <div class="titlecontent">
             <h1 class="phototitle">Bergen/Oslo</h1>
@@ -163,10 +162,10 @@
       </div>
       <div class="gallerywrapper" id="g10">
         <span class="anchor" id="section10"></span>
-        <img class="fwbackground" id="bruggeantwerpbgd" src="images/photography/teaser/Belgium.png">
+        <img class="fwbackground" id="bruggeantwerpbgd" src="/images/photography/teaser/Belgium.png">
         <div class="titlebar">
           <div class="titlecontent">
-            <h1 class="phototitle">Bruges/<br class="mobilebr">Antwerp</h1>
+            <h1 class="phototitle phototitle-lg">Bruges/<br class="mobilebr">Antwerp</h1>
             <div class="buttonwrapper">
               <span><a class="gallerybtn" href="/galleries/Brugge-Antwerp">View Gallery</a></span>
               <span class="locselect">Select Location</span>
@@ -176,7 +175,7 @@
       </div>
       <div class="gallerywrapper" id="g11">
         <span class="anchor" id="section11"></span>
-        <img class="fwbackground" id="parisbgd" src="images/photography/teaser/Paris.png">
+        <img class="fwbackground" id="parisbgd" src="/images/photography/teaser/Paris.png">
         <div class="titlebar">
           <div class="titlecontent">
             <h1 class="phototitle">Paris</h1>

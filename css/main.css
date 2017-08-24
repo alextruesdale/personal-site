@@ -1852,29 +1852,38 @@ nav ul li {
       font-size: 4.2vw;
       margin: 2vw 0 4vw 0; } }
 
+@media (max-width: 1099px) {
+  .container {
+    width: 100vw; } }
+
 .fullbkgd {
-  position: relative;
   position: fixed;
   width: 100%;
-  -webkit-filter: saturate(0);
-          filter: saturate(0);
   margin-bottom: -250px;
   z-index: -100;
-  bottom: 0; }
+  bottom: 0;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  z-index: -100; }
+  @media (max-width: 1099px) {
+    .fullbkgd {
+      zoom: .5;
+      margin-left: -380px;
+      margin-bottom: -650px;
+      width: auto; } }
 
-/*INTRO CONTENT*/
+@media (min-width: 751px) and (max-width: 1099px) {
+  .fullbkgd {
+    zoom: 0; } }
+
 .wrapper {
-  margin: 75px 0 50px 0;
-  width: 100vw;
-  height: 100%;
+  margin: 0px 0 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-justify-content: flex-start; }
+          justify-content: flex-start; }
 
 .contentcontainer {
   z-index: 900;
@@ -1882,13 +1891,27 @@ nav ul li {
   width: 48vw;
   height: 95vh;
   background-color: rgba(0, 0, 0, 0.2); }
+  @media (max-width: 1099px) {
+    .contentcontainer {
+      z-index: 980;
+      margin: 0;
+      width: 100vw;
+      height: 120vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .innerwrapper {
   width: 83%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1896,11 +1919,12 @@ nav ul li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-justify-content: center; }
+          justify-content: center; }
+  @media (max-width: 1099px) {
+    .innerwrapper {
+      width: 87vw; } }
 
 .h1 {
   font-family: 'Muli' sans-serif;
@@ -1908,6 +1932,11 @@ nav ul li {
   font-weight: 300;
   font-size: 6.5vw;
   margin: 2vw 0 0 1.75vw; }
+  @media (max-width: 1099px) {
+    .h1 {
+      font-weight: 300;
+      font-size: 14vw;
+      margin: 5vw 0 6vw 0; } }
 
 .leadtext {
   color: white;
@@ -1915,6 +1944,12 @@ nav ul li {
   letter-spacing: .03em;
   line-height: 1.3em;
   margin: 1.5vw 0 2vw 2vw; }
+  @media (max-width: 1099px) {
+    .leadtext {
+      font-size: 5vw;
+      letter-spacing: .03em;
+      line-height: 1.3em;
+      margin: 0 1vw 6vw 0vw; } }
 
 .bodytext {
   color: white;
@@ -1922,24 +1957,39 @@ nav ul li {
   font-weight: 300;
   line-height: 1.4em;
   margin: 0 0 0 2vw; }
+  @media (max-width: 1099px) {
+    .bodytext {
+      font-size: 4.2vw;
+      font-weight: 300;
+      line-height: 1.4em;
+      margin: 0 0 4vw 0; } }
 
 #cameras {
   margin-bottom: 2vw; }
+  @media (max-width: 1099px) {
+    #cameras {
+      margin-bottom: 6vw; } }
 
 .scrollwrapper {
   margin: 2.25vw 0 0 1.75vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-justify-content: center; }
+          justify-content: center; }
+  @media (max-width: 1099px) {
+    .scrollwrapper {
+      margin: 28vw 0 0 0;
+      -ms-flex-item-align: center;
+          align-self: center; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .scrollwrapper {
+    margin: 5vw 0 0 0; } }
 
 .arrow {
   width: 4.5vw;
@@ -1947,6 +1997,9 @@ nav ul li {
   transition: ease-in-out .4s;
   -webkit-filter: brightness(100%);
           filter: brightness(100%); }
+  @media (max-width: 1099px) {
+    .arrow {
+      width: 14vw; } }
 
 .arrow:hover {
   -ms-transform: translateY(5px);
@@ -1959,14 +2012,24 @@ nav ul li {
   font-size: 1.3vw;
   margin: -.25vw 0 0 .75vw;
   color: #C1C1C1; }
+  @media (max-width: 1099px) {
+    #scrollspan {
+      display: none; } }
 
 .anchor {
   display: block;
   height: 20px;
   margin-top: -5px;
   visibility: hidden; }
+  @media (max-width: 1099px) {
+    .anchor {
+      height: 0;
+      margin: 20px 0 0 0; } }
 
-/*PAGE CONTENT*/
+@media (min-width: 751px) and (max-width: 1099px) {
+  .anchor {
+    margin: 190px 0 0 0; } }
+
 #locationmenu {
   position: absolute;
   position: fixed;
@@ -1978,22 +2041,57 @@ nav ul li {
   height: 100vh;
   width: 25vw;
   z-index: 1000; }
+  @media (max-width: 1099px) {
+    #locationmenu {
+      top: 70px;
+      width: 100vw;
+      right: 0;
+      margin-right: -100vw;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media (min-width: 2001px) {
+    #locationmenu {
+      top: 120px; } }
 
 .locmenu2 {
   margin-right: 0vw !important; }
 
 #locationlist {
   margin: 25px 15px 0 0; }
+  @media (max-width: 1099px) {
+    #locationlist {
+      text-align: center;
+      margin: -65px 0 0 0; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  #locationlist {
+    margin: -45px 0 0 0; } }
 
 .locationitem {
   list-style: none; }
+  .locationitem a {
+    font-size: 2.35vw;
+    font-weight: 300;
+    line-height: 1.4em;
+    color: #E0E0E0;
+    text-decoration: none; }
+    @media (max-width: 1099px) {
+      .locationitem a {
+        font-size: 7.5vw;
+        line-height: 1.5em; } }
 
-.locationitem a {
-  font-size: 2.35vw;
-  font-weight: 300;
-  line-height: 1.4em;
-  color: #E0E0E0;
-  text-decoration: none; }
+@media (min-width: 751px) and (max-width: 1099px) {
+  .locationitem a {
+    font-size: 5.8vw;
+    line-height: 1.5em; } }
 
 #close {
   position: relative;
@@ -2003,6 +2101,13 @@ nav ul li {
   transition: ease-in-out .4s;
   -webkit-filter: brightness(100%);
           filter: brightness(100%); }
+  @media (max-width: 1099px) {
+    #close {
+      margin-top: 10px;
+      width: 10vw; } }
+  @media (min-width: 2001px) {
+    #close {
+      width: 3vw; } }
 
 #close:hover {
   cursor: pointer;
@@ -2014,42 +2119,99 @@ nav ul li {
   width: 100vw;
   height: 100vh;
   overflow: hidden; }
+  @media (max-width: 1099px) {
+    .gallerywrapper {
+      height: 105vh; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .gallerywrapper {
+    height: 120vh; } }
 
 .titlecontent {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.4);
+  height: 185px;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 999; }
+  @media (max-width: 1099px) {
+    .titlecontent {
+      height: 285px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .titlecontent {
+    height: 500px; } }
+  @media (min-width: 2001px) {
+    .titlecontent {
+      height: 240px; } }
 
 .phototitle {
   font-size: 4.7vw;
   font-weight: 300;
-  margin-left: 25px;
+  margin: 35px 0 0 25px;
   color: #E0E0E0; }
+  @media (max-width: 1099px) {
+    .phototitle {
+      text-align: center;
+      margin: 0;
+      font-size: 15vw;
+      margin-top: 55px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .phototitle {
+    font-size: 14vw;
+    margin-top: 100px; } }
+
+@media (max-width: 1099px) {
+  .phototitle-lg {
+    margin-top: 30px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .phototitle-lg {
+    margin-top: 50px; } }
 
 .buttonwrapper {
+  margin: 0 30px 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-justify-content: space-between; }
-
-.buttonwrapper {
-  margin: 0 15px 0 30px; }
+          justify-content: space-between; }
+  @media (max-width: 1099px) {
+    .buttonwrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 20px 0 0 0; } }
 
 .gallerybtn, .locselect {
   font-size: 1.4vw;
   color: #C1C1C1;
-  -webkit-transition: all .1s ease-in-out; }
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out; }
+  @media (max-width: 1099px) {
+    .gallerybtn, .locselect {
+      font-size: 1.4vw;
+      font-size: 5vw;
+      font-weight: 300;
+      color: #C1C1C1; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .gallerybtn, .locselect {
+    font-size: 4vw; } }
+
+@media (max-width: 1099px) {
+  .locselect {
+    margin-top: 13px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .locselect {
+    margin-top: 20px; } }
 
 .locselect:hover {
   cursor: pointer;
@@ -2062,49 +2224,45 @@ nav ul li {
           filter: saturate(0%);
   -webkit-transition: ease-in-out .8s;
   transition: ease-in-out .8s; }
+  @media (max-width: 1099px) {
+    .fwbackground {
+      width: initial;
+      height: 105vh;
+      margin-top: -20px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .fwbackground {
+    height: 125vh;
+    margin-top: -190px; } }
 
 .fwbackground:hover {
   -webkit-filter: saturate(100%);
           filter: saturate(100%); }
 
-#parisbgd {
-  margin: -48vw 0 0 0; }
+@media (max-width: 1099px) {
+  #section1 {
+    margin-top: 75px; } }
 
-#dresdenbgd {
-  margin: -25vw 0 0 0; }
+@media (max-width: 1099px) {
+  #g1 {
+    margin-top: -155px; } }
 
-#copenhagenbgd {
-  margin: -1.3vw 0 0 0; }
-
-#bruggeantwerpbgd {
-  margin: -10vw 0 0 0; }
-
-#bergenoslobgd, #stralsundbgd {
-  margin: -12.5vw 0 0 0; }
-
-#comingsoon {
-  font-size: 4.5vw;
-  padding: 50vh 0;
-  font-weight: 300;
-  color: white; }
-
-#photo_gal_thumb {
-  width: 40%;
-  margin: 0 70px; }
+@media (min-width: 751px) and (max-width: 1099px) {
+  #g1 {
+    margin-top: -300px; } }
 
 .wrapper2 {
   position: relative;
   z-index: 970;
-  width: 100vw;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-justify-content: center; }
+          justify-content: center; }
+  @media (max-width: 1099px) {
+    .wrapper2 {
+      margin: 200px 0 0 0; } }
 
 #secondcontent {
   width: 100%;
@@ -2112,341 +2270,128 @@ nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-justify-content: flex-start; }
-
-#g11 {
-  margin-bottom: 65px; }
+          justify-content: flex-start; }
 
 .mobilebr {
   display: none; }
+  @media (max-width: 1099px) {
+    .mobilebr {
+      display: block; } }
 
-/*FOOTER*/
-footer {
-  position: absolute;
-  width: 100vw;
-  height: 65px;
-  bottom: 0;
-  background-color: white;
-  -webkit-box-shadow: 0 -2px 1px .1px #F3F3F3;
-          box-shadow: 0 -2px 1px .1px #F3F3F3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-justify-content: space-around; }
+#parisbgd {
+  margin: -48vw 0 0 0; }
+  @media (max-width: 1099px) {
+    #parisbgd {
+      margin: -20px 0px 0px -105px; } }
 
-#footerg {
-  width: 35px;
-  height: auto; }
-
-#footerinfo {
-  margin-left: -35px; }
-
-#footercontact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-justify-content: flex-end;
-  margin-right: -38px; }
-
-#text {
-  text-align: right;
-  margin-right: 12px; }
-
-.footergrey {
-  font-size: 12.5px;
-  color: #8C8C8C; }
-
-.footerblack {
-  font-size: 12.5px;
-  color: #3F3F3F; }
-
-.contactlink {
-  -webkit-transition: all .17s ease-in-out;
-  transition: all .17s ease-in-out; }
-
-.contactlink:hover {
-  color: #2a88b5; }
-
-.socicon {
-  width: 36px;
-  margin: 3px 2px 0 0px;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out; }
-
-.socicon:hover {
-  -webkit-filter: brightness(120%);
-  filter: brightness(120%); }
-
-@media screen and (max-width: 1100px) {
-  /*CONTENT*/
-  #container {
-    width: 100vw; }
-  .fullbkgd {
-    z-index: -100;
-    zoom: .5;
-    margin-left: -380px;
-    margin-bottom: -650px;
-    width: auto; }
-  .wrapper {
-    margin-top: 70px; }
-  .contentcontainer {
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 980;
-    margin: 0;
-    width: 100vw;
-    height: 120vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-justify-content: center; }
-  .innerwrapper {
-    width: 87vw; }
-  .h1 {
-    font-weight: 300;
-    font-size: 14vw;
-    margin: 5vw 0 6vw 0; }
-  .leadtext {
-    font-size: 5vw;
-    letter-spacing: .03em;
-    line-height: 1.3em;
-    margin: 0 1vw 6vw 0vw; }
-  .bodytext {
-    font-size: 4.2vw;
-    font-weight: 300;
-    line-height: 1.4em;
-    margin: 0 0 4vw 0; }
-  #cameras {
-    margin-bottom: 6vw; }
-  .scrollwrapper {
-    margin: 28vw 0 0 0;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-align-self: center; }
-  .arrow {
-    width: 14vw; }
-  #scrollspan {
-    display: none; }
-  .anchor {
-    height: 110px;
-    margin-top: -110px; }
-  .wrapper2 {
-    position: relative;
-    z-index: 970;
-    margin: 200px 0 0 0;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-justify-content: center; }
-  #g1 {
-    margin-top: -140px; }
-  #section1 {
-    margin-top: 75px; }
-  #secondcontent {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-justify-content: flex-start; }
-  .gallerywrapper {
-    height: 105vh; }
-  .fwbackground {
-    width: initial;
-    height: 105vh;
-    margin-top: -20px; }
+@media (min-width: 751px) and (max-width: 1099px) {
   #parisbgd {
-    margin: -20px 0px 0px -105px; }
+    margin: -190px 0 0 -130px; } }
+  @media (min-width: 2001px) {
+    #parisbgd {
+      margin: -46vw 0 0 0; } }
+
+@media (max-width: 1099px) {
   #praguebgd {
-    margin: -20px 0 0 0; }
-  #leipzigbgd {
-    margin: -20px 0 0 -230px; }
-  #dresdenbgd {
-    margin: -20px 0 0 -130px; }
-  #berlinbgd {
-    margin: -20px 0 0 -340px; }
-  #copenhagenbgd {
-    margin: -20px 0 0 -70px; }
-  #bruggeantwerpbgd {
-    margin: -20px 0 0 0; }
-  #hamburgbgd {
-    margin: -20px 0 0 -150px; }
-  #bergenoslobgd {
-    margin: -5.5vw 0 0 0; }
-  #stralsundbgd {
-    margin: -5.5vw 0 0 -250px; }
-  #g11 {
-    margin-bottom: 200px; }
-  .phototitle {
-    text-align: center;
-    margin: 0;
-    font-size: 15vw;
-    margin-top: 30px; }
-  .titlecontent {
-    height: 220px; }
-  .buttonwrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 20px 0 0 0; }
-  .gallerybtn, .locselect {
-    font-size: 1.4vw;
-    font-size: 5vw;
-    font-weight: 300;
-    color: #C1C1C1; }
-  .locselect {
-    margin-top: 13px; }
-  #locationmenu {
-    top: 70px;
-    width: 100vw;
-    right: 0;
-    margin-right: -100vw;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-justify-content: center; }
-  #locationlist {
-    text-align: center;
-    margin: -65px 0 0 0; }
-  .locationitem a {
-    font-size: 7.5vw;
-    line-height: 1.5em; }
-  #close {
-    margin-top: 10px;
-    width: 10vw; }
-  .locmenu2 {
-    margin-right: 0vw !important; }
-  .anchor {
-    height: 0;
-    margin: 20px 0 0 0; }
-  .mobilebr {
-    display: block; }
-  #g10 .titlebar .titlecontent {
-    height: 285px; } }
+    margin: -20px 0 0 0; } }
 
-@media screen and (min-width: 750px) and (max-width: 1100px) {
-  .fullbkgd {
-    zoom: 0; }
-  /*CONTENT*/
-  .scrollwrapper {
-    margin: 5vw 0 0 0; }
-  #g1 {
-    margin-top: -300px; }
-  .gallerywrapper {
-    height: 120vh; }
-  .titlecontent {
-    height: 450px; }
-  .fwbackground {
-    height: 125vh;
-    margin-top: -190px; }
-  #parisbgd {
-    margin: -190px 0 0 -130px; }
+@media (min-width: 751px) and (max-width: 1099px) {
   #praguebgd {
-    margin: -260px 0 0 0; }
-  #dresdenbgd {
-    margin: -190px 0 0 -230px; }
-  #leipzigbgd {
-    margin: -220px 0 0 -560px; }
-  #berlinbgd {
-    margin: -190px 0 0 -600px; }
-  #copenhagenbgd {
-    margin: -190px 0 0 -130px; }
-  #bruggeantwerpbgd {
-    margin: -190px 0 0 0; }
-  #hamburgbgd {
-    margin: -190px 0 0 -150px; }
-  #bergenoslobgd {
-    margin: -25vw 0 0 0; }
-  #stralsundbgd {
-    margin: -25vw 0 0 -550px; }
-  .locationitem a {
-    font-size: 5.8vw;
-    line-height: 1.5em; }
-  #locationlist {
-    margin: -45px 0 0 0; }
-  #g11 {
-    margin-bottom: 250px; }
-  .locselect {
-    margin-top: 20px; }
-  .phototitle {
-    font-size: 14vw;
-    margin-top: 50px; }
-  .gallerybtn, .locselect {
-    font-size: 4vw; }
-  .anchor {
-    margin: 190px 0 0 0; }
-  #g10 .titlebar .titlecontent {
-    height: 635px; } }
+    margin: -260px 0 0 0; } }
 
-@media screen and (min-width: 2000px) {
-  /*CONTENT*/
-  .titlecontent {
-    height: 240px; }
-  #locationmenu {
-    top: 120px; }
-  #close {
-    width: 3vw; }
-  #bergenoslobgd, #stralsundbgd {
-    margin: -10.5vw 0 0 0; }
-  #parisbgd {
-    margin: -46vw 0 0 0; }
-  #berlinbgd, #leipzigbgd {
-    margin: -12vw 0 0 0; }
-  #g11 {
-    margin-bottom: 115px; } }
+#dresdenbgd {
+  margin: -25vw 0 0 0; }
+  @media (max-width: 1099px) {
+    #dresdenbgd {
+      margin: -20px 0 0 -130px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  #dresdenbgd {
+    margin: -190px 0 0 -230px; } }
+
+#copenhagenbgd {
+  margin: -1.3vw 0 0 0; }
+  @media (max-width: 1099px) {
+    #copenhagenbgd {
+      margin: -20px 0 0 -70px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  #copenhagenbgd {
+    margin: -190px 0 0 -130px; } }
+
+#bruggeantwerpbgd {
+  margin: -10vw 0 0 0; }
+  @media (max-width: 1099px) {
+    #bruggeantwerpbgd {
+      margin: -20px 0 0 0; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  #bruggeantwerpbgd {
+    margin: -190px 0 0 0; } }
+
+#bergenoslobgd {
+  margin: -12.5vw 0 0 0; }
+  @media (max-width: 1099px) {
+    #bergenoslobgd {
+      margin: -5.5vw 0 0 0; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  #bergenoslobgd {
+    margin: -25vw 0 0 0; } }
+  @media (min-width: 2001px) {
+    #bergenoslobgd {
+      margin: -10.5vw 0 0 0; } }
+
+#stralsundbgd {
+  margin: -12.5vw 0 0 0; }
+  @media (max-width: 1099px) {
+    #stralsundbgd {
+      margin: -5.5vw 0 0 -250px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  #stralsundbgd {
+    margin: -25vw 0 0 -550px; } }
+  @media (min-width: 2001px) {
+    #stralsundbgd {
+      margin: -10.5vw 0 0 0; } }
+
+@media (max-width: 1099px) {
+  #leipzigbgd {
+    margin: -20px 0 0 -230px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  #leipzigbgd {
+    margin: -220px 0 0 -560px; } }
+
+@media (min-width: 2001px) {
+  #leipzigbgd {
+    margin: -12vw 0 0 0; } }
+
+@media (max-width: 1099px) {
+  #berlinbgd {
+    margin: -20px 0 0 -340px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  #berlinbgd {
+    margin: -190px 0 0 -600px; } }
+
+@media (min-width: 2001px) {
+  #berlinbgd {
+    margin: -12vw 0 0 0; } }
+
+@media (max-width: 1099px) {
+  #hamburgbgd {
+    margin: -20px 0 0 -150px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  #hamburgbgd {
+    margin: -190px 0 0 -150px; } }
