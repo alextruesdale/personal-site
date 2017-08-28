@@ -2,6 +2,8 @@ import './nodes/image_preload';
 import './nodes/index_bkg';
 
 import './nodes/photography/photo_menu';
+import './nodes/photography/gallery_introduction';
+import './nodes/photography/lightbox';
 
 import './nodes/bkg_fade/projects_bkg_fade';
 import './nodes/bkg_fade/about_bkg_fade';

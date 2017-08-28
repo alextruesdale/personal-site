@@ -1,15 +1,15 @@
 $(function() {
-  $(".locselect").click(function(){
-    $("#locationmenu").toggleClass("locmenu2", [300]);
+  $(".location-select").click(function(){
+    $(".location-menu").toggleClass("location-menu-show", [300]);
   });
 
-  $(".locbtn").click(function(){
-    $("#locationmenu").removeClass("locmenu2", [300]);
+  $(".location-btn").click(function(){
+    $(".location-menu").removeClass("location-menu-show", [300]);
   });
 
 	$('body').click(function() {
-		if ($("#locationmenu").hasClass("locmenu2")) {
-			$("#locationmenu").removeClass("locmenu2", [300]);
+		if ($(".location-menu").hasClass("location-menu-show")) {
+			$(".location-menu").removeClass("location-menu-show", [300]);
 		};
 	});
 });

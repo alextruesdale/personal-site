@@ -82,7 +82,7 @@
 .intro-bodytext-about{
 	color: white;
 	font-size: 1.4vw;
-	font-weight: 300;
+	font-weight: 600;
 
 	line-height: 1.4em;
 	margin: 0 0 0 2vw;
@@ -92,14 +92,14 @@
 		margin: 0 0 4vw 0;
 	}
 }
-.intro-list{
+.intro-list-about{
 	margin-top: 2vw;
 
 	@include media('<1100px'){
 		width: 95%;
 	}
 }
-.intro-list{
+.intro-list-about{
 	li{
 		color: white;
 		font-size: 1.35vw;
