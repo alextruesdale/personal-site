@@ -12,7 +12,7 @@ $(function() {
         $(".lb-overlay").addClass("lb-overlay3", 400);
     });
 
-    $(".nav-arrow-next-lb").click(function() {
+    $(".nav-arrow-next-lb, .nav-arrow-next-lb--mobile, .lb-image").click(function() {
       var current = $("#lb-image").attr('src')
       var currentloc = jQuery.inArray(current, images)
 
@@ -30,7 +30,7 @@ $(function() {
       .fadeIn(500);
     });
 
-    $(".nav-arrow-prev-lb").click(function() {
+    $(".nav-arrow-prev-lb, .nav-arrow-prev-lb--mobile").click(function() {
       var current = $("#lb-image").attr('src')
       var currentloc = jQuery.inArray(current, images)
 

@@ -23,12 +23,25 @@
 .gallery-title-overlay{
 	font-weight: 400;
 	font-size: 7.1vw;
-	color: #FAB54C
+	color: #FAB54C;
+
+  @include media('<1100px'){
+    font-size: 20vw;
+  }
 }
 .page-numbers{
 	position: absolute;
 	top: 135px;
 	right: 6.8%;
+
+  @include media('<1100px'){
+    margin-top: 55px;
+
+    position: static;
+    display: flex;
+    justify-content: center;
+  	align-items: center;
+  }
 }
 .page-numbers li{
 	list-style: none;
@@ -40,6 +53,12 @@
   &:hover{
     filter: brightness(110%);
   }
+
+  @include media('<1100px'){
+    display: inline-block;
+    font-size: 5vw;
+    margin: 0 5px 8px 5px;
+  }
 }
 .page-active:after {
 	position: absolute;
@@ -47,6 +66,11 @@
 	margin: .1px 0 0 9px;
 	color: #2a88b5;
 	font-size: .9em;
+
+  @include media('<1100px'){
+    margin: -19px 0 0 -9px;
+    font-size: .8em;
+  }
 }
 .gallery{
 	column-count: 3;
@@ -55,19 +79,42 @@
 	width: 79%;
 	margin: 0 auto;
 	margin-top: 48px;
-	margin-bottom: 50px;
-}
-.gallery img{
-	width: 100%;
-	margin-bottom: 7px;
+	margin-bottom: 40px;
 
-	box-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.15);
+  img{
+  	width: 100%;
+  	margin-bottom: 7px;
+
+  	box-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.15);
+
+    @include media('<1100px'){
+      margin-bottom: 20px;
+    }
+  }
+
+  @include media('<1100px'){
+    column-count: 1;
+    margin-top: 25px;
+  }
 }
 .bottom-navigation{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 90px 0 30px 0;
+
+  @include media('<1100px'){
+    margin: 0px 0 30px 0;
+  }
+}
+.content-berlin{
+  .bottom-navigation{
+    margin: -95px 0 30px 0;
+
+    @include media('<1100px'){
+      margin: 0px 0 30px 0;
+    }
+  }
 }
 .prev-div, .next-div{
 	width: 49.3%;
@@ -102,10 +149,29 @@
 .nav-text-prev-rev{
   margin-left: 9px;
 }
-.nav-arrow-next, .nav-arrow-prev, .nav-arrow-next-lb, .nav-arrow-prev-lb{
+.nav-arrow-next, .nav-arrow-prev, .nav-arrow-next-lb, .nav-arrow-prev-lb, .nav-arrow-next-lb--mobile, .nav-arrow-prev-lb--mobile{
 	width: 4vw;
 	transition: ease-in-out .3s;
 	filter: brightness(70%);
+
+  @include media('<1100px'){
+    width: 10.5vw;
+  }
+}
+.nav-arrow-next-lb--mobile, .nav-arrow-prev-lb--mobile{
+  display: none;
+
+  @include media('<1100px'){
+    width: 12vw;
+    display: block;
+    margin: 0 8px 0 8px;
+    z-index: 1200;
+  }
+}
+.nav-arrow-next-lb, .nav-arrow-prev-lb{
+  @include media('<1100px'){
+    display: none;
+  }
 }
 .nav-arrow-next:hover, .nav-arrow-next-lb:hover {
 	transform: translateX(2px);
@@ -124,11 +190,20 @@
 	align-items: center;
 
 	margin: 45px 0 85px 0;
+
+  @include media('<1100px'){
+    margin: 58px 0 75px 0;
+  }
 }
 .location-select-gallery{
 	font-size: 1.4vw;
 	color: #C1C1C1;
+  font-weight: 300;
 	transition: all .1s ease-in-out;
+
+  @include media('<1100px'){
+    font-size: 5vw;
+  }
 }
 .location-select-gallery:hover{
 	cursor: pointer;
@@ -136,23 +211,24 @@
 }
 .location-btn-gallery{
   color: white;
+
+  &:hover{
+    -webkit-backface-visibility: hidden;
+  	filter: brightness(140%);
+    cursor: pointer;
+  }
+
+  @include media('<1100px'){
+    color: #E0E0E0;
+  }
 }
-.location-btn-gallery:hover{
-  -webkit-backface-visibility: hidden;
-	filter: brightness(140%);
-  cursor: pointer;
-}
-.close{
-	position: relative;
-	margin-top: 30px;
-	width: 2.5vw;
-  -webkit-backface-visibility: hidden;
-	transition: ease-in-out .4s;
+.close-gallery{
 	filter: brightness(130%);
-}
-.close:hover{
-	cursor: pointer;
-	filter: brightness(150%);
+
+  &:hover{
+  	cursor: pointer;
+  	filter: brightness(150%);
+  }
 }
 
 
@@ -187,6 +263,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+  @include media('<1100px'){
+    flex-flow: column;
+    width: 88%;
+  }
 }
 .nav-arrow-next-lb {
 	margin-left: 15px;
@@ -195,6 +276,14 @@
 .nav-arrow-prev-lb {
 	margin-right: 15px;
 	z-index: 1502
+}
+.mobile-nav-arrows{
+  @include media('<1100px'){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
 }
 .lb-trigger{
 	transition: ease-in-out .4s;
@@ -212,4 +301,8 @@
   width: 100%;
   height: 100%;
   z-index: 1501;
+
+  @include media('<1100px'){
+    z-index: 1000;
+  }
 }

@@ -1,0 +1,30 @@
+gallery: "stockholm"
+
+overlay:
+  status: true
+  title: "Stockholm"
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/stockholm_1/"
+    active: true
+
+  - number: "2"
+    target: "/photography/galleries/stockholm_2/"
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "next"
+      text: "Stockholm 2"
+      target: "/photography/galleries/stockholm_2/"
+      img_src: "/images/gallery_images/next_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/120/jpeg/STO001.jpg"
+  - src: "/images/photography/full/120/jpeg/STO002.jpg"
+  - src: "/images/photography/full/120/jpeg/STO003.jpg"
+  - src: "/images/photography/full/120/jpeg/STO004.jpg"
+  - src: "/images/photography/full/120/jpeg/STO005.jpg"
+  - src: "/images/photography/full/120/jpeg/STO006.jpg"

@@ -1,0 +1,35 @@
+gallery: "hamburg"
+
+overlay:
+  status: true
+  title: "Hamburg"
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/hamburg_1/"
+    active: true
+
+  - number: "2"
+    target: "/photography/galleries/hamburg_2/"
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "next"
+      text: "Hamburg 2"
+      target: "/photography/galleries/hamburg_2/"
+      img_src: "/images/gallery_images/next_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/HAM025.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/HAM001.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/HAM003.jpg"
+
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/HAM015.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/HAM004.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/HAM019.jpg"
+
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/HAM026.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/HAM030.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/HAM008.jpg"

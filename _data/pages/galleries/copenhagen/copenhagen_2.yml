@@ -1,3 +1,5 @@
+gallery: "copenhagen"
+
 overlay:
   status: false
 
@@ -12,30 +14,28 @@ page_numbers:
   - number: "3"
     target: "/photography/galleries/copenhagen_3/"
 
-  - number: "4"
-    target: "/photography/galleries/copenhagen_4/"
-
-
 nav_buttons:
   first_last: true
 
   data:
     - name: "prev"
       text: "Copenhagen 1"
-      target: "/photography/galleries/copenhagen_3/"
+      target: "/photography/galleries/copenhagen_1/"
       img_src: "/images/gallery_images/prev_arrow.png"
 
     - name: "next"
       text: "Copenhagen 3"
-      target: "/photography/galleries/copenhagen_1/"
+      target: "/photography/galleries/copenhagen_3/"
       img_src: "/images/gallery_images/next_arrow.png"
 
 image_data:
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/CPH005.jpg"
   - src: "/images/photography/full/120/jpeg/CPH007.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_l/CPH002.jpg"
-  - src: "/images/photography/full/120/jpeg/CPH004.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_p/CPH012.jpg"
-  - src: "/images/photography/full/120/jpeg/CPH010.jpg"
-  - src: "/images/photography/full/120/jpeg/CPH017.jpg"
+
   - src: "/images/photography/full/35mm/jpeg/35mm_l/CPH004.jpg"
+  - src: "/images/photography/full/120/jpeg/CPH010.jpg"
+  - src: "/images/photography/full/120/jpeg/CPH011.jpg"
+
   - src: "/images/photography/full/35mm/jpeg/35mm_l/CPH007.jpg"
+  - src: "/images/photography/full/120/jpeg/CPH012.jpg"
+  - src: "/images/photography/full/120/jpeg/CPH021.jpg"

@@ -1,0 +1,40 @@
+gallery: "norway"
+
+overlay:
+  status: false
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/norway_1/"
+
+  - number: "2"
+    target: "/photography/galleries/norway_2/"
+
+  - number: "3"
+    target: "/photography/galleries/norway_3/"
+
+  - number: "4"
+    target: "/photography/galleries/norway_4/"
+    active: true
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "prev"
+      text: "Norway 3"
+      target: "/photography/galleries/norway_3/"
+      img_src: "/images/gallery_images/prev_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/NOR038.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/NOR037.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/NOR027.jpg"
+
+  - src: "/images/photography/full/120/jpeg/NOR013.jpg"
+  - src: "/images/photography/full/120/jpeg/NOR034.jpg"
+
+  - src: "/images/photography/full/120/jpeg/NOR009.jpg"
+  - src: "/images/photography/full/120/jpeg/NOR015.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/NOR035.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/NOR029.jpg"

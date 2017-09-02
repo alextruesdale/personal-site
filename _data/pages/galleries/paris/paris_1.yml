@@ -1,0 +1,30 @@
+gallery: "paris"
+
+overlay:
+  status: true
+  title: "Paris"
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/paris_1/"
+    active: true
+
+  - number: "2"
+    target: "/photography/galleries/paris_2/"
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "next"
+      text: "Paris 2"
+      target: "/photography/galleries/paris_2/"
+      img_src: "/images/gallery_images/next_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/120/jpeg/PAR001.jpg"
+  - src: "/images/photography/full/120/jpeg/PAR003.jpg"
+  - src: "/images/photography/full/120/jpeg/PAR004.jpg"
+  - src: "/images/photography/full/120/jpeg/PAR005.jpg"
+  - src: "/images/photography/full/120/jpeg/PAR006.jpg"
+  - src: "/images/photography/full/120/jpeg/PAR012.jpg"

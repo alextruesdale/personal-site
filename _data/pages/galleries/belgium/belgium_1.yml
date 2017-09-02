@@ -1,0 +1,25 @@
+gallery: "belgium"
+
+overlay:
+  status: true
+  title: "Belgium"
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/belgium_1/"
+    active: true
+
+nav_buttons:
+
+image_data:
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/BEL031.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/BEL017.jpg"
+
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL004.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL007.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL018.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL027.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL037.jpg"
+  
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/BEL002.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/BEL003.jpg"

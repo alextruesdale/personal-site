@@ -1,0 +1,32 @@
+gallery: "dresden"
+
+overlay:
+  status: true
+  title: "Dresden"
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/dresden_1/"
+    active: true
+
+  - number: "2"
+    target: "/photography/galleries/dresden_2/"
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "next"
+      text: "Dresden 2"
+      target: "/photography/galleries/dresden_2/"
+      img_src: "/images/gallery_images/next_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/120/jpeg/DRE001.jpg"
+  - src: "/images/photography/full/120/jpeg/DRE002.jpg"
+
+  - src: "/images/photography/full/120/jpeg/DRE003.jpg"
+  - src: "/images/photography/full/120/jpeg/DRE007.jpg"
+
+  - src: "/images/photography/full/120/jpeg/DRE010.jpg"
+  - src: "/images/photography/full/120/jpeg/DRE011.jpg"

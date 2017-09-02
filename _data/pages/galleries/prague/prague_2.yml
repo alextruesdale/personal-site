@@ -1,0 +1,43 @@
+gallery: "prague"
+
+overlay:
+  status: false
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/prague_1/"
+
+  - number: "2"
+    target: "/photography/galleries/prague_2/"
+    active: true
+
+  - number: "3"
+    target: "/photography/galleries/prague_3/"
+
+nav_buttons:
+  first_last: true
+
+  data:
+    - name: "prev"
+      text: "Prague 1"
+      target: "/photography/galleries/prague_1/"
+      img_src: "/images/gallery_images/prev_arrow.png"
+
+    - name: "next"
+      text: "Prague 3"
+      target: "/photography/galleries/prague_3/"
+      img_src: "/images/gallery_images/next_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/PRG016.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/PRG024.jpg"
+  - src: "/images/photography/full/120/jpeg/PRG017.jpg"
+
+  - src: "/images/photography/full/120/jpeg/PRG016.jpg"
+  - src: "/images/photography/full/120/jpeg/PRG009.jpg"
+  - src: "/images/photography/full/120/jpeg/PRG011.jpg"
+
+  - src: "/images/photography/full/120/jpeg/PRG010.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/PRG018.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/PRG010.jpg"
+  
