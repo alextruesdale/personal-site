@@ -1,16 +1,21 @@
 url: "http://www.alextruesdale.net"
+baseurl: ""
 
 markdown: kramdown
+permalink: pretty
 
 assets:
-  css_compressor:
-  js_compressor:
+  css_compressor: sass
+  js_compressor: uglifier
+  cache: false
   sources:
     - css
     - scripts
     - _assets
     - _assets/scss
     - _assets/js
+
+include: ['_pages']
 
 exclude:
   - CNAME

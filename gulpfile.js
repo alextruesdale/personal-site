@@ -4,7 +4,14 @@ var gulp           = require('gulp'),
     sourcemaps     = require('gulp-sourcemaps'),
     browsersync    = require('browser-sync'),
     browserify     = require('browserify'),
-    autoprefixer   = require('gulp-autoprefixer')
+    autoprefixer   = require('gulp-autoprefixer'),
+    source         = require('vinyl-source-stream'),
+    buffer         = require('vinyl-buffer'),
+    jekyllProc;
+
+
+// GULP TASK(S)
+
 
 gulp.task('sass', function() {
   return gulp.src('_assets/sass/**/*.scss')
@@ -24,7 +31,7 @@ const supported = [
 
 var scripts = function () {
   var b = browserify({
-    entries: './_assets/scripts/global.js'
+    entries: './_assets/js/global.js'
   });
 
   return b.transform('babelify', {
@@ -53,7 +60,7 @@ gulp.task('watch', function() {
   ], ['sass']);
 
   gulp.watch([
-    '_assets/scripts/**/*.js'
+    '_assets/js/**/*.js'
   ], ['build:scripts']);
 });
 

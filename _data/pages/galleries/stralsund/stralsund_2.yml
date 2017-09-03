@@ -1,0 +1,35 @@
+gallery: "stralsund"
+
+overlay:
+  status: false
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/stralsund_1/"
+
+  - number: "2"
+    target: "/photography/galleries/stralsund_2/"
+    active: true
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "prev"
+      text: "Stralsund 1"
+      target: "/photography/galleries/stralsund_1/"
+      img_src: "/images/gallery_images/prev_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/STR040.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/STR077.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/STR041.jpg"
+
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/STR057.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/STR058.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/STR059.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/STR064.jpg"
+
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/STR066.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/STR073.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/STR074.jpg"

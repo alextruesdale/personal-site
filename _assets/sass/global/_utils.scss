@@ -1,0 +1,23 @@
+.text-center {
+  text-align: center !important;
+}
+
+.text-center--mobile {
+  text-align: center !important;
+
+  @include media(">=tablet") {
+    text-align: left !important;
+  }
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}

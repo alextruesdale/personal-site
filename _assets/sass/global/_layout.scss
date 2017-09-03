@@ -1,0 +1,35 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  animation: fadein 1.5s;
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+}
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-header, .site-content, .site-footer {
+  display: flex;
+}
+.site-header {
+  order: 1;
+  height: 75px;
+
+  @include media('<1000px') {
+    height: 70px;
+  }
+}
+.site-content {
+  order: 2;
+  min-height: 100vh;
+}
+.site-footer {
+  order: 3;
+}

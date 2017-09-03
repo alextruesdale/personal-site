@@ -1,0 +1,57 @@
+gallery: "berlin"
+
+overlay:
+  status: true
+  title: "Berlin"
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/berlin_1/"
+    active: true
+
+  - number: "2"
+    target: "/photography/galleries/berlin_2/"
+
+  - number: "3"
+    target: "/photography/galleries/berlin_3/"
+
+  - number: "4"
+    target: "/photography/galleries/berlin_4/"
+
+  - number: "5"
+    target: "/photography/galleries/berlin_5/"
+
+  - number: "6"
+    target: "/photography/galleries/berlin_6/"
+
+  - number: "7"
+    target: "/photography/galleries/berlin_7/"
+
+  - number: "8"
+    target: "/photography/galleries/berlin_8/"
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "next"
+      text: "Berlin 2"
+      target: "/photography/galleries/berlin_2/"
+      img_src: "/images/gallery_images/next_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/BER051.jpg"
+  - src: "/images/photography/full/120/jpeg/BER001.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BER001.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BER002.jpg"
+
+  - src: "/images/photography/full/120/jpeg/BER002.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/BER054.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BER006.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BER005.jpg"
+
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/BER061.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BER013.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BER014.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BER009.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/BER012.jpg"

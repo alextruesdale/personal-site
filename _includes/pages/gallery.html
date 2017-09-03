@@ -1,0 +1,61 @@
+{% assign photo = site.data.pages.photography %}
+{% assign gallery = site.data.pages.galleries[include.folder][include.file] %}
+
+<div class="content-gallery content-{{ gallery.gallery }}">
+
+  {% if gallery.overlay.status %}
+    <div class="title-overlay-div"><h1 class="gallery-title-overlay">{{ gallery.overlay.title }}</h1></div>
+  {% endif %}
+
+  <div class="lb-overlay">
+    <img class="nav-arrow-prev-lb" src="/images/gallery_images/prev_arrow.png">
+      <div class="lb-image-div">
+        <img id="lb-image" src="">
+        <div class="mobile-nav-arrows">
+          <img class="nav-arrow-prev-lb--mobile" src="/images/gallery_images/prev_arrow.png">
+          <img class="nav-arrow-next-lb--mobile" src="/images/gallery_images/next_arrow.png">
+        </div>
+      </div>
+    <img class="nav-arrow-next-lb" src="/images/gallery_images/next_arrow.png">
+    <div class="lb-close"></div>
+  </div>
+
+  <div class="page-numbers">
+    <ul>
+      {% for number in gallery.page_numbers %}
+        <a href="{{ number.target }}"><li class="{% if number.active %}page-active{% endif %}">{{ number.number }}</li></a>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="gallery">
+    {% for image in gallery.image_data %}
+      <img class="lb-trigger" src="{{ image.src }}">
+    {% endfor %}
+  </div>
+  <div class="bottom-navigation">
+    {% for nav in gallery.nav_buttons.data %}
+      <div class="{{ nav.name }}-div {% if gallery.nav_buttons.first_last == false %}full-div{% endif %}">
+        <a class="bottom-nav-link {% if gallery.nav_buttons.first_last == false %}nav-link-reverse{% endif %}" href="{{ nav.target }}">
+          {% if nav.name == "prev" %}
+            <p class="{% if gallery.nav_buttons.first_last == false %}nav-text-prev-rev{% else %}nav-text-{{ nav.name }}{% endif %}">{{ nav.text }}</p>
+            <img class="nav-arrow-{{ nav.name }}" src="{{ nav.img_src }}">
+          {% else %}
+            <img class="nav-arrow-{{ nav.name }}" src="{{ nav.img_src }}">
+            <p class="{% if gallery.nav_buttons.first_last == false %}nav-text-next-rev{% else %}nav-text-{{ nav.name }}{% endif %}">{{ nav.text }}</p>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="location-select-div">
+    <p class="location-select location-select-gallery">Select Location</p>
+  </div>
+  <div class="location-menu">
+    <ul class="location-list">
+      {% for location in photo.location_list %}
+        <li class="location-item"><a href="{{ location.gallery_url }}" class="location-btn-gallery">{{ location.location }}</a></li>
+      {% endfor %}
+      <li class="location-item"><img class="location-btn close close-gallery" src="/images/gallery_images/close_arrow.png"></li>
+    </ul>
+  </div>
+</div>

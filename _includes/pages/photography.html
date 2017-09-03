@@ -1,0 +1,53 @@
+{% assign photo = site.data.pages.photography %}
+
+<div class="container container-photography">
+  <div><img class="fullbkgd-photography" src="/images/gallery_images/photo_bkgd.png"></div>
+  <div class="wrapper-intro-photography">
+    <div class="content-intro-photography">
+      <div class="wrapper-inner-photography">
+        <h1 class="intro-header-photography">{{ photo.intro.header }}</h1>
+        <p class="intro-leadtext-photography">{{ photo.intro.leadtext[0] }}<br>{{ photo.intro.leadtext[1] }}</p>
+        <p class="intro-bodytext-photography">{{ photo.intro.bodytext[0] }}<br><br>{{ photo.intro.bodytext[1] }}</p>
+        <p class="intro-list-photography">
+          {% for item in photo.intro.list %}
+            {{ item }} <br>
+          {% endfor %}
+        </p>
+        <div class="scrollwrapper-photography">
+          <a href="#section1"><img class="arrow arrow-photography" src="/images/down_arrow.png"></a>
+          <span class="scrollspan-photography">scroll down</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-content-photography">
+    <span class="anchor photography-anchor" id="section1"></span>
+    <div class="content-main-photography">
+  <div class="location-menu">
+    <ul class="location-list">
+      {% for location in photo.location_list %}
+        <li class="location-item"><a href="#{{ location.target }}" class="location-btn">{{ location.location }}</a></li>
+      {% endfor %}
+      <li class="location-item"><img class="location-btn close close-photography" src="/images/gallery_images/close_arrow.png"></li>
+    </ul>
+  </div>
+  <div class="wraper-content-photography">
+    <div class="content-main-photography">
+      {% for location in photo.location_list %}
+        <div class="gallery-wrapper {{ location.position }}">
+          <span class="section-anchor" id="{{ location.target }}"></span>
+          {% if location.background_image %}<img class="location-background {{ location.background_image.id }}" src="{{ location.background_image.src }}">{% endif %}
+          <div class="title-bar">
+            <div class="title-content {% if location.extended_div %}title-content-lg{% endif %}">
+              <h1 class="location-title {% if location.extended_div %}photo-title-lg{% endif %}">{% if location.mobile_br %}{{ location.mobile_br[0] }}<br class="mobile-br">{{ location.mobile_br[1] }}{% else %}{{ location.location }}{% endif %}</h1>
+              <div class="button-wrapper">
+                <span><a class="gallery-btn" href="{{ location.gallery_url }}">View Gallery</a></span>
+                <span class="location-select location-select-about">Select Location</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

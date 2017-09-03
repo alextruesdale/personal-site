@@ -1,0 +1,44 @@
+intro:
+  header: "Hello."
+  leadtext:
+    - "My name is Alex Truesdale."
+    - "Welcome to my corner of the web."
+
+  bodytext: "I built this website as a project to better introduce myself and my work to others in a
+             well-designed, personalised space. A brief introduction of me; I like:"
+
+  list:
+    - "International business & technology (data science, business analytics, web / software dev.)"
+    - "Pastry & warm beverages from around the world."
+    - "Analogue photography (yes, one of those)"
+
+content:
+  - class: bh1
+    header: Business Analytics & An International Career
+    text:
+      - "Coming from two years experience in digital marketing, my curiosity in sophisticated business systems
+        has led me further to the fields of data science & business analytics. I am fascinated by the
+        scalability of programming, machine learning, and the visible impact of data-informed decision-making
+        on any given business."
+
+      - "But a career in a cutting-edge field is just one component to an exciting life; I am also drawn to
+        the challenges and experiences that come with travel and living amongst a new culture. Combining this
+        and career, I have spent much of the last year living and working abroad in Berlin, Germany."
+
+  - class: bh2
+    header: Why Move to Germany?
+    text:
+      - "The value of international experience has become clear as my interests grow beyond the borders of
+        the United States. A key step to building a unique, global career, life in Berlin has been an
+        enriching and diverse experience, working with colleagues from all over the world and laying the
+        foundation for further ambitions at home and abroad."
+
+  - class: bh3
+    header: Creative Pursuits
+    text:
+      - "Outside of professional life, I find myself drawn to photography and design."
+
+      - "I like to test my skills in web and graphic design, sharpening development knowledge and building
+        webpages — like this one. Conversely, with photography, I use only analogue cameras and film.
+        Unlike when working with code, the live-medium of film creates a uniquely fallible experience where
+        errors in process or materials have the potential to produce interesting results."

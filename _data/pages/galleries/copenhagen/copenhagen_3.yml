@@ -1,0 +1,34 @@
+gallery: "copenhagen"
+
+overlay:
+  status: false
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/copenhagen_1/"
+
+  - number: "2"
+    target: "/photography/galleries/copenhagen_2/"
+
+  - number: "3"
+    target: "/photography/galleries/copenhagen_3/"
+    active: true
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "prev"
+      text: "Copenhagen 2"
+      target: "/photography/galleries/copenhagen_2/"
+      img_src: "/images/gallery_images/prev_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/120/jpeg/CPH014.jpg"
+  - src: "/images/photography/full/120/jpeg/CPH015.jpg"
+
+  - src: "/images/photography/full/120/jpeg/CPH016.jpg"
+  - src: "/images/photography/full/120/jpeg/CPH017.jpg"
+
+  - src: "/images/photography/full/120/jpeg/CPH018.jpg"
+  - src: "/images/photography/full/120/jpeg/CPH019.jpg"

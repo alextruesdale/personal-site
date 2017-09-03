@@ -1,0 +1,21 @@
+<footer class="site-footer">
+	<div class="footer-info">
+		<p class="footer-grey">© Alex Truesdale | All Rights Reserved</p>
+		<p class="footer-black">Website designed and hand-coded by Alex Truesdale</p>
+	</div>
+	<div class="footer-gdiv">
+		<img class="footer-g" src="/images/footer_icons/footer_graphic.png">
+	</div>
+	<div class="footer-contact">
+		<div class="text">
+			{% for link in site.data.footer.contact_links %}
+				<p><span class="footer-grey">{{ link.lead }}</span><a href="{{ link.url }}"><span class="footer-black contact-link">  {{ link.text }}</span></a></p>
+			{% endfor %}
+		</div>
+		<div class="icons">
+			{% for logo in site.data.footer.logos %}
+				<a href="{{ logo.url }}" target="blank"><img class="soc-icon" src="{{ logo.src }}"></a>
+			{% endfor %}
+		</div>
+	</div>
+</footer>

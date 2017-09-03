@@ -1,0 +1,35 @@
+gallery: "leipzig"
+
+overlay:
+  status: false
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/leipzig_1/"
+
+  - number: "2"
+    target: "/photography/galleries/leipzig_2/"
+    active: true
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "prev"
+      text: "Liepzig 1"
+      target: "/photography/galleries/leipzig_1/"
+      img_src: "/images/gallery_images/prev_arrow.png"
+
+image_data:
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/LPZ002.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/LPZ028.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/LPZ005.jpg"
+
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/LPZ006.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/LPZ008.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_p/LPZ030.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/LPZ012.jpg"
+
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/LPZ016.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/LPZ022.jpg"
+  - src: "/images/photography/full/35mm/jpeg/35mm_l/LPZ027.jpg"

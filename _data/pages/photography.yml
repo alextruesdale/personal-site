@@ -1,0 +1,119 @@
+intro:
+  header: "Photography."
+  leadtext:
+    - "Living in Berlin,"
+    - "I took some photos of my travels."
+
+  bodytext:
+    - "I made these galleries in order to share my photos in a unique way specific to my personal site."
+    - "Photos taken with the following:"
+
+  list:
+    - "Minolta x-700 (35mm SLR)"
+    - "Minolta 7s-ii (35mm Rangefinder)"
+    - "Rolleicord V (Middle Format TLR)"
+
+location_list:
+  - location: "Stockholm"
+    target: "section-stockholm"
+    position: "position-1"
+    gallery_url: "/photography/galleries/stockholm_1"
+
+    background_image:
+      src: "/image/photography/teaser/Stockholm.png"
+      id: "stockholm-bkg"
+
+  - location: "Berlin"
+    target: "section-berlin"
+    position: "position-2"
+    gallery_url: "/photography/galleries/berlin_1"
+
+    background_image:
+      src: "/images/photography/teaser/Berlin.png"
+      id: "berlin-bkg"
+
+  - location: "Leipzig"
+    target: "section-leipzig"
+    position: "position-3"
+    gallery_url: "/photography/galleries/leipzig_1"
+
+    background_image:
+      src: "/images/photography/teaser/Leipzig.png"
+      id: "leipzig-bkg"
+
+  - location: "Dresden"
+    target: "section-dresden"
+    position: "position-4"
+    gallery_url: "/photography/galleries/dresden_1"
+
+    background_image:
+      src: "/images/photography/teaser/Dresden.png"
+      id: "dresden-bkg"
+
+  - location: "Prague"
+    target: "section-prague"
+    position: "position-5"
+    gallery_url: "/photography/galleries/prague_1"
+
+    background_image:
+      src: "/images/photography/teaser/Prague.png"
+      id: "prague-bkg"
+
+  - location: "Stralsund"
+    target: "section-stralsund"
+    position: "position-6"
+    gallery_url: "/photography/galleries/stralsund_1"
+
+    background_image:
+      src: "/images/photography/teaser/Stralsund.png"
+      id: "stralsund-bkg"
+
+  - location: "Hamburg"
+    target: "section-hamburg"
+    position: "position-7"
+    gallery_url: "/photography/galleries/hamburg_1"
+
+    background_image:
+      src: "/images/photography/teaser/Hamburg.png"
+      id: "hamburg-bkg"
+
+  - location: "Copenhagen"
+    target: "section-copenhagen"
+    position: "position-8"
+    gallery_url: "/photography/galleries/copenhagen_1"
+
+    background_image:
+      src: "/images/photography/teaser/Copenhagen.png"
+      id: "copenhagen-bkg"
+
+  - location: "Bergen/Oslo"
+    target: "section-bergenoslo"
+    position: "position-9"
+    gallery_url: "/photography/galleries/norway_1"
+
+    background_image:
+      src: "/images/photography/teaser/Norway.png"
+      id: "norway-bkg"
+
+  - location: "Bruges/Antwerp"
+    target: "section-brugesantwerp"
+    position: "position-10"
+    gallery_url: "/photography/galleries/belgium_1"
+
+    background_image:
+      src: "/images/photography/teaser/Belgium.png"
+      id: "bruges-antwerp-bkg"
+
+    extended_div: true
+    mobile_br:
+      - "Bruges/"
+      - "Antwerp"
+
+  - location: "Paris"
+    target: "section-paris"
+    position: "position-11"
+    gallery_url: "/photography/galleries/paris_1"
+
+    background_image:
+      src: "/images/photography/teaser/Paris.png"
+      id: "paris-bkg"

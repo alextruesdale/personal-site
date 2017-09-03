@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="mobile-nav"></div>
+  <div class="mobile-menu mm-layer">
+    <span></span>
+  </div>
+  <a href="/"><img class="menu-bird" src="/images/menubird.png" alt="Menu Logo"></a>
+  <nav>
+    <div class="menu-name"><a href="/">Alex Truesdale</a></div>
+    <div class="menu-divider">|</div>
+
+    <ul>
+      {% for menu_item in site.data.menu %}
+        <li><a class="menu-{{ menu_item.copy | slugify }}" href="{{ menu_item.url }}">{{ menu_item.copy }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

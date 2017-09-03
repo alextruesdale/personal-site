@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="site">
+    {% include header.html %}
+    <div class="site-content content-{{ page.url | slugify }}">
+      {{ content }}
+    </div>
+    {% unless page.footer == false %}{% include footer.html %}{% endunless %}
+  </body>
+  {% include foot.html %}
+</html>

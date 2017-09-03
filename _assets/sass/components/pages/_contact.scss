@@ -1,0 +1,122 @@
+.content-contact{
+  min-height: 0;
+}
+.container-contact{
+  width: 100vw;
+}
+.wrapper-contact{
+	width: 100%;
+	height: 80vh;
+
+	display: flex;
+	justify-content: center;
+  align-items: center;
+
+  @include media('>2000px'){
+    height: 90vh;
+  }
+}
+.wrapper-inner-contact{
+	width: 85%;
+
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+
+  @include media('<1100px'){
+    margin-top: 15px;
+    width: 75vw;
+    height: 65vh;
+    border-left: solid 2px #E8E8E8;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.contact-h1{
+	font-family: 'Muli' sans-serif;
+	color: #D5D5D5;
+	font-weight: 300;
+	font-size: 6.5vw;
+  margin: -10px 0 0 -10px;
+
+  @include media('<1100px'){
+    font-weight: 300;
+    font-size: 14vw;
+    margin: 5vw 0 5vw -4px;
+  }
+}
+.icon-links{
+  width: 220px;
+  height: 55vh;
+
+  border-right: solid 3.5px #E8E8E8;
+
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media('<1100px'){
+    height: 15vh;
+    margin: 5px 0 0 6px;
+    border: none;
+    order: 2;
+
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+.social-icon-full{
+  display: flex;
+  width: 7.3vw;
+  margin: 11px 0;
+
+  transition: all .25s ease-in-out;
+
+  @include media('<1100px'){
+    width: 15vw;
+    margin: 0px 7px;
+  }
+  @include media('>2000px'){
+    margin: 15px 100px 20px 0;
+  }
+}
+.social-icon-full:hover{
+  filter: brightness(120%);
+}
+.contact-information{
+  margin-left: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include media('<1100px'){
+    margin: -30px 0 0 20px;
+  }
+}
+.contact-greyspan {
+  color: #8C8C8C;
+}
+.contact-black{
+	color: #3F3F3F;
+}
+.contact-link{
+	transition: all .17s ease-in-out;
+}
+.contact-link:hover{
+	color: #2a88b5;
+}
+.contact-bodytext{
+  font-size: 1.4vw;
+	font-weight: 300;
+
+  margin: 10px 0;
+	line-height: 1.4em;
+
+  @include media('<1100px'){
+    font-size: 4.2vw;
+    margin: 2vw 0 4vw 0;
+  }
+}
