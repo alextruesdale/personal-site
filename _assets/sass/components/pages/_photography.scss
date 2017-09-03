@@ -120,7 +120,7 @@
 	justify-content: center;
 
   @include media('<1100px'){
-    margin: 28vw 0 0 0;
+    margin: 15vw 0 0 0;
 		align-self: center;
   }
   @include media('>750px', '<1100px'){
