@@ -9,16 +9,6 @@ var imageFiles = [
 	"/images/about_images/about_bkgd.png",
 	"/images/resume_images/Résumé.pdf",
 	"/images/gallery_images/photo_bkgd.png",
-	"/images/photography/teaser/Belgium.png",
-	"/images/photography/teaser/Berlin.png",
-	"/images/photography/teaser/Copenhagen.png",
-	"/images/photography/teaser/Dresden.png",
-	"/images/photography/teaser/Hamburg.png",
-	"/images/photography/teaser/Leipzig.png",
-	"/images/photography/teaser/Norway.png",
-	"/images/photography/teaser/Paris.png",
-	"/images/photography/teaser/Prague.png",
-	"/images/photography/teaser/Stralsund.png"
 ];
 
 function preload(imageFiles) {
