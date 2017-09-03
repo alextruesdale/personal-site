@@ -2484,7 +2484,7 @@ nav ul li {
   color: #FAB54C; }
   @media (max-width: 1099px) {
     .gallery-title-overlay {
-      font-size: 20vw; } }
+      font-size: 16vw; } }
 
 .page-numbers {
   position: absolute;
