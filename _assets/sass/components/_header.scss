@@ -157,7 +157,7 @@ nav{
 		padding: 10px 0;
 		background-color: #F8F8F8;
 	}
-	@include media('>2000px'){
+	@include media('>1800px'){
 		height: 120px;
 	}
 }
@@ -185,7 +185,7 @@ nav{
 			@include media('>750px', '<1100px'){
 				margin: 45px 2.2vw 0px 2.2vw;
 			}
-			@include media('>2000px'){
+			@include media('>1800px'){
 				font-size: 1.9em;
 				margin: 0 2.6vw 0 2.6vw;
 			}
@@ -200,7 +200,7 @@ nav{
 	@include media('<1100px'){
 		display: none;
 	}
-	@include media('>2000px'){
+	@include media('>1800px'){
 		font-size: 2.8em;
 	}
 }
@@ -214,7 +214,7 @@ nav{
 	@include media('<1100px'){
 		display: none;
 	}
-	@include media('>2000px'){
+	@include media('>1800px'){
 		font-size: 2.6em;
 		font-weight: 200;
 		margin: 0 -200px 0 -150px;
@@ -243,7 +243,7 @@ nav{
 	@include media('>750px', '<1100px'){
 		width: 95px;
 	}
-	@include media('>2000px'){
+	@include media('>1800px'){
 		width: 95px;
 	}
 }

@@ -10,7 +10,7 @@
     margin-left: -380px;
     width: auto;
   }
-  @include media('>2000px'){
+  @include media('>1800px'){
 		zoom: 0;
 	}
 }
