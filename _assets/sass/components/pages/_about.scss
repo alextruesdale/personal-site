@@ -154,7 +154,7 @@
 	height: 90px;
 	margin-top: -90px;
 
-	@include media('>2000px'){
+	@include media('>1800px'){
 		margin-top: -230px;
 	}
 }
