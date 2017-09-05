@@ -66,3 +66,4 @@ gulp.task('watch', function() {
 
 gulp.task('jekyll:watch', shell.task(['bundle exec jekyll build --watch --incremental --limit_posts 30 --config _config.yml,_assets/_config.development.yml']));
 gulp.task('default', ['jekyll:watch', 'watch']);
+
