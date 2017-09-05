@@ -28,3 +28,4 @@ exclude:
   - _assets
 
 tolerate_liquid_errors: false
+
