@@ -41,8 +41,6 @@ menu:
       text: "About."
     - url: "/resume"
       text: "Résumé."
-    - url: "/design"
-      text: "Design Work."
     - url: "/photography"
       text: "Photography."
     - url: "/contact"
