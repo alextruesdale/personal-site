@@ -11,8 +11,6 @@ require('./nodes/photography/gallery_introduction');
 
 require('./nodes/photography/lightbox');
 
-require('./nodes/bkg_fade/projects_bkg_fade');
-
 require('./nodes/bkg_fade/about_bkg_fade');
 
 require('./nodes/bkg_fade/photography_bkg_fade');
@@ -23,7 +21,7 @@ require('./nodes/menu_toggle');
 
 require('./nodes/smooth_scroll');
 
-},{"./nodes/bkg_fade/about_bkg_fade":2,"./nodes/bkg_fade/photography_bkg_fade":3,"./nodes/bkg_fade/projects_bkg_fade":4,"./nodes/image_preload":5,"./nodes/index_bkg":6,"./nodes/menu_toggle":7,"./nodes/photography/gallery_introduction":8,"./nodes/photography/lightbox":9,"./nodes/photography/photo_menu":10,"./nodes/resume_button_exp":11,"./nodes/smooth_scroll":12}],2:[function(require,module,exports){
+},{"./nodes/bkg_fade/about_bkg_fade":2,"./nodes/bkg_fade/photography_bkg_fade":3,"./nodes/image_preload":4,"./nodes/index_bkg":5,"./nodes/menu_toggle":6,"./nodes/photography/gallery_introduction":7,"./nodes/photography/lightbox":8,"./nodes/photography/photo_menu":9,"./nodes/resume_button_exp":10,"./nodes/smooth_scroll":11}],2:[function(require,module,exports){
 "use strict";
 
 $(window).scroll(function () {
@@ -46,14 +44,6 @@ $(window).scroll(function () {
 },{}],4:[function(require,module,exports){
 "use strict";
 
-$(window).scroll(function () {
-  var scrollVar = $(window).scrollTop() / 3;
-  $(".fullbkgd-projects").css({ 'opacity': (100 - scrollVar) / 100 });
-});
-
-},{}],5:[function(require,module,exports){
-"use strict";
-
 var images = new Array();
 var imageFiles = ["/images/index_background/backgroundblue2.png", "/images/index_background/backgroundblue1.png", "/images/index_background/backgroundred2.png", "/images/index_background/backgroundred1.png", "/images/404small.png", "/images/404.png", "/images/about_images/about_bkgd.png", "/images/resume_images/Résumé.pdf", "/images/gallery_images/photo_bkgd.png"];
 
@@ -66,7 +56,7 @@ function preload(imageFiles) {
 
 preload(imageFiles);
 
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 $(attachClickHandlers);
@@ -135,7 +125,7 @@ function attachClickHandlers() {
 	$("#lightblue").click(handleClick);
 }
 
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -174,7 +164,7 @@ function hasShow() {
   };
 };
 
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 $(function () {
@@ -185,7 +175,7 @@ $(function () {
    });
 });
 
-},{}],9:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -241,7 +231,7 @@ $(function () {
   });
 });
 
-},{}],10:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -260,7 +250,7 @@ $(function () {
   });
 });
 
-},{}],11:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -278,7 +268,7 @@ $(function () {
 	});
 });
 
-},{}],12:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 'use strict';
 
 $(function () {
