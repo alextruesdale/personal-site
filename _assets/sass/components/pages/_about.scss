@@ -126,11 +126,11 @@
 	}
 }
 .arrow{
-	width: 4.5vw;
+	width: 3.5vw;
 	transition: ease-in-out .4s;
 
 	@include media('<1100px'){
-		width: 14vw;
+		width: 13vw;
 	}
 }
 .arrow-about:hover{
@@ -139,7 +139,7 @@
 }
 .scrollspan-about{
 	font-size: 1.3vw;
-	margin: -.25vw 0 0 .75vw;
+	margin: -.45vw 0 0 1vw;
 	color: #B7B7B7;
 
 	@include media('<1100px'){

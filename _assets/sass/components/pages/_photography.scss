@@ -128,12 +128,12 @@
   }
 }
 .arrow-photography{
-	width: 4.5vw;
+	width: 3.5vw;
 	transition: ease-in-out .4s;
 	filter: brightness(100%);
 
   @include media('<1100px'){
-    width: 14vw;
+    width: 13vw;
   }
   @include media('>750px', '<1100px'){
     width: 11vw;
@@ -146,7 +146,7 @@
 }
 .scrollspan-photography{
 	font-size: 1.3vw;
-	margin: -.25vw 0 0 .75vw;
+	margin: -.45vw 0 0 1vw;
 	color: #C1C1C1;
 
   @include media('<1100px'){
