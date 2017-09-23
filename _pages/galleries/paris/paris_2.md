@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Paris
-description: Alex Truesdale | Development, data science, and analytics. Pursuing growth with boundless, interminable curiosity.
+description: Alex Truesdale | Development & design for business applications.. and photos on occasion.
 permalink: /photography/galleries/paris_2/
 
 data_folder: paris

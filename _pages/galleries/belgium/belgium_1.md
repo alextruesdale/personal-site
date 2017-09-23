@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Belgium
-description: Alex Truesdale | Development, data science, and analytics. Pursuing growth with boundless, interminable curiosity.
+description: Alex Truesdale | Development & design for business applications.. and photos on occasion.
 permalink: /photography/galleries/belgium_1/
 
 data_folder: belgium

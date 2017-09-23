@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Norway
-description: Alex Truesdale | Development, data science, and analytics. Pursuing growth with boundless, interminable curiosity.
+description: Alex Truesdale | Development & design for business applications.. and photos on occasion.
 permalink: /photography/galleries/norway_4/
 
 data_folder: norway
