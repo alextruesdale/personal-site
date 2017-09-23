@@ -16,26 +16,28 @@ content:
   - class: bh1
     header: Development, Business & An International Career
     text:
-      - "A keen interest in the innerworkings of business systems and web applications has led me
-        to furiously clattering upon my keyboard, seeking mastery of front-end development
-        and nurturing a budding aptitude for back-end wizardry."
+      - "My interest in business systems and web applications has led to furiously clattering
+        upon my keyboard, honing front-end fundamentals and nurturing a budding aptitude for
+        back-end wizardry."
 
-      - "However, a career in cutting-edge tech remains just one component to an exciting life; I am also
-        drawn to the challenge and experience that comes with living amongst a non-native culture. Combining
-        this and career, I have spent much of the last year living and working abroad in Berlin, Germany."
+      - "A career in cutting-edge tech remains just one component to an exciting life; I am also
+        drawn to the challenge and experience that comes with travel and living amongst a new culture.
+        Combining this and career ambitions, I have spent much of the last year living and working
+        abroad in Berlin, Germany."
 
   - class: bh2
     header: Why Move to Germany?
     text:
       - "At first, I chose Berlin somewhat at random. Following the expat tradition, however, I quickly
-        developed a fondness for the city. Life in Berlin has been an enriching and diverse experience,
-        working with colleagues from all over the world while developing my skills and myself."
+        developed a fondness for the city, making plans to settle more permanently. Seeking a broader worldview and international
+        professional experience, life in Berlin has been rich and rewarding, working with colleagues from all over the world and
+        laying the foundation for future ambitions abroad."
 
   - class: bh3
-    header: Creative Pursuits
+    header: Photography
     text:
-      - "Outside of professional life, film photography is a pleasant undulgence and change of pace from
+      - "Outside of professional life, film photography is a pleasant change of pace from
         the digital world."
 
-      - "Unlike when working with code, the live-medium of film allows for a less rigid creative experience
-        where errors in process or materials have the potential to produce interesting and unexpected results."
+      - "Unlike when working with code, the live-medium of film allows for a less rigid process where errors
+        in process or materials have the potential to produce interesting and unexpected results."
