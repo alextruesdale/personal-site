@@ -8,6 +8,8 @@ var imageFiles = [
 	"/images/404.png",
 	"/images/about_images/about_bkgd.png",
 	"/images/resume_images/Résumé.pdf",
+	"/images/resume_images/resumehead.png",
+	"/images/resume_images/resumeleft.png",
 	"/images/gallery_images/photo_bkgd.png",
 ];
 
@@ -18,4 +20,6 @@ function preload(imageFiles) {
 	};
 };
 
-preload(imageFiles);
+$(function() {
+	preload(imageFiles);
+});
