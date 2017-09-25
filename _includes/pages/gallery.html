@@ -29,7 +29,10 @@
   </div>
   <div class="gallery">
     {% for image in gallery.image_data %}
-      <img class="lb-trigger" src="{{ image.src }}">
+      <div class="gal_img">
+        <img class="lb-preview" src="{{ image.blur }}">
+        <img class="lb-trigger" src="{{ image.src }}">
+      </div>
     {% endfor %}
   </div>
   <div class="bottom-navigation">

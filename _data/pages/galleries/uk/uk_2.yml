@@ -1,0 +1,43 @@
+gallery: "uk"
+
+overlay:
+  status: false
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/unitedkingdom_1/"
+
+  - number: "2"
+    target: "/photography/galleries/unitedkingdom_2/"
+    active: true
+
+  - number: "3"
+    target: "/photography/galleries/unitedkingdom_3/"
+
+nav_buttons:
+  first_last: true
+
+  data:
+    - name: "prev"
+      text: "UK 1"
+      target: "/photography/galleries/unitedkingdom_1/"
+      img_src: "/images/gallery_images/prev_arrow.png"
+
+    - name: "next"
+      text: "UK 3"
+      target: "/photography/galleries/unitedkingdom_3/"
+      img_src: "/images/gallery_images/next_arrow.png"
+
+image_data:
+  - blur: "/images/photography/blur/120/jpeg/SCO011 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO011 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/SCO012 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO012 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/BRI001 copy.jpg"
+    src: "/images/photography/full/120/jpeg/BRI001 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CAR002 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CAR002 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/SCO013 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO013 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/SCO015 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO015 copy.jpg"

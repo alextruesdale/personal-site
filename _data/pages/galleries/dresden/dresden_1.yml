@@ -22,11 +22,17 @@ nav_buttons:
       img_src: "/images/gallery_images/next_arrow.png"
 
 image_data:
-  - src: "/images/photography/full/120/jpeg/DRE001.jpg"
-  - src: "/images/photography/full/120/jpeg/DRE002.jpg"
+  - blur: "/images/photography/blur/120/jpeg/DRE001 copy.jpg"
+    src: "/images/photography/full/120/jpeg/DRE001 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/DRE002 copy.jpg"
+    src: "/images/photography/full/120/jpeg/DRE002 copy.jpg"
 
-  - src: "/images/photography/full/120/jpeg/DRE003.jpg"
-  - src: "/images/photography/full/120/jpeg/DRE007.jpg"
+  - blur: "/images/photography/blur/120/jpeg/DRE003 copy.jpg"
+    src: "/images/photography/full/120/jpeg/DRE003 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/DRE007 copy.jpg"
+    src: "/images/photography/full/120/jpeg/DRE007 copy.jpg"
 
-  - src: "/images/photography/full/120/jpeg/DRE010.jpg"
-  - src: "/images/photography/full/120/jpeg/DRE011.jpg"
+  - blur: "/images/photography/blur/120/jpeg/DRE010 copy.jpg"
+    src: "/images/photography/full/120/jpeg/DRE010 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/DRE011 copy.jpg"
+    src: "/images/photography/full/120/jpeg/DRE011 copy.jpg"

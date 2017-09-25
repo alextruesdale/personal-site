@@ -25,11 +25,17 @@ nav_buttons:
       img_src: "/images/gallery_images/next_arrow.png"
 
 image_data:
-  - src: "/images/photography/full/35mm/jpeg/35mm_p/CPH012.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_l/CPH002.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_p/CPH012 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_p/CPH012 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_l/CPH002 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_l/CPH002 copy.jpg"
 
-  - src: "/images/photography/full/120/jpeg/CPH001.jpg"
-  - src: "/images/photography/full/120/jpeg/CPH002.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH001 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH001 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH002 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH002 copy.jpg"
 
-  - src: "/images/photography/full/120/jpeg/CPH004.jpg"
-  - src: "/images/photography/full/120/jpeg/CPH005.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH004 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH004 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH005 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH005 copy.jpg"

@@ -1,0 +1,38 @@
+gallery: "uk"
+
+overlay:
+  status: false
+
+page_numbers:
+  - number: "1"
+    target: "/photography/galleries/unitedkingdom_1/"
+
+  - number: "2"
+    target: "/photography/galleries/unitedkingdom_2/"
+
+  - number: "3"
+    target: "/photography/galleries/unitedkingdom_3/"
+    active: true
+
+nav_buttons:
+  first_last: false
+
+  data:
+    - name: "prev"
+      text: "UK 2"
+      target: "/photography/galleries/unitedkingdom_2/"
+      img_src: "/images/gallery_images/prev_arrow.png"
+
+image_data:
+  - blur: "/images/photography/blur/120/jpeg/SCO017 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO017 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/SCO018 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO018 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/SCO021 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO021 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/SCO022 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO022 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/SCO023 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO023 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/SCO014 copy.jpg"
+    src: "/images/photography/full/120/jpeg/SCO014 copy.jpg"

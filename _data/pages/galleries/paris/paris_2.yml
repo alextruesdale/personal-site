@@ -21,8 +21,9 @@ nav_buttons:
       img_src: "/images/gallery_images/prev_arrow.png"
 
 image_data:
-  - src: "/images/photography/full/120/jpeg/PAR007.jpg"
-  - src: "/images/photography/full/120/jpeg/PAR008.jpg"
-  - src: "/images/photography/full/120/jpeg/PAR009.jpg"
-  - src: 
-  - src: "/images/photography/full/120/jpeg/PAR011.jpg"
+  - blur: "/images/photography/blur/120/jpeg/PAR007 copy.jpg"
+    src: "/images/photography/full/120/jpeg/PAR007 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/PAR008 copy.jpg"
+    src: "/images/photography/full/120/jpeg/PAR008 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/PAR009 copy.jpg"
+    src: "/images/photography/full/120/jpeg/PAR009 copy.jpg"

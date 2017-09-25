@@ -4,7 +4,7 @@ $(function() {
     });
 
     $(".lb-trigger").click(function () {
-        var index = $(this).index();
+        var index = $(this).parent().index();
 
         $('#lb-image').attr('src', images[index]);
 
@@ -12,7 +12,31 @@ $(function() {
         $(".lb-overlay").addClass("lb-overlay3", 400);
     });
 
-    $(".nav-arrow-next-lb, .nav-arrow-next-lb--mobile, .lb-image").click(function() {
+    $(".nav-arrow-next-lb, .nav-arrow-next-lb--mobile, #lb-image").click(function() {
+      img_left()
+    });
+
+    $(".nav-arrow-prev-lb, .nav-arrow-prev-lb--mobile").click(function() {
+      img_right()
+    });
+
+    $(document).keydown(function(e) {
+      switch(e.which) {
+          case 37:
+          img_right()
+          break;
+
+          case 39:
+          img_left()
+          break;
+
+          default: return;
+          }
+
+          e.preventDefault();
+    });
+
+    function img_left(){
       var current = $("#lb-image").attr('src')
       var currentloc = jQuery.inArray(current, images)
 
@@ -28,9 +52,9 @@ $(function() {
         $('#lb-image').attr('src', images[replace]);
       })
       .fadeIn(500);
-    });
+    }
 
-    $(".nav-arrow-prev-lb, .nav-arrow-prev-lb--mobile").click(function() {
+    function img_right() {
       var current = $("#lb-image").attr('src')
       var currentloc = jQuery.inArray(current, images)
 
@@ -46,7 +70,7 @@ $(function() {
         $('#lb-image').attr('src', images[replace]);
       })
       .fadeIn(500);
-    });
+    }
 
     $(".lb-close").click(function(){
       $.when($(".lb-overlay").removeClass("lb-overlay3", 400)).done(function() {

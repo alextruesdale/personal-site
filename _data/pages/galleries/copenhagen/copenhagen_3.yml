@@ -24,11 +24,17 @@ nav_buttons:
       img_src: "/images/gallery_images/prev_arrow.png"
 
 image_data:
-  - src: "/images/photography/full/120/jpeg/CPH014.jpg"
-  - src: "/images/photography/full/120/jpeg/CPH015.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH014 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH014 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH015 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH015 copy.jpg"
 
-  - src: "/images/photography/full/120/jpeg/CPH016.jpg"
-  - src: "/images/photography/full/120/jpeg/CPH017.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH016 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH016 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH017 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH017 copy.jpg"
 
-  - src: "/images/photography/full/120/jpeg/CPH018.jpg"
-  - src: "/images/photography/full/120/jpeg/CPH019.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH018 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH018 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/CPH019 copy.jpg"
+    src: "/images/photography/full/120/jpeg/CPH019 copy.jpg"
