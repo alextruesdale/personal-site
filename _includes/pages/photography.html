@@ -36,7 +36,10 @@
       {% for location in photo.location_list %}
         <div class="gallery-wrapper {{ location.position }}">
           <span class="section-anchor" id="{{ location.target }}"></span>
-          {% if location.background_image %}<img class="location-background {{ location.background_image.id }}" src="{{ location.background_image.src }}">{% endif %}
+          {% if location.background_image %}
+            <!-- <img class="blurloc-background {{ location.background_image.id }}-blur" src="{{ location.background_image.bsrc }}"> -->
+            <img class="location-background {{ location.background_image.id }}" src="{{ location.background_image.src }}">
+          {% endif %}
           <div class="title-bar">
             <div class="title-content {% if location.extended_div %}title-content-lg{% endif %}">
               <h1 class="location-title {% if location.extended_div %}photo-title-lg{% endif %}">{% if location.mobile_br %}{{ location.mobile_br[0] }}<br class="mobile-br">{{ location.mobile_br[1] }}{% else %}{{ location.location }}{% endif %}</h1>

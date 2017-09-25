@@ -11,6 +11,8 @@ require('./nodes/photography/gallery_introduction');
 
 require('./nodes/photography/lightbox');
 
+require('./nodes/photography/blur_fade');
+
 require('./nodes/bkg_fade/about_bkg_fade');
 
 require('./nodes/bkg_fade/photography_bkg_fade');
@@ -21,7 +23,7 @@ require('./nodes/menu_toggle');
 
 require('./nodes/smooth_scroll');
 
-},{"./nodes/bkg_fade/about_bkg_fade":2,"./nodes/bkg_fade/photography_bkg_fade":3,"./nodes/image_preload":4,"./nodes/index_bkg":5,"./nodes/menu_toggle":6,"./nodes/photography/gallery_introduction":7,"./nodes/photography/lightbox":8,"./nodes/photography/photo_menu":9,"./nodes/resume_button_exp":10,"./nodes/smooth_scroll":11}],2:[function(require,module,exports){
+},{"./nodes/bkg_fade/about_bkg_fade":2,"./nodes/bkg_fade/photography_bkg_fade":3,"./nodes/image_preload":4,"./nodes/index_bkg":5,"./nodes/menu_toggle":6,"./nodes/photography/blur_fade":7,"./nodes/photography/gallery_introduction":8,"./nodes/photography/lightbox":9,"./nodes/photography/photo_menu":10,"./nodes/resume_button_exp":11,"./nodes/smooth_scroll":12}],2:[function(require,module,exports){
 "use strict";
 
 $(window).scroll(function () {
@@ -168,6 +170,23 @@ function hasShow() {
 'use strict';
 
 $(function () {
+  $('.lb-trigger').each(function () {
+    if (!this.complete) {
+      $(this).on('load', function () {
+        $(this).addClass('lb-in');
+        $(this).siblings().addClass('lb-out');
+      });
+    } else {
+      $(this).addClass('lb-in');
+      $(this).siblings().addClass('lb-out');
+    }
+  });
+});
+
+},{}],8:[function(require,module,exports){
+'use strict';
+
+$(function () {
    var titleOverlay = $('.title-overlay-div');
 
    titleOverlay.one("webkitAnimationEnd oanimationend msAnimationEnd animationend", function (e) {
@@ -175,7 +194,7 @@ $(function () {
    });
 });
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -184,7 +203,7 @@ $(function () {
   });
 
   $(".lb-trigger").click(function () {
-    var index = $(this).index();
+    var index = $(this).parent().index();
 
     $('#lb-image').attr('src', images[index]);
 
@@ -192,7 +211,32 @@ $(function () {
     $(".lb-overlay").addClass("lb-overlay3", 400);
   });
 
-  $(".nav-arrow-next-lb, .nav-arrow-next-lb--mobile, .lb-image").click(function () {
+  $(".nav-arrow-next-lb, .nav-arrow-next-lb--mobile, #lb-image").click(function () {
+    img_left();
+  });
+
+  $(".nav-arrow-prev-lb, .nav-arrow-prev-lb--mobile").click(function () {
+    img_right();
+  });
+
+  $(document).keydown(function (e) {
+    switch (e.which) {
+      case 37:
+        img_right();
+        break;
+
+      case 39:
+        img_left();
+        break;
+
+      default:
+        return;
+    }
+
+    e.preventDefault();
+  });
+
+  function img_left() {
     var current = $("#lb-image").attr('src');
     var currentloc = jQuery.inArray(current, images);
 
@@ -206,9 +250,9 @@ $(function () {
     $("#lb-image").fadeOut(500, function () {
       $('#lb-image').attr('src', images[replace]);
     }).fadeIn(500);
-  });
+  }
 
-  $(".nav-arrow-prev-lb, .nav-arrow-prev-lb--mobile").click(function () {
+  function img_right() {
     var current = $("#lb-image").attr('src');
     var currentloc = jQuery.inArray(current, images);
 
@@ -222,7 +266,7 @@ $(function () {
     $("#lb-image").fadeOut(500, function () {
       $('#lb-image').attr('src', images[replace]);
     }).fadeIn(500);
-  });
+  }
 
   $(".lb-close").click(function () {
     $.when($(".lb-overlay").removeClass("lb-overlay3", 400)).done(function () {
@@ -231,7 +275,7 @@ $(function () {
   });
 });
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -250,7 +294,7 @@ $(function () {
   });
 });
 
-},{}],10:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -268,7 +312,7 @@ $(function () {
 	});
 });
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 'use strict';
 
 $(function () {

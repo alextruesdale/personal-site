@@ -12,14 +12,23 @@ page_numbers:
 nav_buttons:
 
 image_data:
-  - src: "/images/photography/full/35mm/jpeg/35mm_p/BEL031.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_p/BEL017.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_p/BEL031 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_p/BEL031 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_p/BEL017 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_p/BEL017 copy.jpg"
 
-  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL004.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL007.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL018.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL027.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_l/BEL037.jpg"
-  
-  - src: "/images/photography/full/35mm/jpeg/35mm_p/BEL002.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_p/BEL003.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_l/BEL004 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_l/BEL004 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_l/BEL007 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_l/BEL007 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_l/BEL018 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_l/BEL018 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_l/BEL027 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_l/BEL027 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_l/BEL037 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_l/BEL037 copy.jpg"
+
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_p/BEL002 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_p/BEL002 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_p/BEL003 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_p/BEL003 copy.jpg"

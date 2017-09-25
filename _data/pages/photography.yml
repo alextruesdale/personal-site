@@ -21,6 +21,7 @@ location_list:
 
     background_image:
       src: "/image/photography/teaser/Stockholm.png"
+      bsrc: "/image/photography/teaser/Stockholm_blur.png"
       id: "stockholm-bkg"
 
   - location: "Berlin"
@@ -30,6 +31,7 @@ location_list:
 
     background_image:
       src: "/images/photography/teaser/Berlin.png"
+      bsrc: "/images/photography/teaser/Berlin_blur.png"
       id: "berlin-bkg"
 
   - location: "Leipzig"
@@ -39,6 +41,7 @@ location_list:
 
     background_image:
       src: "/images/photography/teaser/Leipzig.png"
+      bsrc: "/images/photography/teaser/Leipzig_blur.png"
       id: "leipzig-bkg"
 
   - location: "Dresden"
@@ -48,6 +51,7 @@ location_list:
 
     background_image:
       src: "/images/photography/teaser/Dresden.png"
+      bsrc: "/images/photography/teaser/Dresden_blur.png"
       id: "dresden-bkg"
 
   - location: "Prague"
@@ -57,51 +61,82 @@ location_list:
 
     background_image:
       src: "/images/photography/teaser/Prague.png"
+      bsrc: "/images/photography/teaser/Prague_blur.png"
       id: "prague-bkg"
+
+  - location: "Weimar"
+    target: "section-weimar"
+    position: "position-6"
+    gallery_url: "/photography/galleries/weimar_1"
+
+    background_image:
+      src: "/images/photography/teaser/Weimar.png"
+      bsrc: "/images/photography/teaser/Weimar_blur.png"
+      id: "weimar-bkg"
 
   - location: "Stralsund"
     target: "section-stralsund"
-    position: "position-6"
+    position: "position-7"
     gallery_url: "/photography/galleries/stralsund_1"
 
     background_image:
       src: "/images/photography/teaser/Stralsund.png"
+      bsrc: "/images/photography/teaser/Stralsund_blur.png"
       id: "stralsund-bkg"
 
   - location: "Hamburg"
     target: "section-hamburg"
-    position: "position-7"
+    position: "position-8"
     gallery_url: "/photography/galleries/hamburg_1"
 
     background_image:
       src: "/images/photography/teaser/Hamburg.png"
+      bsrc: "/images/photography/teaser/Hamburg_blur.png"
       id: "hamburg-bkg"
 
   - location: "Copenhagen"
     target: "section-copenhagen"
-    position: "position-8"
+    position: "position-9"
     gallery_url: "/photography/galleries/copenhagen_1"
 
     background_image:
       src: "/images/photography/teaser/Copenhagen.png"
+      bsrc: "/images/photography/teaser/Copenhagen_blur.png"
       id: "copenhagen-bkg"
+
+  - location: "United Kingdom"
+    target: "section-unitedkingdom"
+    position: "position-10"
+    gallery_url: "/photography/galleries/unitedkingdom_1"
+
+    background_image:
+      src: "/images/photography/teaser/UK.png"
+      bsrc: "/images/photography/teaser/UK_blur.png"
+      id: "uk-bkg"
+
+    extended_div: true
+    mobile_br:
+      - "United "
+      - "Kingdom"
 
   - location: "Bergen/Oslo"
     target: "section-bergenoslo"
-    position: "position-9"
+    position: "position-11"
     gallery_url: "/photography/galleries/norway_1"
 
     background_image:
       src: "/images/photography/teaser/Norway.png"
+      bsrc: "/images/photography/teaser/Norway_blur.png"
       id: "norway-bkg"
 
   - location: "Bruges/Antwerp"
     target: "section-brugesantwerp"
-    position: "position-10"
+    position: "position-12"
     gallery_url: "/photography/galleries/belgium_1"
 
     background_image:
       src: "/images/photography/teaser/Belgium.png"
+      bsrc: "/images/photography/teaser/Belgium_blur.png"
       id: "bruges-antwerp-bkg"
 
     extended_div: true
@@ -111,9 +146,10 @@ location_list:
 
   - location: "Paris"
     target: "section-paris"
-    position: "position-11"
+    position: "position-13"
     gallery_url: "/photography/galleries/paris_1"
 
     background_image:
       src: "/images/photography/teaser/Paris.png"
+      bsrc: "/images/photography/teaser/Paris_blur.png"
       id: "paris-bkg"

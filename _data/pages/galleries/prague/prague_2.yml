@@ -29,15 +29,23 @@ nav_buttons:
       img_src: "/images/gallery_images/next_arrow.png"
 
 image_data:
-  - src: "/images/photography/full/35mm/jpeg/35mm_p/PRG016.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_l/PRG024.jpg"
-  - src: "/images/photography/full/120/jpeg/PRG017.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_p/PRG016 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_p/PRG016 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_l/PRG024 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_l/PRG024 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/PRG017 copy.jpg"
+    src: "/images/photography/full/120/jpeg/PRG017 copy.jpg"
 
-  - src: "/images/photography/full/120/jpeg/PRG016.jpg"
-  - src: "/images/photography/full/120/jpeg/PRG009.jpg"
-  - src: "/images/photography/full/120/jpeg/PRG011.jpg"
+  - blur: "/images/photography/blur/120/jpeg/PRG016 copy.jpg"
+    src: "/images/photography/full/120/jpeg/PRG016 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/PRG009 copy.jpg"
+    src: "/images/photography/full/120/jpeg/PRG009 copy.jpg"
+  - blur: "/images/photography/blur/120/jpeg/PRG011 copy.jpg"
+    src: "/images/photography/full/120/jpeg/PRG011 copy.jpg"
 
-  - src: "/images/photography/full/120/jpeg/PRG010.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_p/PRG018.jpg"
-  - src: "/images/photography/full/35mm/jpeg/35mm_l/PRG010.jpg"
-  
+  - blur: "/images/photography/blur/120/jpeg/PRG010 copy.jpg"
+    src: "/images/photography/full/120/jpeg/PRG010 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_p/PRG018 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_p/PRG018 copy.jpg"
+  - blur: "/images/photography/blur/35mm/jpeg/35mm_l/PRG010 copy.jpg"
+    src: "/images/photography/full/35mm/jpeg/35mm_l/PRG010 copy.jpg"
