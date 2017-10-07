@@ -1,4 +1,4 @@
-.fullbkgd-photography{
+.fullbkgd-photography, .fullbkgd-photography-blur{
 	position: fixed;
 	width: 100%;
   margin-bottom: -250px;
@@ -18,6 +18,12 @@
   @include media('>750px', '<1100px'){
     zoom: 0;
   }
+}
+.fullbkgd-photography{
+	opacity: 0;
+}
+.fullbkgd-photography-blur{
+	opacity: 1;
 }
 .container-photography{
   @include media('<1100px'){
@@ -375,7 +381,12 @@
 	cursor: pointer;
 	color: #2a88b5;
 }
-.location-background{
+.blurloc-background{
+	position: absolute;
+	width: 100%;
+	opacity: 1
+}
+.location-background, .blurloc-background{
 	width: 100%;
 	margin-top: -14vw;
 	filter: saturate(0%);
@@ -391,6 +402,9 @@
     height: 125vh;
     zoom: 1;
   }
+}
+.location-background{
+	opacity: 0;
 }
 .location-background:hover{
 	filter: saturate(100%);
@@ -441,7 +455,7 @@
     display: block;
   }
 }
-.paris-bkg{
+.paris-bkg, .paris-bkg-blur{
   margin: -48vw 0 0 0;
 
   @include media('<1100px'){
@@ -454,7 +468,7 @@
     margin: -45vw 0 0 0;
   }
 }
-.prague-bkg{
+.prague-bkg, .prague-bkg-blur{
   margin: -12.5vw 0 0 0;
 
   @include media('<1100px'){
@@ -467,7 +481,7 @@
     margin: -9vw 0 0 0;
   }
 }
-.dresden-bkg{
+.dresden-bkg, .dresden-bkg-blur{
 	margin: -25vw 0 0 0;
 
   @include media('<1100px'){
@@ -477,7 +491,7 @@
     margin: -20px 0 0 -230px;
   }
 }
-.weimar-bkg{
+.weimar-bkg, .weimar-bkg-blur{
 	margin: -33vw 0 0 0;
 
   @include media('<1100px'){
@@ -487,7 +501,7 @@
     margin: -20px 0 0 -230px;
   }
 }
-.copenhagen-bkg{
+.copenhagen-bkg, .copenhagen-bkg-blur{
 	margin: -1.3vw 0 0 0;
 
   @include media('<1100px'){
@@ -497,7 +511,7 @@
     margin: -20px 0 0 -130px;
   }
 }
-.uk-bkg{
+.uk-bkg, .uk-bkg-blur{
 	margin: -19vw 0 0 0;
 
   @include media('<1100px'){
@@ -507,7 +521,7 @@
     margin: -20px 0 0 -230px;
   }
 }
-.bruges-antwerp-bkg{
+.bruges-antwerp-bkg, .bruges-antwerp-bkg-blur{
 	margin: -10vw 0 0 0;
 
   @include media('<1100px'){
@@ -517,7 +531,7 @@
     margin: -20px 0 0 0;
   }
 }
-.norway-bkg{
+.norway-bkg, .norway-bkg-blur{
 	margin: -12.5vw 0 0 0;
 
   @include media('<1100px'){

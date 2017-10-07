@@ -11,7 +11,9 @@ require('./nodes/photography/gallery_introduction');
 
 require('./nodes/photography/lightbox');
 
-require('./nodes/photography/blur_fade');
+require('./nodes/image_fade/gallery_fade');
+
+require('./nodes/image_fade/photo_fade');
 
 require('./nodes/bkg_fade/about_bkg_fade');
 
@@ -23,7 +25,7 @@ require('./nodes/menu_toggle');
 
 require('./nodes/smooth_scroll');
 
-},{"./nodes/bkg_fade/about_bkg_fade":2,"./nodes/bkg_fade/photography_bkg_fade":3,"./nodes/image_preload":4,"./nodes/index_bkg":5,"./nodes/menu_toggle":6,"./nodes/photography/blur_fade":7,"./nodes/photography/gallery_introduction":8,"./nodes/photography/lightbox":9,"./nodes/photography/photo_menu":10,"./nodes/resume_button_exp":11,"./nodes/smooth_scroll":12}],2:[function(require,module,exports){
+},{"./nodes/bkg_fade/about_bkg_fade":2,"./nodes/bkg_fade/photography_bkg_fade":3,"./nodes/image_fade/gallery_fade":4,"./nodes/image_fade/photo_fade":5,"./nodes/image_preload":6,"./nodes/index_bkg":7,"./nodes/menu_toggle":8,"./nodes/photography/gallery_introduction":9,"./nodes/photography/lightbox":10,"./nodes/photography/photo_menu":11,"./nodes/resume_button_exp":12,"./nodes/smooth_scroll":13}],2:[function(require,module,exports){
 "use strict";
 
 $(window).scroll(function () {
@@ -35,15 +37,57 @@ $(window).scroll(function () {
 "use strict";
 
 $(window).scroll(function () {
-		if ($(this).scrollTop() < 800) {
+  if ($(this).scrollTop() < 850) {
 
-				var scrollVar = $(window).scrollTop() / 1050;
-				var saturate = "saturate" + "(" + scrollVar + ")";
-				$(".fullbkgd-photography").css({ 'filter': saturate });
-		};
+    var scrollVar = $(window).scrollTop() / 1050;
+    var saturate = "saturate" + "(" + scrollVar + ")";
+    $(".fullbkgd-photography").css({ 'filter': saturate });
+  };
+
+  if ($(this).scrollTop() < 1500) {
+    $(".fullbkgd-photography").css({ 'visibility': 'visible' });
+  };
+
+  if ($(this).scrollTop() > 1500) {
+    $(".fullbkgd-photography").css({ 'visibility': 'hidden' });
+  };
 });
 
 },{}],4:[function(require,module,exports){
+'use strict';
+
+$(function () {
+  $('.lb-trigger').each(function () {
+    if (!this.complete) {
+      $(this).on('load', function () {
+        $(this).addClass('lb-in');
+        $(this).siblings().addClass('lb-out');
+      });
+    } else {
+      $(this).addClass('lb-in');
+      $(this).siblings().addClass('lb-out');
+    }
+  });
+});
+
+},{}],5:[function(require,module,exports){
+'use strict';
+
+$(function () {
+  $('.location-background, .fullbkgd-about, .fullbkgd-photography').each(function () {
+    if (!this.complete) {
+      $(this).on('load', function () {
+        $(this).addClass('lb-in');
+        $(this).prev().addClass('lb-out');
+      });
+    } else {
+      $(this).addClass('lb-in');
+      $(this).prev().addClass('lb-out');
+    }
+  });
+});
+
+},{}],6:[function(require,module,exports){
 "use strict";
 
 var images = new Array();
@@ -60,7 +104,7 @@ $(function () {
 	preload(imageFiles);
 });
 
-},{}],5:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 $(attachClickHandlers);
@@ -129,7 +173,7 @@ function attachClickHandlers() {
 	$("#lightblue").click(handleClick);
 }
 
-},{}],6:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -168,24 +212,7 @@ function hasShow() {
   };
 };
 
-},{}],7:[function(require,module,exports){
-'use strict';
-
-$(function () {
-  $('.lb-trigger').each(function () {
-    if (!this.complete) {
-      $(this).on('load', function () {
-        $(this).addClass('lb-in');
-        $(this).siblings().addClass('lb-out');
-      });
-    } else {
-      $(this).addClass('lb-in');
-      $(this).siblings().addClass('lb-out');
-    }
-  });
-});
-
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 'use strict';
 
 $(function () {
@@ -196,7 +223,7 @@ $(function () {
    });
 });
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -277,7 +304,7 @@ $(function () {
   });
 });
 
-},{}],10:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -296,7 +323,7 @@ $(function () {
   });
 });
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 "use strict";
 
 $(function () {
@@ -314,7 +341,7 @@ $(function () {
 	});
 });
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 'use strict';
 
 $(function () {

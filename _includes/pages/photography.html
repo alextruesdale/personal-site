@@ -1,7 +1,10 @@
 {% assign photo = site.data.pages.photography %}
 
 <div class="container container-photography">
-  <div><img class="fullbkgd-photography" src="/images/gallery_images/photo_bkgd.png"></div>
+  <div>
+    <img class="fullbkgd-photography-blur" src="/images/gallery_images/photo_bkgd_blur.jpg">
+    <img class="fullbkgd-photography" src="/images/gallery_images/photo_bkgd.png">
+  </div>
   <div class="wrapper-intro-photography">
     <div class="content-intro-photography">
       <div class="wrapper-inner-photography">
@@ -37,7 +40,7 @@
         <div class="gallery-wrapper {{ location.position }}">
           <span class="section-anchor" id="{{ location.target }}"></span>
           {% if location.background_image %}
-            <!-- <img class="blurloc-background {{ location.background_image.id }}-blur" src="{{ location.background_image.bsrc }}"> -->
+            <img class="blurloc-background {{ location.background_image.id }}-blur" src="{{ location.background_image.bsrc }}">
             <img class="location-background {{ location.background_image.id }}" src="{{ location.background_image.src }}">
           {% endif %}
           <div class="title-bar">
