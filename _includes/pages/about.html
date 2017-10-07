@@ -8,10 +8,10 @@
 	<div class="wrapper-intro-about">
 		<div class="container-intro-about">
 			<div class="wrapper-inner-about">
-				<h1 class="intro-header-about">{{ about.intro.header }}</h1>
-				<p class="intro-leadtext-about">{{ about.intro.leadtext[0] }}<br>{{ about.intro.leadtext[1] }}</p>
-				<p class="intro-bodytext-about">{{ about.intro.bodytext }}</p>
-				<ol class="intro-list-about">
+				<h1 class="intro-header">{{ about.intro.header }}</h1>
+				<p class="intro-leadtext">{{ about.intro.leadtext[0] }}<br>{{ about.intro.leadtext[1] }}</p>
+				<p class="intro-bodytext">{{ about.intro.bodytext }}</p>
+				<ol class="intro-list">
 					{% for item in about.intro.list %}
 						<li>{{ item }}</li>
 					{% endfor %}

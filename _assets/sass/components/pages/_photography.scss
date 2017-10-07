@@ -24,6 +24,17 @@
 }
 .fullbkgd-photography-blur{
 	opacity: 1;
+
+	@include media('<1100px'){
+		margin-left: -210px;
+		margin-bottom: -358px;
+		zoom: .911;
+	}
+	@include media('>750px', '<1100px'){
+		margin-left: -208px;
+    margin-bottom: -356px;
+		zoom: 1.81;
+	}
 }
 .container-photography{
   @include media('<1100px'){
@@ -66,56 +77,6 @@
 
   @include media('<1100px'){
     width: 87vw;
-  }
-}
-.intro-header-photography{
-	font-family: 'Muli' sans-serif;
-	color: #E6E6E6;
-	font-weight: 400;
-	font-size: 6.5vw;
-	margin: 4vw 0 0 1.75vw;
-
-  @include media('<1100px'){
-		font-size: 14vw;
-		margin: 5vw 0 6vw 0;
-  }
-}
-.intro-leadtext-photography{
-	color: white;
-	font-size: 1.8vw;
-	letter-spacing: .03em;
-	line-height: 1.3em;
-	margin: 1.5vw 0 2vw 2vw;
-
-  @include media('<1100px'){
-    font-size: 5vw;
-		letter-spacing: .03em;
-		line-height: 1.3em;
-		margin: 0 1vw 6vw 0vw;
-  }
-}
-.intro-bodytext-photography{
-	color: white;
-	font-size: 1.4vw;
-	font-weight: 500;
-	line-height: 1.4em;
-	margin: 0 0 0 2vw;
-
-  @include media('<1100px'){
-    font-size: 4.2vw;
-		line-height: 1.4em;
-		margin: 0 0 4vw 0;
-  }
-}
-.intro-list-photography{
-  @extend .intro-bodytext-photography;
-  margin: 1vw 0 1vw 2vw;
-
-  @include media('<1100px'){
-    margin: 0;
-  }
-  @include media('>750px', '<1100px'){
-    font-size: 4vw;
   }
 }
 .scrollwrapper-photography{
@@ -200,6 +161,10 @@
     align-items: center;
     justify-content: center;
   }
+	@include media('>750px', '<1100px'){
+		top: 100px;
+		height: 95vh;
+	}
   @include media('>1800px'){
     top: 120px;
   }
@@ -236,8 +201,8 @@
       line-height: 1.54em;
     }
     @include media('>750px', '<1100px'){
-      font-size: 5.8vw;
-  		line-height: 1.5em;
+			font-size: 5vw;
+	    line-height: 1.5em;
     }
   }
 }
@@ -298,6 +263,9 @@
   @include media('>750px', '<1100px'){
     height: 430px;
   }
+	@include media('>1000px', '<1100px'){
+    height: 520px;
+  }
   @include media('>1800px'){
     height: 310px;
   }
@@ -308,6 +276,9 @@
   }
   @include media('>750px', '<1100px'){
     height: 500px;
+  }
+	@include media('>1000px', '<1100px'){
+    height: 640px;
   }
 }
 
@@ -544,7 +515,7 @@
     margin: -9vw 0 0 0;
   }
 }
-.stralsund-bkg{
+.stralsund-bkg, .stralsund-bkg-blur{
 	margin: -12.5vw 0 0 0;
 
   @include media('<1100px'){
@@ -557,7 +528,7 @@
     margin: -9.5vw 0 0 0;
   }
 }
-.leipzig-bkg{
+.leipzig-bkg, .leipzig-bkg-blur{
   @include media('<1100px'){
     margin: 0 0 0 -250px;
   }
@@ -568,7 +539,7 @@
     margin: -11vw 0 0 0;
   }
 }
-.berlin-bkg{
+.berlin-bkg, .berlin-bkg-blur{
   @include media('<1100px'){
     margin: 0 0 0 -345px;
   }

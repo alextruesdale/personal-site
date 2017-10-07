@@ -8,10 +8,10 @@
   <div class="wrapper-intro-photography">
     <div class="content-intro-photography">
       <div class="wrapper-inner-photography">
-        <h1 class="intro-header-photography">{{ photo.intro.header }}</h1>
-        <p class="intro-leadtext-photography">{{ photo.intro.leadtext[0] }}<br>{{ photo.intro.leadtext[1] }}</p>
-        <p class="intro-bodytext-photography">{{ photo.intro.bodytext[0] }}<br><br>{{ photo.intro.bodytext[1] }}</p>
-        <p class="intro-list-photography">
+        <h1 class="intro-header">{{ photo.intro.header }}</h1>
+        <p class="intro-leadtext">{{ photo.intro.leadtext[0] }}<br>{{ photo.intro.leadtext[1] }}</p>
+        <p class="intro-bodytext">{{ photo.intro.bodytext[0] }}<br><br>{{ photo.intro.bodytext[1] }}</p>
+        <p class="intro-list">
           {% for item in photo.intro.list %}
             {{ item }} <br>
           {% endfor %}
