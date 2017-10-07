@@ -1,4 +1,4 @@
-.fullbkgd-about{
+.fullbkgd-about, .fullbkgd-about-blur{
 	position: fixed;
 	width: 100%;
 	z-index: -100;
@@ -12,6 +12,12 @@
 	@include media('>750px', '<1100px'){
 		zoom: 0;
 	}
+}
+.fullbkgd-about{
+	opacity: 0
+}
+.fullbkgd-about-blur{
+	opacity: 1
 }
 .container-about{
 	@include media('<1100px'){

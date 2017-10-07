@@ -4,31 +4,31 @@ intro:
     - "My name is Alex Truesdale."
     - "Welcome to my corner of the web."
 
-  bodytext: "I built this website as a project to better introduce myself and my work to others in a
-             well-designed, personalised space. A brief introduction of me; I like:"
+  bodytext: "I built this website as a project to better introduce myself to others in a
+            personalised space. A brief introduction; I like:"
 
   list:
     - "International business & technology"
-    - "Pastry & warm beverages from around the world."
+    - "Pastries & warm beverages from around the world."
     - "Film photography (yes, one of those)"
 
 content:
   - class: bh1
     header: Development, Business & An International Career
     text:
-      - "My interest in business systems and web applications has led to furiously clattering
-        upon my keyboard, honing front-end fundamentals and nurturing a budding aptitude for
-        back-end wizardry."
+      - "My interest in business systems and web applications has led me to furiously clattering
+        upon my keyboard, honing front-end fundamentals and nurturing a budding interest in
+        back-end development."
 
-      - "A career in cutting-edge tech remains just one component to an exciting life; I am also
-        drawn to the challenge and experience that comes with living amongst a new culture.
+      - "A career in cutting-edge tech, however, is just one component to an exciting life; I am also
+        drawn to the challenge and experience that comes with living abroad amongst a new culture.
         Combining this and career ambitions, I have spent much of the last year living and working
-        abroad in Berlin, Germany."
+        in Berlin, Germany."
 
   - class: bh2
     header: Why Move to Germany?
     text:
-      - "At first, I chose Berlin somewhat at random. Following the expat tradition, however, I quickly
+      - "At first, I chose Berlin somewhat at random. Following the expat tradition, I then quickly
         developed a fondness for the city, making plans to settle more permanently. Seeking a broader worldview and international
         professional experience, life in Berlin has been rich and rewarding, working with colleagues from all over the world and
         laying the foundation for future ambitions abroad."
@@ -36,8 +36,7 @@ content:
   - class: bh3
     header: Photography
     text:
-      - "Outside of professional life, film photography is a pleasant change of pace from
-        the digital world."
+      - "Outside of professional life, film photography is a pleasant change of pace from the digital world."
 
-      - "Unlike when working with code, the live-medium of film allows for a less rigid process where errors
+      - "Unlike when working with code, the live-medium of film allows for a less rigid creative experience where errors
         in process or materials have the potential to produce interesting and unexpected results."

@@ -761,20 +761,26 @@ nav ul li {
   -webkit-filter: saturate(100%) brightness(100%) contrast(100%);
           filter: saturate(100%) brightness(100%) contrast(100%); }
 
-.fullbkgd-about {
+.fullbkgd-about, .fullbkgd-about-blur {
   position: fixed;
   width: 100%;
   z-index: -100;
   bottom: 0; }
   @media (max-width: 1099px) {
-    .fullbkgd-about {
+    .fullbkgd-about, .fullbkgd-about-blur {
       zoom: .45;
       margin-left: -650px;
       width: auto; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .fullbkgd-about {
+  .fullbkgd-about, .fullbkgd-about-blur {
     zoom: 0; } }
+
+.fullbkgd-about {
+  opacity: 0; }
+
+.fullbkgd-about-blur {
+  opacity: 1; }
 
 @media (max-width: 1099px) {
   .container-about {
@@ -1609,7 +1615,7 @@ nav ul li {
       font-size: 4.2vw;
       margin: 2vw 0 4vw 0; } }
 
-.fullbkgd-photography {
+.fullbkgd-photography, .fullbkgd-photography-blur {
   position: fixed;
   width: 100%;
   margin-bottom: -250px;
@@ -1619,15 +1625,21 @@ nav ul li {
           filter: saturate(0);
   z-index: -100; }
   @media (max-width: 1099px) {
-    .fullbkgd-photography {
+    .fullbkgd-photography, .fullbkgd-photography-blur {
       zoom: .5;
       margin-left: -380px;
       margin-bottom: -650px;
       width: auto; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .fullbkgd-photography {
+  .fullbkgd-photography, .fullbkgd-photography-blur {
     zoom: 0; } }
+
+.fullbkgd-photography {
+  opacity: 0; }
+
+.fullbkgd-photography-blur {
+  opacity: 1; }
 
 @media (max-width: 1099px) {
   .container-photography {
@@ -2002,7 +2014,12 @@ nav ul li {
   cursor: pointer;
   color: #2a88b5; }
 
-.location-background {
+.blurloc-background {
+  position: absolute;
+  width: 100%;
+  opacity: 1; }
+
+.location-background, .blurloc-background {
   width: 100%;
   margin-top: -14vw;
   -webkit-filter: saturate(0%);
@@ -2010,15 +2027,18 @@ nav ul li {
   -webkit-transition: ease-in-out .8s;
   transition: ease-in-out .8s; }
   @media (max-width: 1099px) {
-    .location-background {
+    .location-background, .blurloc-background {
       width: initial;
       height: 105vh;
       zoom: 1.03; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .location-background {
+  .location-background, .blurloc-background {
     height: 125vh;
     zoom: 1; } }
+
+.location-background {
+  opacity: 0; }
 
 .location-background:hover {
   -webkit-filter: saturate(100%);
@@ -2079,93 +2099,93 @@ nav ul li {
     .mobile-br {
       display: block; } }
 
-.paris-bkg {
+.paris-bkg, .paris-bkg-blur {
   margin: -48vw 0 0 0; }
   @media (max-width: 1099px) {
-    .paris-bkg {
+    .paris-bkg, .paris-bkg-blur {
       margin: 0 0 0 -120px; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .paris-bkg {
+  .paris-bkg, .paris-bkg-blur {
     margin: -10px 0 0 -130px; } }
   @media (min-width: 1801px) {
-    .paris-bkg {
+    .paris-bkg, .paris-bkg-blur {
       margin: -45vw 0 0 0; } }
 
-.prague-bkg {
+.prague-bkg, .prague-bkg-blur {
   margin: -12.5vw 0 0 0; }
   @media (max-width: 1099px) {
-    .prague-bkg {
+    .prague-bkg, .prague-bkg-blur {
       margin: 0 0 0 0; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .prague-bkg {
+  .prague-bkg, .prague-bkg-blur {
     margin: -20px 0 0 -15px; } }
   @media (min-width: 1801px) {
-    .prague-bkg {
+    .prague-bkg, .prague-bkg-blur {
       margin: -9vw 0 0 0; } }
 
-.dresden-bkg {
+.dresden-bkg, .dresden-bkg-blur {
   margin: -25vw 0 0 0; }
   @media (max-width: 1099px) {
-    .dresden-bkg {
+    .dresden-bkg, .dresden-bkg-blur {
       margin: 0 0 0 -130px; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .dresden-bkg {
+  .dresden-bkg, .dresden-bkg-blur {
     margin: -20px 0 0 -230px; } }
 
-.weimar-bkg {
+.weimar-bkg, .weimar-bkg-blur {
   margin: -33vw 0 0 0; }
   @media (max-width: 1099px) {
-    .weimar-bkg {
+    .weimar-bkg, .weimar-bkg-blur {
       margin: 0 0 0 -130px; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .weimar-bkg {
+  .weimar-bkg, .weimar-bkg-blur {
     margin: -20px 0 0 -230px; } }
 
-.copenhagen-bkg {
+.copenhagen-bkg, .copenhagen-bkg-blur {
   margin: -1.3vw 0 0 0; }
   @media (max-width: 1099px) {
-    .copenhagen-bkg {
+    .copenhagen-bkg, .copenhagen-bkg-blur {
       margin: 0 0 0 -70px; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .copenhagen-bkg {
+  .copenhagen-bkg, .copenhagen-bkg-blur {
     margin: -20px 0 0 -130px; } }
 
-.uk-bkg {
+.uk-bkg, .uk-bkg-blur {
   margin: -19vw 0 0 0; }
   @media (max-width: 1099px) {
-    .uk-bkg {
+    .uk-bkg, .uk-bkg-blur {
       margin: 0 0 0 -130px; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .uk-bkg {
+  .uk-bkg, .uk-bkg-blur {
     margin: -20px 0 0 -230px; } }
 
-.bruges-antwerp-bkg {
+.bruges-antwerp-bkg, .bruges-antwerp-bkg-blur {
   margin: -10vw 0 0 0; }
   @media (max-width: 1099px) {
-    .bruges-antwerp-bkg {
+    .bruges-antwerp-bkg, .bruges-antwerp-bkg-blur {
       margin: 0 0 0 -15px; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .bruges-antwerp-bkg {
+  .bruges-antwerp-bkg, .bruges-antwerp-bkg-blur {
     margin: -20px 0 0 0; } }
 
-.norway-bkg {
+.norway-bkg, .norway-bkg-blur {
   margin: -12.5vw 0 0 0; }
   @media (max-width: 1099px) {
-    .norway-bkg {
+    .norway-bkg, .norway-bkg-blur {
       margin: 0 0 0 0; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .norway-bkg {
+  .norway-bkg, .norway-bkg-blur {
     margin: -20px 0 0 0; } }
   @media (min-width: 1801px) {
-    .norway-bkg {
+    .norway-bkg, .norway-bkg-blur {
       margin: -9vw 0 0 0; } }
 
 .stralsund-bkg {
@@ -2327,7 +2347,11 @@ nav ul li {
   position: relative; }
 
 .lb-trigger {
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s; }
+  .lb-trigger:hover {
+    cursor: pointer; }
 
 .lb-trigger, .lb-preview {
   width: 100%;
@@ -2609,13 +2633,6 @@ nav ul li {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 30px; } }
-
-.lb-trigger {
-  -webkit-transition: ease-in-out .4s;
-  transition: ease-in-out .4s; }
-
-.lb-trigger:hover {
-  cursor: pointer; }
 
 #lb-image {
   max-width: 100%;
