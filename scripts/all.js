@@ -44,11 +44,11 @@ $(window).scroll(function () {
     $(".fullbkgd-photography").css({ 'filter': saturate });
   };
 
-  if ($(this).scrollTop() < 1500) {
+  if ($(this).scrollTop() < 3200) {
     $(".fullbkgd-photography").css({ 'visibility': 'visible' });
   };
 
-  if ($(this).scrollTop() > 1500) {
+  if ($(this).scrollTop() > 3200) {
     $(".fullbkgd-photography").css({ 'visibility': 'hidden' });
   };
 });

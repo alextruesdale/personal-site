@@ -60,6 +60,10 @@
     font-size: 5vw;
     margin: 0 5px 8px 5px;
   }
+  @include media('>750px', '<1100px'){
+    font-size: 4vw;
+    margin: 0 6px 8px 6px;
+  }
 }
 .page-active:after {
 	position: absolute;
@@ -71,6 +75,12 @@
   @include media('<1100px'){
     margin: -19px 0 0 -9px;
     font-size: .8em;
+  }
+  @include media('>750px', '<1100px'){
+    margin: -35px 0 0 -16.5px;
+  }
+  @include media('>1000px', '<1100px'){
+    margin: -40px 0 0 -21px;
   }
 }
 .gallery{
@@ -85,6 +95,9 @@
   @include media('<1100px'){
     column-count: 1;
     margin-top: 25px;
+  }
+  @include media('>750px', '<1100px'){
+    margin-bottom: 80px;
   }
 }
 .gal_img{
@@ -162,11 +175,27 @@
 }
 .next-div{
 	justify-content: flex-start;
-  margin-left: 8px
+  margin-left: 8px;
+
+  @include media('<1100px'){
+    margin-left: 6.5px;
+  }
+
+  @include media('>750px', '<1100px'){
+    margin-left: 12px;
+  }
 }
 .prev-div{
 	justify-content: flex-end;
-  margin-right: 8px
+  margin-right: 8px;
+
+  @include media('<1100px'){
+    margin-right: 6.5px;
+  }
+
+  @include media('>750px', '<1100px'){
+    margin-right: 12px;
+  }
 }
 .full-div{
   width: 100%;
@@ -179,17 +208,21 @@
 .nav-link-reverse{
   flex-flow: row-reverse;
 }
-.nav-text-next{
-	margin-left: 13px;
-}
-.nav-text-next-rev{
+.nav-text-next-rev, .nav-text-prev{
   margin-right: 13px;
+
+  @include media('>750px', '<1100px'){
+    font-size: 3.5vw;
+    font-weight: 300;
+  }
 }
-.nav-text-prev{
-	margin-right: 13px;
-}
-.nav-text-prev-rev{
+.nav-text-prev-rev, .nav-text-next{
   margin-left: 13px;
+
+  @include media('>750px', '<1100px'){
+    font-size: 3.5vw;
+    font-weight: 300;
+  }
 }
 .nav-arrow-next, .nav-arrow-prev, .nav-arrow-next-lb, .nav-arrow-prev-lb, .nav-arrow-next-lb--mobile, .nav-arrow-prev-lb--mobile{
 	width: 3.2vw;
@@ -198,6 +231,9 @@
 
   @include media('<1100px'){
     width: 10.5vw;
+  }
+  @include media('>750px', '<1100px'){
+    width: 9vw;
   }
 }
 .nav-arrow-next-lb--mobile, .nav-arrow-prev-lb--mobile{
@@ -208,6 +244,10 @@
     display: block;
     margin: 0 13px 0 13px;
     z-index: 1200;
+  }
+  @include media('>750px', '<1100px'){
+    width: 9vw;
+    margin: 0 20px 0 20px;
   }
 }
 .nav-arrow-next-lb, .nav-arrow-prev-lb{
@@ -237,6 +277,9 @@
   @include media('<1100px'){
     margin: 58px 0 75px 0;
   }
+  @include media('>750px', '<1100px'){
+    margin: 85px 0 95px 0;
+  }
 }
 .location-select-gallery{
 	font-size: 1.4vw;
@@ -246,6 +289,9 @@
 
   @include media('<1100px'){
     font-size: 5vw;
+  }
+  @include media('>750px', '<1100px'){
+    font-size: 4vw;
   }
 }
 .location-select-gallery:hover{

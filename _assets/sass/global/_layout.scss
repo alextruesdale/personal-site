@@ -25,6 +25,9 @@ body {
   @include media('<1000px') {
     height: 70px;
   }
+  @include media('>750px', '<1100px'){
+		height: 100px;
+	}
 }
 .site-content {
   order: 2;
