@@ -1,0 +1,28 @@
+<script type="text/javascript">
+  var pages = new Array(
+    nextpage = $(".next-div").find('a').attr("href"),
+    prevpage = $(".prev-div").find('a').attr("href")
+  );
+
+  var images = new Array();
+  var imageFiles = new Array();
+
+  for (i = 0; i < pages.length; i++) {
+    $.get(pages[i], function(data) {
+      $(".lb-preview", data).each(function() {
+        imageFiles.push($(this).attr("src"));
+      });
+    });
+  }
+
+  function preload(imageFiles) {
+    for (var i = 0; i < imageFiles.length; i++) {
+      images[i] = new Image()
+      images[i].src = imageFiles[i];
+    };
+  };
+
+  $(function() {
+    preload(imageFiles);
+  });
+</script>

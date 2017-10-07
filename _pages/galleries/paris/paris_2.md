@@ -3,7 +3,9 @@ layout: default
 title: Paris
 description: Alex Truesdale | Development & design for business applications.. and photos on occasion.
 permalink: /photography/galleries/paris_2/
-
+foot_includes:
+  - gallery_preload
+  
 data_folder: paris
 data_file: paris_2
 ---

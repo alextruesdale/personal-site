@@ -1,0 +1,11 @@
+{% if page.foot_includes %}
+  {% for include in page.foot_includes %}
+
+    {% capture component %}
+        foot_includes/{{ include }}.html
+    {% endcapture %}
+
+    {% include {{ component | strip }} %}
+
+  {% endfor %}
+{% endif %}

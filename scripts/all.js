@@ -1,6 +1,10 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
+require('./nodes/bkg_fade/about_bkg_fade');
+
+require('./nodes/bkg_fade/photography_bkg_fade');
+
 require('./nodes/image_preload');
 
 require('./nodes/index_bkg');
@@ -14,10 +18,6 @@ require('./nodes/photography/lightbox');
 require('./nodes/image_fade/gallery_fade');
 
 require('./nodes/image_fade/photo_fade');
-
-require('./nodes/bkg_fade/about_bkg_fade');
-
-require('./nodes/bkg_fade/photography_bkg_fade');
 
 require('./nodes/resume_button_exp');
 
@@ -91,7 +91,7 @@ $(function () {
 "use strict";
 
 var images = new Array();
-var imageFiles = ["/images/index_background/backgroundblue2.png", "/images/index_background/backgroundblue1.png", "/images/index_background/backgroundred2.png", "/images/index_background/backgroundred1.png", "/images/404small.png", "/images/404.png", "/images/about_images/about_bkgd.png", "/images/resume_images/Résumé.pdf", "/images/resume_images/resumehead.png", "/images/resume_images/resumeleft.png", "/images/gallery_images/photo_bkgd.png"];
+var imageFiles = ["/images/index_background/backgroundblue2.png", "/images/index_background/backgroundblue1.png", "/images/index_background/backgroundred2.png", "/images/index_background/backgroundred1.png", "/images/404small.png", "/images/404.png", "/images/about_images/about_bkgd.png-blur", "/images/resume_images/Résumé.pdf", "/images/resume_images/resumehead.png", "/images/resume_images/resumeleft.png", "/images/gallery_images/photo_bkgd-blur.png", '/images/photography/teaser/Belgium_blur.png', '/images/photography/teaser/Berlin_blur.png', '/images/photography/teaser/Copenhagen_blur.png', '/images/photography/teaser/Dresden_blur.png', '/images/photography/teaser/Hamburg_blur.png', '/images/photography/teaser/Leipzig_blur.png', '/images/photography/teaser/Norway_blur.png', '/images/photography/teaser/Paris_blur.png', '/images/photography/teaser/Prague_blur.png', '/images/photography/teaser/Stralsund_blur.png', '/images/photography/teaser/UK_blur.png', '/images/photography/teaser/Weimar_blur.png'];
 
 function preload(imageFiles) {
 	for (var i = 0; i < imageFiles.length; i++) {

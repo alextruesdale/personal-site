@@ -6,11 +6,23 @@ var imageFiles = [
 	"/images/index_background/backgroundred1.png",
 	"/images/404small.png",
 	"/images/404.png",
-	"/images/about_images/about_bkgd.png",
+	"/images/about_images/about_bkgd.png-blur",
 	"/images/resume_images/Résumé.pdf",
 	"/images/resume_images/resumehead.png",
 	"/images/resume_images/resumeleft.png",
-	"/images/gallery_images/photo_bkgd.png",
+	"/images/gallery_images/photo_bkgd-blur.png",
+	'/images/photography/teaser/Belgium_blur.png',
+	'/images/photography/teaser/Berlin_blur.png',
+	'/images/photography/teaser/Copenhagen_blur.png',
+	'/images/photography/teaser/Dresden_blur.png',
+	'/images/photography/teaser/Hamburg_blur.png',
+	'/images/photography/teaser/Leipzig_blur.png',
+	'/images/photography/teaser/Norway_blur.png',
+	'/images/photography/teaser/Paris_blur.png',
+	'/images/photography/teaser/Prague_blur.png',
+	'/images/photography/teaser/Stralsund_blur.png',
+	'/images/photography/teaser/UK_blur.png',
+	'/images/photography/teaser/Weimar_blur.png'
 ];
 
 function preload(imageFiles) {

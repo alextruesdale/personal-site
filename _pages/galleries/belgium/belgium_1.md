@@ -3,7 +3,9 @@ layout: default
 title: Belgium
 description: Alex Truesdale | Development & design for business applications.. and photos on occasion.
 permalink: /photography/galleries/belgium_1/
-
+foot_includes:
+  - gallery_preload
+  
 data_folder: belgium
 data_file: belgium_1
 ---

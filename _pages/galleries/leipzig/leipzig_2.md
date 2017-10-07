@@ -3,7 +3,9 @@ layout: default
 title: Leipzig
 description: Alex Truesdale | Development & design for business applications.. and photos on occasion.
 permalink: /photography/galleries/leipzig_2/
-
+foot_includes:
+  - gallery_preload
+  
 data_folder: leipzig
 data_file: leipzig_2
 ---

@@ -3,7 +3,9 @@ layout: default
 title: Stralsund
 description: Alex Truesdale | Development & design for business applications.. and photos on occasion.
 permalink: /photography/galleries/stralsund_2/
-
+foot_includes:
+  - gallery_preload
+  
 data_folder: stralsund
 data_file: stralsund_2
 ---
