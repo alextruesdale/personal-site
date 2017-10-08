@@ -1112,7 +1112,7 @@ nav ul li {
       zoom: 1.8; } }
 
 .resume-header {
-  margin-top: 10px;
+  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,6 +1203,7 @@ nav ul li {
 
 .reshead-areas {
   margin-left: -14px;
+  width: 89%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1255,7 +1256,7 @@ nav ul li {
 .section-title {
   font-weight: 300;
   font-size: 35px;
-  margin: 40px 0 0px 0; }
+  margin: 30px 0 0px 0; }
 
 .resume-h3 {
   font-weight: 500;
@@ -1275,8 +1276,12 @@ nav ul li {
   font-size: 14.7px;
   font-weight: 700; }
 
+.resume-semi {
+  font-size: 13.7px;
+  font-weight: 500; }
+
 .resume-unbold {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 13px;
   color: #8C8C8C;
   margin-left: 3px; }
@@ -1325,11 +1330,11 @@ nav ul li {
     max-width: 620px; } }
 
 @media (max-width: 1099px) {
-  #ctrlqs, #cesr, #persinfo, #eduinfo, #compinfo, #datascience, #logrhythm {
+  #ctrlqs, #cesr, #persinfo, #eduinfo, #compinfo, #datascience, #logrhythm, #pythondev {
     display: none; } }
 
 @media (max-width: 1099px) {
-  #ctrlqsbtn, #cesrbtn, #eduinfobtn, #datasciencebtn, #logrhythmbtn {
+  #ctrlqsbtn, #cesrbtn, #eduinfobtn, #datasciencebtn, #logrhythmbtn, #pythondevbtn {
     margin-top: 15px;
     margin-bottom: 15px; } }
 
@@ -1397,40 +1402,17 @@ nav ul li {
     content: "\a";
     white-space: pre; } }
 
-.meta-summary {
-  width: 99%;
-  border: .5px solid #e6e7e8;
-  border-left: none;
-  padding: 20px 10px 20px 70px;
-  margin-top: 30px;
-  margin-left: -70px; }
-  @media (max-width: 1099px) {
-    .meta-summary {
-      width: 100%;
-      border-left: .5px solid #e6e7e8;
-      margin-top: 40px;
-      margin-left: 0;
-      padding: 20px 10px 20px 10px; } }
-  @media (min-width: 1801px) {
-    .meta-summary {
-      margin-left: -80px;
-      padding: 20px 10px 20px 80px; } }
-
 .job-summary {
   width: 90%;
-  margin-bottom: 15px; }
-  @media (max-width: 1099px) {
-    .job-summary {
-      width: 97%;
-      text-align: center; } }
-
-.meta-summary p, .job-summary {
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 1.6em;
   font-weight: 400; }
-
-.meta-summary p {
-  font-size: 15px; }
+  @media (max-width: 1099px) {
+    .job-summary {
+      width: 97%;
+      text-align: center;
+      margin-left: 4px; } }
 
 #compinfo {
   margin-top: 18px; }
@@ -1461,6 +1443,9 @@ nav ul li {
 
 .school {
   margin: 15px 0; }
+
+.complang p, .education p, .personaldata p {
+  margin-top: 3px; }
 
 /*DOWNLOAD*/
 .container-download {

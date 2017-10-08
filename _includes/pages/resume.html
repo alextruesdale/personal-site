@@ -23,9 +23,6 @@
   </div>
 
   <div class="leftcolumn">
-    <div class="meta-summary">
-      <p class="metasum-p">{{ resume.meta_summary }}</p>
-    </div>
     <div class="experience">
       <h2 class="section-title">{{ resume.experience.section_title }}</h2>
 
@@ -92,15 +89,22 @@
       </div>
 
       <div id="compinfo" class="inner">
-        {% for skill in resume.comp_lang.skills.digital %}
+        {% for skill in resume.comp_lang.skills.lang.details %}
           <p><span class="resume-bold">{{ skill.skill }}</span>{% if skill.level %}<span class="resume-unbold">{{ skill.level }}</span>{% endif %}</p>
         {% endfor %}
-        <br>
-        {% for skill in resume.comp_lang.skills.data_prog %}
+
+        <h3 class="resume-h3">{{ resume.comp_lang.skills.digital.title }}</h3>
+        {% for skill in resume.comp_lang.skills.digital.details %}
+          <p><span class="resume-bold">{{ skill.skill }}</span>{% if skill.desc %}<span class="resume-semi">{{ skill.desc }}</span>{% endif %}{% if skill.level %}<span class="resume-unbold">{{ skill.level }}</span>{% endif %}</p>
+        {% endfor %}
+
+        <h3 class="resume-h3">{{ resume.comp_lang.skills.data_prog.title }}</h3>
+        {% for skill in resume.comp_lang.skills.data_prog.details %}
           <p><span class="resume-bold">{{ skill.skill }}</span>{% if skill.level %}<span class="resume-unbold">{{ skill.level }}</span>{% endif %}</p>
         {% endfor %}
-        <br>
-        {% for skill in resume.comp_lang.skills.lang %}
+
+        <h3 class="resume-h3">{{ resume.comp_lang.skills.work_vcontrol.title }}</h3>
+        {% for skill in resume.comp_lang.skills.work_vcontrol.details %}
           <p><span class="resume-bold">{{ skill.skill }}</span>{% if skill.level %}<span class="resume-unbold">{{ skill.level }}</span>{% endif %}</p>
         {% endfor %}
       </div>
