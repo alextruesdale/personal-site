@@ -1085,7 +1085,7 @@ nav ul li {
 .container-resume {
   position: relative;
   z-index: 950;
-  width: 90%;
+  width: 72%;
   overflow: auto;
   max-width: 1800px;
   margin: 65px auto 5px auto;
@@ -1112,7 +1112,7 @@ nav ul li {
       zoom: 1.8; } }
 
 .resume-header {
-  margin: 10px 0;
+  margin: 10px 0 10px -55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1313,7 +1313,7 @@ nav ul li {
   cursor: pointer; }
 
 .inner {
-  width: 85%; }
+  width: 95%; }
   @media (max-width: 1099px) {
     .inner {
       width: 100%;
@@ -1349,8 +1349,8 @@ nav ul li {
 /*LEFT COLUMN*/
 .leftcolumn {
   float: left;
-  width: 47%;
-  margin-left: 5.5%; }
+  width: 50%;
+  margin-left: 60px; }
   @media (max-width: 1099px) {
     .leftcolumn {
       display: -webkit-box;
@@ -1375,7 +1375,8 @@ nav ul li {
   margin: 18px 0 18px 0;
   font-size: 14px;
   line-height: 1.6em;
-  font-weight: 400; }
+  font-weight: 400;
+  width: 95%; }
 
 .bullet-diamond {
   width: 7px;
@@ -1403,7 +1404,7 @@ nav ul li {
     white-space: pre; } }
 
 .job-summary {
-  width: 90%;
+  width: 96%;
   margin-bottom: 15px;
   font-size: 14px;
   line-height: 1.6em;
@@ -1420,7 +1421,8 @@ nav ul li {
 /*RIGHT COLUMN*/
 .rightcolumn {
   float: right;
-  width: 45%; }
+  width: 40%;
+  margin-right: 25px; }
   @media (max-width: 1099px) {
     .rightcolumn {
       display: -webkit-box;
