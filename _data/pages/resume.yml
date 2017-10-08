@@ -13,11 +13,10 @@ experience:
       company: "Leeds Natural Language Processing Lab"
       duration: " – September 2017 to Present"
       location: "Boulder, CO | United States"
-      job_sum: "Write multi-component Python script to prepare a large set of images (Moody’s industry investment documents; early 1900s to 1990s) for digitisation and organisation as queryable data."
+      job_sum: "Creating a Python tool to prepare a large set of scanned images (Moody’s industry investment documents; early 1900s to 1990s) for digitisation and organisation as queryable data."
       tasks:
-        - "Develop object-oriented image processing algorithms"
         - "Design preliminary SQl database / table structure"
-        - "Individually manage day-to-day workflow and progress reporting"
+        - "Develop object-oriented image processing algorithms to dynamically correct for scanning errors: rotation, scaling, cropping"
 
       mobile_expand: pythondev
 
@@ -92,26 +91,26 @@ comp_lang:
     lang:
       details:
         - skill: "English  "
-          level: "native-speaker"
+          level: "native speaker"
         - skill: "German  "
-          level: "intermediate (A2.2)"
+          level: "advanced beginner (A2.2)"
 
     digital:
       title: "Design & Front-End"
       details:
         - skill: "Adobe Photoshop / Illustrator  "
-          level: "advanced"
+          level: "proficient"
         - skill: "HTML5  "
-          level: "advanced"
+          level: "proficient"
         - skill: "CSS3 "
           desc:  "(SCSS)  "
-          level: "advanced"
+          level: "proficient"
         - skill: "Liquid "
           desc:  "(Templating Language)  "
-          level: "advanced"
+          level: "competent"
         - skill: "Javascript "
           desc:  "(JQuery)  "
-          level: "intermediate"
+          level: "competent"
         - skill: "Google Analytics Certification"
           level: false
 
@@ -119,19 +118,19 @@ comp_lang:
       title: "Programming & Data Analysis"
       details:
         - skill: "Python  "
-          level: "intermediate"
+          level: "competent"
         - skill: "SQL  "
-          level: "intermediate"
+          level: "competent"
 
     work_vcontrol:
       title: "Workflow & Version Control"
       details:
         - skill: "Git  "
-          level: "intermediate"
+          level: "competent"
         - skill: "Jekyll  "
-          level: "intermediate"
+          level: "competent"
         - skill: "Gulp  "
-          level: "intermediate"
+          level: "advanced beginner"
 
 personal_data:
   section_title: "Personal Data"
