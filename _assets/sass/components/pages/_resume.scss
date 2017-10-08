@@ -36,7 +36,7 @@
 	}
 }
 .resume-header{
-	margin-top: 10px;
+	margin: 10px 0;
 
 	display: flex;
 	align-items: center;
@@ -114,6 +114,7 @@
 }
 .reshead-areas{
 	margin-left: -14px;
+	width: 89%;
 
 	display: flex;
 	align-items: center;
@@ -168,7 +169,7 @@
 .section-title{
 	font-weight: 300;
 	font-size: 35px;
-	margin: 40px 0 0px 0;
+	margin: 30px 0 0px 0;
 }
 .resume-h3{
 	font-weight: 500;
@@ -188,8 +189,12 @@
 	font-size: 14.7px;
 	font-weight: 700;
 }
+.resume-semi{
+	font-size: 13.7px;
+	font-weight: 500;
+}
 .resume-unbold{
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 13px;
 	color: #8C8C8C;
 	margin-left: 3px;
@@ -239,12 +244,12 @@
 // BUTTONS
 
 
-#ctrlqs, #cesr, #persinfo, #eduinfo, #compinfo, #datascience, #logrhythm{
+#ctrlqs, #cesr, #persinfo, #eduinfo, #compinfo, #datascience, #logrhythm, #pythondev{
 	@include media('<1100px'){
 		display: none;
 	}
 }
-#ctrlqsbtn, #cesrbtn, #eduinfobtn, #datasciencebtn, #logrhythmbtn{
+#ctrlqsbtn, #cesrbtn, #eduinfobtn, #datasciencebtn, #logrhythmbtn, #pythondevbtn{
 	@include media('<1100px'){
 		margin-top: 15px;
 		margin-bottom: 15px;
@@ -315,43 +320,18 @@
 		white-space: pre;
 	}
 }
-.meta-summary{
-	width: 99%;
-	border: .5px solid #e6e7e8;
-	border-left: none;
-	padding: 20px 10px 20px 70px;
-	margin-top: 30px;
-	margin-left: -70px;
-
-	@include media('<1100px'){
-		width: 100%;
-		border-left: .5px solid #e6e7e8;
-		margin-top: 40px;
-		margin-left: 0;
-		padding: 20px 10px 20px 10px;
-	}
-
-	@include media('>1800px'){
-		margin-left: -80px;
-		padding: 20px 10px 20px 80px;
-	}
-}
 .job-summary{
 	width: 90%;
 	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 1.6em;
+	font-weight: 400;
 
 	@include media('<1100px'){
 		width: 97%;
 		text-align: center;
+    margin-left: 4px;
 	}
-}
-.meta-summary p, .job-summary{
-	font-size: 14px;
-	line-height: 1.6em;
-	font-weight: 400;
-}
-.meta-summary p{
-	font-size: 15px;
 }
 #compinfo{
 	margin-top: 18px;
@@ -379,6 +359,11 @@
 }
 .school{
 	margin: 15px 0;
+}
+.complang, .education, .personaldata{
+	p {
+		margin-top: 3px;
+	}
 }
 
 

@@ -1,23 +1,33 @@
 head:
   name: Alex Truesdale
   areas:
-    - Data Science
-    - Analytics
     - Development
-
-meta_summary: I am looking to further develop skills in the area of data science and business analytics following two years of experience in digital marketing, working with technical systems in professional business environments.
+    - Design
+    - Analytics
 
 experience:
   section_title: Experience
 
   positions:
+    - pos_title: "Python Development Research Assistant"
+      company: "Leeds Natural Language Processing Lab"
+      duration: " – September 2017 to Present"
+      location: "Boulder, CO | United States"
+      job_sum: "Write multi-component Python script to prepare a large set of images (Moody’s industry investment documents; early 1900s to 1990s) for digitisation and organisation as queryable data."
+      tasks:
+        - "Develop object-oriented image processing algorithms"
+        - "Design preliminary SQl database / table structure"
+        - "Individually manage day-to-day workflow and progress reporting"
+
+      mobile_expand: pythondev
+
     - pos_title: "Data Science Research Assistant – Team Lead"
       company: "CU Boulder, Leeds School of Business"
-      duration: " – May 2017 to Present"
+      duration: " – May 2017 to September 2017"
       location: "Boulder, CO | United States"
-      job_sum: "Preparation of open-source Kaggle datasets as case studies to be used as learning examples in and upcoming machine learning publication using the web application DataRobot."
+      job_sum: "Preparation of open-source Kaggle datasets to be used as case studies in machine learning publication using the auto machine learning app, DataRobot. Includes complete editing of book text and content."
       tasks:
-        - "Clean datasets with missing / incomplete data within Alteryx"
+        - "Clean datasets with missing / incomplete data"
         - "Write case briefs for each dataset, guiding readers through exercises"
         - "Organise team project deliverable specifications and deadlines"
 
@@ -31,7 +41,7 @@ experience:
       tasks:
         - "Web development technologies used: HTML, CSS, Jekyll, Liquid, Git"
         - "Web analytics and tracking in Google Analytics / Tag Manager"
-        - "Workflow managed in Trello and weekly cross-functional scrums"
+        - "Workflow managed in Trello and weekly cross-functional Scrums"
 
       mobile_expand: logrhythm
 
@@ -46,14 +56,6 @@ experience:
 
       mobile_expand: ctrlqs
 
-    - pos_title: "Digital Marketing Assistant"
-      company: "Center for Education on Social Responsibility"
-      duration: " – May 2016 to December 2016"
-      location: "Boulder, CO | United States"
-      job_sum: "Partnered with marketing director to develop initial digital marketing presence, increasing content volume and overall campaign integration."
-
-      mobile_expand: cesr
-
 education:
   section_title: "Education"
 
@@ -67,7 +69,7 @@ education:
         degree: "Double BS-BA | Marketing & Information Management"
         gpa:
           gpa_text: "GPA"
-          gpa_num: " | 3.65"
+          gpa_num: " | 3.65 ( USA )"
 
         linebreak: true
 
@@ -82,48 +84,54 @@ education:
       location: "Wollongong, NSW | Australia"
       desc: "Semester Abroad"
       duration: " – February 2014 to July 2014"
-      linebreak: true
-
-    - school: "World Trade Center Denver"
-      location: "Denver, CO | United States"
-      desc: "International Trade Certificate"
-      duration: " – Completed May 2016"
 
 comp_lang:
   section_title: "Computer & Language"
 
   skills:
+    lang:
+      details:
+        - skill: "English  "
+          level: "native-speaker"
+        - skill: "German  "
+          level: "intermediate (A2.2)"
+
     digital:
-      - skill: "Adobe Photoshop  "
-        level: "advanced"
-      - skill: "Adobe Illustrator  "
-        level: "advanced"
-      - skill: "HTML  "
-        level: "advanced"
-      - skill: "CSS (SCSS)  "
-        level: "advanced"
-      - skill: "Jekyll / Liquid  "
-        level: "advanced"
-      - skill: "Javascript  "
-        level: "basic-working"
-      - skill: "Google Analytics Certification"
-        level: false
+      title: "Design & Front-End"
+      details:
+        - skill: "Adobe Photoshop / Illustrator  "
+          level: "advanced"
+        - skill: "HTML5  "
+          level: "advanced"
+        - skill: "CSS3 "
+          desc:  "(SCSS)  "
+          level: "advanced"
+        - skill: "Liquid "
+          desc:  "(Templating Language)  "
+          level: "advanced"
+        - skill: "Javascript "
+          desc:  "(JQuery)  "
+          level: "intermediate"
+        - skill: "Google Analytics Certification"
+          level: false
 
     data_prog:
-      - skill: "Alteryx (R-based VPL)  "
-        level: "intermediate"
-      - skill: "DataRobot (Machine Learning App)  "
-        level: "intermediate"
-      - skill: "Python  "
-        level: "basic-working"
-      - skill: "SQL  "
-        level: "basic-working"
+      title: "Programming & Data Analysis"
+      details:
+        - skill: "Python  "
+          level: "intermediate"
+        - skill: "SQL  "
+          level: "intermediate"
 
-    lang:
-      - skill: "English  "
-        level: "native-speaker"
-      - skill: "German  "
-        level: "intermediate (B1)"
+    work_vcontrol:
+      title: "Workflow & Version Control"
+      details:
+        - skill: "Git  "
+          level: "intermediate"
+        - skill: "Jekyll  "
+          level: "intermediate"
+        - skill: "Gulp  "
+          level: "intermediate"
 
 personal_data:
   section_title: "Personal Data"
