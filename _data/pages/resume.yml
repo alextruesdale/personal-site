@@ -16,7 +16,7 @@ experience:
       job_sum: "Write multi-component Python script to prepare a large set of images (Moody’s industry investment documents; early 1900s to 1990s) for digitisation and organisation as queryable data."
       tasks:
         - "Develop object-oriented image processing algorithms"
-        - "Design preliminary SQl database / table structure"
+        - "Design preliminary SQL database / table structure"
         - "Individually manage day-to-day workflow and progress reporting"
 
       mobile_expand: pythondev
