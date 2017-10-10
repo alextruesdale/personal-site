@@ -48,6 +48,7 @@
 	}
 
 	@include media('<1100px'){
+		margin: 10px 0 10px 0px;
 		flex-direction: column;
 	}
 }
@@ -230,7 +231,6 @@
 		max-width: 500px;
 
 		padding: 25px 15px 20px 15px;
-		margin-left: -.7%;
 		border-radius: 2px;
 		background-color: #F9F9F9;
 	}
@@ -283,7 +283,7 @@
 
 		float: none;
 		width: 90%;
-		margin-left: 5.5%;
+		margin-left: 5%;
 		text-align: center;
 	}
 }
@@ -293,6 +293,10 @@
 	line-height: 1.6em;
 	font-weight: 400;
 	width: 95%;
+
+	@include media('<1100px'){
+		margin: 18px 0 18px 2.5%;
+	}
 }
 .bullet-diamond{
 	width: 7px;
@@ -355,7 +359,7 @@
 
 		float: none;
 		width: 90%;
-		margin-left: 5.5%;
+		margin-left: 5%;
 		text-align: center;
 	}
 }
