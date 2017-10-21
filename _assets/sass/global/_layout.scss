@@ -35,7 +35,7 @@ body {
   }
 
   @include media('>750px', '<1100px') {
-    height: 100px;
+    height: 80px;
 	}
 }
 

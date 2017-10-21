@@ -47,6 +47,10 @@
     margin: 5vw 0 5vw -4px;
   }
 
+  @include media('>750px', '<1100px') {
+    font-size: 12vw;
+  }
+
   @include media('>1800px') {
     font-size: 5.8vw;
   }
@@ -135,7 +139,7 @@
   }
 
   @include media('>750px', '<1100px') {
-    font-size: 3.8vw;
+    font-size: 3.5vw;
   }
 
   @include media('>1800px') {
