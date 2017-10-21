@@ -5,40 +5,40 @@ $(attachClickHandlers);
 function getStyle(id, name) {
 	var element = document.getElementById(id);
 	return element.currentStyle ? element.currentStyle[name] : (window.getComputedStyle ? window.getComputedStyle(element, null).getPropertyValue(name) : null);
-};
+}
 
 // HANDLECLICK
 
 var background = [
-	'background',
-	'backgroundblue1',
-	'backgroundblue2',
-	'backgroundred1',
-	'backgroundred2'
+'background',
+'backgroundblue1',
+'backgroundblue2',
+'backgroundred1',
+'backgroundred2'
 ];
 
 var backgroundKey = {
-	'lightblue':'backgroundblue1',
-	'darkblue':'backgroundblue2',
-	'lightred':'backgroundred1',
-	'darkred':'backgroundred2'
+'lightred': 'backgroundred1',
+'lightblue': 'backgroundblue1',
+'darkred': 'backgroundred2',
+'darkblue': 'backgroundblue2'
 };
 
 var paletteKey = {
-	'red1' : 'darkred',
-	'red2' : 'darkred',
-	'red3' : 'darkred',
-	'red4' : 'darkred',
-	'red5' : 'lightred',
-	'red6' : 'lightred',
-	'red7' : 'lightred',
-	'red8' : 'lightred',
-	'blue1' : 'darkblue',
-	'blue2' : 'darkblue',
-	'blue3' : 'darkblue',
-	'blue4' : 'lightblue',
-	'blue5' : 'lightblue',
-	'blue6' : 'lightblue'
+'red8': 'lightred',
+'red7': 'lightred',
+'red6': 'lightred',
+'red5': 'lightred',
+'red4': 'darkred',
+'red3': 'darkred',
+'red2': 'darkred',
+'red1': 'darkred',
+'blue6': 'lightblue',
+'blue5': 'lightblue',
+'blue4': 'lightblue',
+'blue3': 'darkblue',
+'blue2': 'darkblue',
+'blue1': 'darkblue'
 };
 
 function handleClick() {

@@ -1,5 +1,5 @@
 $(function() {
-  $('.lb-trigger').each(function(){
+  $('.lb-trigger').each(function() {
     if (!this.complete) {
         $(this).on('load', function() {
           $(this).addClass('lb-in');
