@@ -26,7 +26,6 @@
 
   @include media('<680px') {
     margin-left: -190px;
-    margin-top: 65px;
     transform: rotate(-90deg) scaleX(-1);
     width: 190%;
   }

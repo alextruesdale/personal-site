@@ -207,7 +207,6 @@ a {
     #backgroundred1,
     #backgroundred2 {
       margin-left: -190px;
-      margin-top: 65px;
       -webkit-transform: rotate(-90deg) scaleX(-1);
           -ms-transform: rotate(-90deg) scaleX(-1);
               transform: rotate(-90deg) scaleX(-1);
@@ -2782,7 +2781,7 @@ nav {
 
 .nav-text-next-rev,
 .nav-text-prev {
-  font-size: .9vw;
+  font-size: 4vw;
   margin-right: 13px; }
 
 @media (min-width: 751px) and (max-width: 1099px) {
@@ -2794,7 +2793,7 @@ nav {
 
 .nav-text-prev-rev,
 .nav-text-next {
-  font-size: .9vw;
+  font-size: 4vw;
   margin-left: 13px; }
 
 @media (min-width: 751px) and (max-width: 1099px) {

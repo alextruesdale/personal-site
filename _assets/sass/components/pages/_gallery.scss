@@ -252,7 +252,7 @@
 
 .nav-text-next-rev,
 .nav-text-prev {
-  font-size: .9vw;
+  font-size: 4vw;
   margin-right: 13px;
 
   @include media('>750px', '<1100px') {
@@ -265,7 +265,7 @@
 
 .nav-text-prev-rev,
 .nav-text-next {
-  font-size: .9vw;
+  font-size: 4vw;
   margin-left: 13px;
 
   @include media('>750px', '<1100px') {
