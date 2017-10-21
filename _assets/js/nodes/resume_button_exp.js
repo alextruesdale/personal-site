@@ -1,14 +1,14 @@
 $(function() {
-	$(".expbutton").click(function() {
-    var live_btn = "#" + $(this).attr('id')
-    var live_div = live_btn.slice(0,-3)
+	$('.expbutton').click(function() {
+    var liveBtn = '#' + $(this).attr('id')
+    var liveDiv = liveBtn.slice(0, -3)
 
-		if ($(live_btn).text() === "Hide") {
-			$(live_btn).text("Expand");
+		if ($(liveBtn).text() === 'Hide') {
+			$(liveBtn).text('Expand');
 		} else {
-			$(live_btn).text("Hide");
-		};
+			$(liveBtn).text('Hide');
+		}
 
-		$(live_div).slideToggle("medium");
+		$(liveDiv).slideToggle('medium');
 	});
 });

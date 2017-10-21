@@ -1,80 +1,81 @@
 $(function() {
-    var images = $(".lb-trigger").map(function() {
-      return $(this).attr("src");
-    });
+  var images = $('.lb-trigger').map(function() {
+    return $(this).attr('src');
+  });
 
-    $(".lb-trigger").click(function () {
-        var index = $(this).parent().index();
+  $('.lb-trigger').click(function () {
+      var index = $(this).parent().index();
+      var lbTimeDelay = 400
 
-        $('#lb-image').attr('src', images[index]);
+      $('#lb-image').attr('src', images[index]);
 
-        $(".lb-overlay").addClass("lb-overlay2");
-        $(".lb-overlay").addClass("lb-overlay3", 400);
-    });
+      $('.lb-overlay').addClass('lb-overlay2');
+      $('.lb-overlay').addClass('lb-overlay3', lbTimeDelay);
+  });
 
-    $(".nav-arrow-next-lb, .nav-arrow-next-lb--mobile, #lb-image").click(function() {
-      img_left()
-    });
+  $('.nav-arrow-next-lb, .nav-arrow-next-lb--mobile, #lb-image').click(function() {
+    imgLeft()
+  });
 
-    $(".nav-arrow-prev-lb, .nav-arrow-prev-lb--mobile").click(function() {
-      img_right()
-    });
+  $('.nav-arrow-prev-lb, .nav-arrow-prev-lb--mobile').click(function() {
+    imgRight()
+  });
 
-    $(document).keydown(function(e) {
-      switch(e.which) {
-          case 37:
-          img_right()
-          break;
+  $(document).keydown(function(e) {
+    switch (e.which) {
+        case 37:
+        imgRight()
+        break;
 
-          case 39:
-          img_left()
-          break;
+        case 39:
+        imgLeft()
+        break;
 
-          default: return;
-          }
+        default: return;
+        }
 
-          e.preventDefault();
-    });
+        e.preventDefault();
+  });
 
-    function img_left(){
-      var current = $("#lb-image").attr('src')
-      var currentloc = jQuery.inArray(current, images)
+  function imgLeft() {
+    var current = $('#lb-image').attr('src')
+    var currentloc = jQuery.inArray(current, images)
 
-      if (currentloc == (images.length - 1)) {
-        var replace = 0
+    if (currentloc === images.length - 1) {
+      var replace = 0
 
-      } else {
+    } else {
 
-        var replace = currentloc + 1
-      }
-
-      $("#lb-image").fadeOut(500, function() {
-        $('#lb-image').attr('src', images[replace]);
-      })
-      .fadeIn(500);
+      var replace = currentloc + 1
     }
 
-    function img_right() {
-      var current = $("#lb-image").attr('src')
-      var currentloc = jQuery.inArray(current, images)
+    $('#lb-image').fadeOut(500, function() {
+      $('#lb-image').attr('src', images[replace]);
+    })
+    .fadeIn(500);
+  }
 
-      if (currentloc == "0") {
-        var replace = images.length - 1
+  function imgRight() {
+    var current = $('#lb-image').attr('src')
+    var currentloc = jQuery.inArray(current, images)
 
-      } else {
+    if (currentloc === '0') {
+      var replace = images.length - 1
 
-        var replace = currentloc - 1
-      }
+    } else {
 
-      $("#lb-image").fadeOut(500, function() {
-        $('#lb-image').attr('src', images[replace]);
-      })
-      .fadeIn(500);
+      var replace = currentloc - 1
     }
 
-    $(".lb-close").click(function(){
-      $.when($(".lb-overlay").removeClass("lb-overlay3", 400)).done(function() {
-        $(".lb-overlay").removeClass("lb-overlay2");
-      });
+    $('#lb-image').fadeOut(500, function() {
+      $('#lb-image').attr('src', images[replace]);
+    })
+    .fadeIn(500);
+  }
+
+  $('.lb-close').click(function() {
+    $.when($('.lb-overlay').removeClass('lb-overlay3', 400)).done(function() {
+      $('.lb-overlay').removeClass('lb-overlay2');
     });
+  });
 });

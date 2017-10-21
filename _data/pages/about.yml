@@ -2,23 +2,23 @@ intro:
   header: "Hello."
   leadtext:
     - "My name is Alex Truesdale."
-    - "Welcome to my corner of the web."
+    - "Welcome to my corner of the Web."
 
-  bodytext: "I built this website as a project to better introduce myself to others in a
-            personalised space. A brief introduction; I like:"
+  bodytext: "I built this website as a project to better introduce myself to others and create
+             a space to share my photos. A little about me; I am interested in:"
 
   list:
     - "International business & technology"
-    - "Pastries & warm beverages from around the world."
+    - "Pastries & warm beverages from around the world"
     - "Film photography (yes, one of those)"
 
 content:
   - class: bh1
     header: Development, Business & An International Career
     text:
-      - "My interest in business systems and web applications has led me to furiously clattering
-        upon my keyboard, honing front-end fundamentals and nurturing a budding interest in
-        back-end development."
+      - "My interests in business systems and web applications have led me to furiously clattering
+        upon my keyboard, sharpening front-end fundamentals and nurturing a budding interest in
+        back-end architecture."
 
       - "A career in cutting-edge tech, however, is just one component to an exciting life; I am also
         drawn to the challenge and experience that comes with living abroad amongst a new culture.
@@ -28,7 +28,7 @@ content:
   - class: bh2
     header: Why Move to Germany?
     text:
-      - "At first, I chose Berlin somewhat at random. Following the expat tradition, I then quickly
+      - "At first, I chose Berlin somewhat at random. However, following the expat tradition, I quickly
         developed a fondness for the city, making plans to settle more permanently. Seeking a broader worldview and international
         professional experience, life in Berlin has been rich and rewarding, working with colleagues from all over the world and
         laying the foundation for future ambitions abroad."

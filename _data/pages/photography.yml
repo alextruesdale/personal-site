@@ -1,12 +1,12 @@
 intro:
   header: "Photography."
   leadtext:
-    - "Living in Berlin,"
-    - "I took some photos of my travels."
+    - "While living in Berlin and traveling about, I took some photos of my travels."
 
   bodytext:
-    - "I made these galleries to share my photos and attempt to build an elegant, lightweight image gallery."
-    - "Photos taken with the following:"
+    - "These gallaries are an experiment in constructing a lightweight, minimal image display.
+       Please, browse away."
+    - "Photos were taken with the following:"
 
   list:
     - "Minolta x-700 (35mm SLR)"

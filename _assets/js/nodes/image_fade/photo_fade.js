@@ -1,5 +1,5 @@
 $(function() {
-  $('.location-background, .fullbkgd-about, .fullbkgd-photography').each(function(){
+  $('.location-background, .fullbkgd-about, .fullbkgd-photography').each(function() {
     if (!this.complete) {
         $(this).on('load', function() {
           $(this).addClass('lb-in');

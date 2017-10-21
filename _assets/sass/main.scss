@@ -1,17 +1,16 @@
 @import
-  "library/base",
-  "library/fonts",
-  "library/include-media",
+  'library/base',
+  'library/fonts',
+  'library/include-media',
 
-  "global/layout",
-  "global/typography",
-  "global/utils",
+  'global/layout',
+  'global/typography',
 
-  "components/index",
-  "components/footer",
-  "components/header",
-  "components/pages/about",
-  "components/pages/resume",
-  "components/pages/contact",
-  "components/pages/photography",
-  "components/pages/gallery";
+  'components/index',
+  'components/footer',
+  'components/header',
+  'components/pages/about',
+  'components/pages/resume',
+  'components/pages/contact',
+  'components/pages/photography',
+  'components/pages/gallery';

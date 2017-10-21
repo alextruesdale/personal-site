@@ -1,8 +1,11 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 body {
   animation: fadein 1.5s;
   @keyframes fadein {
@@ -10,29 +13,37 @@ body {
     to {opacity: 1;}
   }
 }
+
 .site {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
 }
-.site-header, .site-content, .site-footer {
+
+.site-header,
+.site-content,
+.site-footer {
   display: flex;
 }
+
 .site-header {
-  order: 1;
   height: 75px;
+  order: 1;
 
   @include media('<1000px') {
     height: 70px;
   }
-  @include media('>750px', '<1100px'){
-		height: 100px;
+
+  @include media('>750px', '<1100px') {
+    height: 100px;
 	}
 }
+
 .site-content {
-  order: 2;
   min-height: 100vh;
+  order: 2;
 }
+
 .site-footer {
   order: 3;
 }
