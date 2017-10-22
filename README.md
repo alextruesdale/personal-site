@@ -3,6 +3,8 @@
 
 # Personal Site
 Welcome to the repository for the my personal webpage. Building one's own site is a rite of passage that calls beyond the ease of creating a Squarespace page, and I am proud to share mine here! Please take a look around.
+<br>
+<br>
 
 ## Code
 The site is built using liquid tags and the GitHub's Jekyll compiler, especially useful for template pages like image galleries. Styling is written in modular SCSS that is compiled via the Gulp build system. Javascript functions are written  using primarily JQuery and are compiled in the same way.
