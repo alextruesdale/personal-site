@@ -2,7 +2,7 @@
     <img src="https://github.com/alextruesdale/personal-site/blob/master/images/menubird.png" alt="Truesdale logo" title="Alex Truesdale" align="right" height="150" /></a>
 
 # Personal Site
-Welcome to the repository for my personal webpage. Building one's own site is a rite of passage that calls beyond the ease of creating a Squarespace page, and I am proud to share mine here! Please take a look around.
+Welcome to the repository for my personal webpage. Building one's own site is a rite of passage that goes beyond creating a Squarespace page, and I am proud to share mine here! Please take a look around.
 <br>
 <br>
 
