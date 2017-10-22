@@ -2781,8 +2781,12 @@ nav {
 
 .nav-text-next-rev,
 .nav-text-prev {
-  font-size: 4vw;
+  font-size: 1.2vw;
   margin-right: 13px; }
+  @media (max-width: 1099px) {
+    .nav-text-next-rev,
+    .nav-text-prev {
+      font-size: 4vw; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
   .nav-text-next-rev,
@@ -2790,11 +2794,19 @@ nav {
     font-size: 3.2vw;
     font-weight: 300;
     margin-right: 20px; } }
+  @media (min-width: 1801px) {
+    .nav-text-next-rev,
+    .nav-text-prev {
+      font-size: .9vw; } }
 
 .nav-text-prev-rev,
 .nav-text-next {
-  font-size: 4vw;
+  font-size: 1.2vw;
   margin-left: 13px; }
+  @media (max-width: 1099px) {
+    .nav-text-prev-rev,
+    .nav-text-next {
+      font-size: 4vw; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
   .nav-text-prev-rev,
@@ -2802,6 +2814,10 @@ nav {
     font-size: 3.2vw;
     font-weight: 300;
     margin-left: 20px; } }
+  @media (min-width: 1801px) {
+    .nav-text-prev-rev,
+    .nav-text-next {
+      font-size: .9vw; } }
 
 .nav-arrow-next,
 .nav-arrow-prev,
