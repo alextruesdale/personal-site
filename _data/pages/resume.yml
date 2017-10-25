@@ -13,9 +13,10 @@ experience:
       company: "Leeds Natural Language Processing Lab"
       duration: " – September 2017 to Present"
       location: "Boulder, CO | United States"
-      job_sum: "Creating a Python tool to prepare a large set of scanned images (Moody’s industry investment documents; early 1900s to 1990s) for digitisation and organisation as queryable data."
+      job_sum: "Creation of a Python tool to prepare a large set of scanned images (Moody’s industry investment documents; early 1900s to 1990s) for digitisation and organisation as queryable data."
       tasks:
         - "Design preliminary SQL database / table structure"
+        - "Documentation of code and processes for current and future contributors"
         - "Develop object-oriented image processing algorithms to dynamically correct for scanning errors: rotation, scaling, cropping"
 
       mobile_expand: pythondev
