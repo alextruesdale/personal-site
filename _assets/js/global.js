@@ -5,6 +5,8 @@ import './nodes/image_preload';
 import './nodes/index_bkg';
 
 import './nodes/photography/photo_menu';
+import './nodes/photography/jquery.visible.js';
+import './nodes/photography/in_viewport';
 import './nodes/photography/gallery_introduction';
 import './nodes/photography/lightbox';
 

@@ -28,7 +28,7 @@
 
       {% for position in resume.experience.positions %}
         <h3 class="resume-h3">{{ position.pos_title }}</h3>
-        <p><span class="resume-bold">{{ position.company }}</span><span class="resume-unbold">{{ position.duration }}</span></p>
+        <p class="bold-unbold"><span class="resume-bold">{{ position.company }}</span><span class="resume-unbold ub-linebreak">{{ position.duration }}</span></p>
         <h5 class="resume-h5">{{ position.location }}</h5>
 
         <div class="btn-wrapper">
@@ -40,7 +40,22 @@
         <div id="{{ position.mobile_expand }}" class="responsibilities inner">
           <p class="job-summary">{{ position.job_sum }}</p>
           {% for task in position.tasks %}
-            <div class="bullet-diamond"></div>{{ task }} <br>
+
+            {% if task.main %}
+              {% if task.children %}
+                <div class="bullet-diamond"></div><span class="task-text">{{ task.main }}</span><br>
+                  <ol class="task-children">
+                    {% for child in task.children %}
+                      <li>{{ child }}</li>
+                    {% endfor %}
+                  </ol>
+              {% else %}
+                <div class="bullet-diamond"></div><span class="task-text">{{ task.main }}</span><br>
+              {% endif %}
+
+            {% else %}
+              <div class="bullet-diamond"></div><span class="task-text">{{ task }}</span><br>
+            {% endif %}
           {% endfor %}
         </div>
       {% endfor%}
@@ -50,27 +65,25 @@
   <div class="rightcolumn">
     <div class="education">
       <h2 class="section-title">{{ resume.education.section_title }}</h2>
-      <h3 class="resume-h3">{{ resume.education.cu_boulder.university }}</h3>
-      <h5 class="resume-h5">{{ resume.education.cu_boulder.location }}</h5>
+      {% for institution in resume.education.institutions %}
+        <h3 class="resume-h3">{{ institution.university }}</h3>
+        <h5 class="resume-h5">{{ institution.location }}</h5>
 
-      <div class="btn-wrapper">
-        <div id="eduinfobtn" class="expbutton">
-          Expand
-        </div>
-      </div>
-
-      <div id="eduinfo" class="inner">
-        {% for uni in resume.education.cu_boulder.school_data %}
-          <div class="school">
-            <p><span class="resume-bold">{{ uni.school }}</span><span class="resume-unbold {% if uni.linebreak %}ub-linebreak{% endif %}">{{ uni.duration }}</span></p>
-            <p>{{ uni.degree }}</p>
-
-            {% if uni.gpa %}
-              <p><span class="resume-bold">{{ uni.gpa.gpa_text }}</span><span class="resume-unbold">{{ uni.gpa.gpa_num }}</span></p>
-            {% endif %}
+        <div class="btn-wrapper">
+          <div id="{{ institution.mobile_expand }}btn" class="expbutton">
+            Expand
           </div>
+        </div>
+
+        <div id="{{ institution.mobile_expand }}" class="inner">
+          {% for data in institution.school_data %}
+            <div class="school">
+              <p><span class="resume-bold">{{ data.school }}</span><span class="resume-unbold ub-linebreak">{{ data.duration }}</span></p>
+              <p>{{ data.detail }}</p>
+            </div>
+          {% endfor %}
+        </div>
         {% endfor %}
-      </div>
 
       {% for uni in resume.education.other_edu %}
         <h3 class="resume-h3">{{ uni.school }}</h3>
@@ -118,9 +131,10 @@
           Expand
         </div>
       </div>
+
       <div id="persinfo" class="inner">
         {% for data in resume.personal_data.data %}
-          <p><span class="resume-bold">{{ data.data }}</span><span class="resume-unbold">{{ data.content }}</span>{% if data.content_second %}<span class="bullet-diamond-min"></span><span class="resume-unbold">{{ data.content_second }}</span>{% endif %}</p>
+          <p><span class="resume-bold">{{ data.data }}</span>{% if data.hyperlink %}<a href="{{ data.hyperlink }}"><span class="resume-unbold">{{ data.content }}</span></a>{% else %}<span class="resume-unbold">{{ data.content }}</span>{% endif %}</p>
         {% endfor %}
       </div>
     </div>

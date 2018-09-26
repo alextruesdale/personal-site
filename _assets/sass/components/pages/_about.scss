@@ -154,7 +154,6 @@
 }
 
 .content-main-about {
-  align-items: center;
   display: flex;
   justify-content: center;
   width: 95%;
@@ -169,8 +168,24 @@
 	}
 }
 
-.portrait {
+.image-container {
+  display: flex;
+  flex-direction: column;
+
+  @include media('<1100px') {
+    margin-left: -.5em;
+	}
+
+  @include media('>750px', '<1100px') {
+    margin-left: 2.2em;
+	}
+}
+
+.portrait,
+.photo_photo {
   width: 30vw;
+  margin: 0 0 0 10px;
+  box-shadow: 1.5px 2px 2px rgba(0, 0, 0, .15);
 
   @include media('<1100px') {
     margin-bottom: 25px;
@@ -178,12 +193,16 @@
   }
 
   @include media('>750px', '<1100px') {
-    width: 81vw;
+    width: 73vw;
 	}
 
   @include media('>1800px') {
     width: 28vw;
   }
+}
+
+.portrait {
+  margin-bottom: 10px;
 }
 
 .bio-content {

@@ -11,18 +11,18 @@ var imageFiles = [
 	'/images/resume_images/resumehead.png',
 	'/images/resume_images/resumeleft.png',
 	'/images/gallery_images/photo_bkgd_blur.jpg',
-	'/images/photography/teaser/Belgium_blur.png',
-	'/images/photography/teaser/Berlin_blur.png',
-	'/images/photography/teaser/Copenhagen_blur.png',
-	'/images/photography/teaser/Dresden_blur.png',
-	'/images/photography/teaser/Hamburg_blur.png',
-	'/images/photography/teaser/Leipzig_blur.png',
-	'/images/photography/teaser/Norway_blur.png',
-	'/images/photography/teaser/Paris_blur.png',
-	'/images/photography/teaser/Prague_blur.png',
-	'/images/photography/teaser/Stralsund_blur.png',
-	'/images/photography/teaser/UK_blur.png',
-	'/images/photography/teaser/Weimar_blur.png'
+	'/images/photography/teaser/Belgium_blur.jpg',
+	'/images/photography/teaser/Berlin_blur.jpg',
+	'/images/photography/teaser/Copenhagen_blur.jpg',
+	'/images/photography/teaser/Dresden_blur.jpg',
+	'/images/photography/teaser/Hamburg_blur.jpg',
+	'/images/photography/teaser/Leipzig_blur.jpg',
+	'/images/photography/teaser/Norway_blur.jpg',
+	'/images/photography/teaser/Paris_blur.jpg',
+	'/images/photography/teaser/Prague_blur.jpg',
+	'/images/photography/teaser/Stralsund_blur.jpg',
+	'/images/photography/teaser/UK_blur.jpg',
+	'/images/photography/teaser/Weimar_blur.jpg'
 ];
 
 function preload() {

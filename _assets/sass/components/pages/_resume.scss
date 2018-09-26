@@ -36,9 +36,21 @@
 
   br {
     @include media('<1100px') {
-      line-height: 2em;
+      display: none;
 		}
 	}
+}
+
+%light-gray-text {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+%modified-p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6em;
 }
 
 .resume-header {
@@ -180,14 +192,14 @@
 .section-title {
   font-size: 35px;
   font-weight: 300;
-  margin: 30px 0 0;
+  margin: 22px 0 0;
 }
 
 .resume-h3 {
   color: #8b9792;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 18px 0 3px;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 16.5px 0 1px;
 
   a {
     &:visited {
@@ -202,20 +214,27 @@
   margin: 2.5px 0;
 }
 
+.bold-unbold {
+  margin: 4px 0 4.5px;
+}
+
 .resume-bold {
-  font-size: 14.7px;
+  font-size: 16px;
   font-weight: 700;
+
+  @include media('<1100px') {
+    display: inline-block;
+	}
 }
 
 .resume-semi {
   font-size: 13.7px;
   font-weight: 500;
+  margin-left: 5px;
 }
 
 .resume-unbold {
-  color: #8c8c8c;
-  font-size: 13px;
-  font-weight: 400;
+  @extend %light-gray-text;
   margin-left: 3px;
 }
 
@@ -251,14 +270,15 @@
     background-color: #f9f9f9;
     border-radius: 2px;
     max-width: 500px;
-    padding: 25px 15px 20px;
+    padding: 30px 35px 30px;
+    text-align: left;
     width: 100%;
 
 	}
 
   @include media('>750px', '<1100px') {
     margin-left: none;
-    max-width: 620px;
+    max-width: 560px;
     width: 100%;
 	}
 }
@@ -270,6 +290,8 @@
 #compinfo,
 #datascience,
 #logrhythm,
+#humboldt,
+#cuboulder,
 #pythondev {
   @include media('<1100px') {
     display: none;
@@ -281,6 +303,8 @@
 #eduinfobtn,
 #datasciencebtn,
 #logrhythmbtn,
+#humboldtbtn,
+#cuboulderbtn,
 #pythondevbtn {
   @include media('<1100px') {
     margin-bottom: 15px;
@@ -303,7 +327,7 @@
 .leftcolumn {
   float: left;
   margin-left: 60px;
-  width: 50%;
+  width: 50.3%;
 
   @include media('<1100px') {
     align-items: center;
@@ -318,15 +342,22 @@
 }
 
 .responsibilities {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6em;
-  margin: 18px 0;
+  @extend %modified-p;
+  margin: 16px 0;
   width: 95%;
 
   @include media('<1100px') {
     margin: 18px 0 18px 2.5%;
+    text-align: left;
+  }
+
+  @include media('<750px') {
+    padding: 19px;
 	}
+
+  @include media('>750px', '<1100px') {
+    padding: 25px;
+  }
 }
 
 .bullet-diamond {
@@ -342,8 +373,42 @@
 	}
 }
 
+.task-text {
+  @include media('<750px') {
+    display: block;
+    margin: -22px 0 5px 20px;
+  }
+  @include media('>750px', '<1100px') {
+    display: block;
+    margin: -20px 0 5px 20px;
+  }
+}
+
+.task-children {
+  list-style: none;
+  counter-reset: custom-counter;
+  margin: 6px 0 6px 11px;
+
+  li {
+    counter-increment: custom-counter;
+
+    @include media('<1100px') {
+      margin-left: 20px
+    }
+
+    &::before {
+      content: counter(custom-counter) ". ";
+      @extend %light-gray-text;
+
+      @include media('<1100px') {
+        margin-left: -15px
+    	}
+    }
+  }
+}
+
 .extra-br {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .ub-linebreak::before {
@@ -354,15 +419,11 @@
 }
 
 .job-summary {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6em;
   margin-bottom: 15px;
   width: 96%;
 
   @include media('<1100px') {
     margin-left: 4px;
-    text-align: center;
     width: 97%;
 	}
 }
@@ -389,14 +450,14 @@
 }
 
 .school {
-  margin: 15px 0;
+  margin: 12px 0;
 }
 
 .complang,
 .education,
 .personaldata {
   p {
-    margin-top: 3px;
+    @extend %modified-p;
 	}
 }
 

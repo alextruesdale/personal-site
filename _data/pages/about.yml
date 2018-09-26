@@ -10,32 +10,48 @@ intro:
   list:
     - "International business & technology"
     - "Pastries & warm beverages from around the world"
-    - "Film photography (yes, one of those)"
+    - "Film photography and taking it easy"
 
 content:
   - class: bh1
     header: Development, Business & An International Career
     text:
-      - "My interests in business systems and web applications have led me to furiously clattering
-        upon my keyboard, sharpening front-end fundamentals and nurturing a budding interest in
-        back-end architecture."
+      - "My interests have always lain someplace in the space between creativity and logic. When I
+        was younger, I spent much of my time drawing intricate art pieces in a very meticulous manner,
+        spending hours making, re-making, and re-re-making perfectly clean lines and angles."
 
-      - "A career in cutting edge tech, however, is just one component to an exciting life; I am also
-        drawn to the challenge and experience that comes with living abroad amongst a new culture.
-        Combining this and career ambitions, I have spent much of the last year living and working
-        in Berlin, Germany."
+      - "When searching for a fulfilling careerpath, I've courted, alongside studies at business
+        school, disciplines on either end of the spectrum: artist, data scientist, and digital
+        marketing guy (of different flavours). With each exposure, professionally or at university,
+        I've continued to move toward the center – where business meets technology, where creativity
+        meets structure. Though I no longer make the drawings that I used to, I still like working with
+        my hands and making beautiful things, which has led me to discover the wonders of programming.
+        I have worked in both visual (front-end) and functional (data-processing / analysis) capacities
+        with expertise derived from self-teaching and professional working experience."
+
+      - "A career in business and tech, however, is just one component to an exciting life; I am also
+        drawn to the challenges and learnings that come with getting out there – traveling and living
+        amongst new cultures. Combining this with career ambitions: I have spent much of the last years
+        living and working in Berlin, Germany, and am now putting down more permanently roots here."
 
   - class: bh2
     header: Why Move to Germany?
     text:
-      - "At first, I chose Berlin somewhat at random. However, following the expat tradition, I quickly
-        developed a fondness for the city, making plans to settle more permanently. Seeking a broader worldview and international
-        professional experience, life in Berlin has been rich and rewarding, working with colleagues from all over the world and
-        laying the foundation for future ambitions abroad."
+      - "At first, I chose Berlin somewhat at random. I originally moved here for an internship
+        two-and-a-half years ago and have since bounced back and forth between Berlin and my first
+        home (Boulder, Colorado). Over that time, however, I grew to feel more comfortable in
+        Berlin, where I've developed meaningful relationships and a fondness for the unique city
+        culture."
+
+      - "Now, I have relocated here more permanently and have begun a master's study in Wirtschaftsinformatik
+        at the Humboldt Universität zu Berlin. For the forseeable future, I look forward to contining
+        to work and study with colleagues from all over the world, laying the foundation for future
+        ambitions in Germany and beyond."
 
   - class: bh3
     header: Photography
     text:
-      - "Outside of professional life, film photography is a pleasant change of pace from the digital world.
-        Unlike when working with code, the live-medium of film allows for a less rigid creative experience where errors
-        in process or materials have the potential to produce interesting and unexpected results."
+      - "Outside of professional life, film photography is a pleasant change of pace from the digital
+        world. Unlike when working with code, the live-medium of film allows for a less rigid creative
+        experience where errors in process or materials have the potential to produce interesting and
+        unexpected results."

@@ -11,6 +11,10 @@ require('./nodes/index_bkg');
 
 require('./nodes/photography/photo_menu');
 
+require('./nodes/photography/jquery.visible.js');
+
+require('./nodes/photography/in_viewport');
+
 require('./nodes/photography/gallery_introduction');
 
 require('./nodes/photography/lightbox');
@@ -25,7 +29,7 @@ require('./nodes/menu_toggle');
 
 require('./nodes/smooth_scroll');
 
-},{"./nodes/bkg_fade/about_bkg_fade":2,"./nodes/bkg_fade/photography_bkg_fade":3,"./nodes/image_fade/gallery_fade":4,"./nodes/image_fade/photo_fade":5,"./nodes/image_preload":6,"./nodes/index_bkg":7,"./nodes/menu_toggle":8,"./nodes/photography/gallery_introduction":9,"./nodes/photography/lightbox":10,"./nodes/photography/photo_menu":11,"./nodes/resume_button_exp":12,"./nodes/smooth_scroll":13}],2:[function(require,module,exports){
+},{"./nodes/bkg_fade/about_bkg_fade":2,"./nodes/bkg_fade/photography_bkg_fade":3,"./nodes/image_fade/gallery_fade":4,"./nodes/image_fade/photo_fade":5,"./nodes/image_preload":6,"./nodes/index_bkg":7,"./nodes/menu_toggle":8,"./nodes/photography/gallery_introduction":9,"./nodes/photography/in_viewport":10,"./nodes/photography/jquery.visible.js":11,"./nodes/photography/lightbox":12,"./nodes/photography/photo_menu":13,"./nodes/resume_button_exp":14,"./nodes/smooth_scroll":15}],2:[function(require,module,exports){
 'use strict';
 
 $(window).scroll(function () {
@@ -93,7 +97,7 @@ $(function () {
 'use strict';
 
 var images = [];
-var imageFiles = ['/images/index_background/backgroundblue2.png', '/images/index_background/backgroundblue1.png', '/images/index_background/backgroundred2.png', '/images/index_background/backgroundred1.png', '/images/404small.png', '/images/404.png', '/images/about_images/about_bkgd_blur.jpg', '/images/resume_images/Résumé.pdf', '/images/resume_images/resumehead.png', '/images/resume_images/resumeleft.png', '/images/gallery_images/photo_bkgd_blur.jpg', '/images/photography/teaser/Belgium_blur.png', '/images/photography/teaser/Berlin_blur.png', '/images/photography/teaser/Copenhagen_blur.png', '/images/photography/teaser/Dresden_blur.png', '/images/photography/teaser/Hamburg_blur.png', '/images/photography/teaser/Leipzig_blur.png', '/images/photography/teaser/Norway_blur.png', '/images/photography/teaser/Paris_blur.png', '/images/photography/teaser/Prague_blur.png', '/images/photography/teaser/Stralsund_blur.png', '/images/photography/teaser/UK_blur.png', '/images/photography/teaser/Weimar_blur.png'];
+var imageFiles = ['/images/index_background/backgroundblue2.png', '/images/index_background/backgroundblue1.png', '/images/index_background/backgroundred2.png', '/images/index_background/backgroundred1.png', '/images/404small.png', '/images/404.png', '/images/about_images/about_bkgd_blur.jpg', '/images/resume_images/Résumé.pdf', '/images/resume_images/resumehead.png', '/images/resume_images/resumeleft.png', '/images/gallery_images/photo_bkgd_blur.jpg', '/images/photography/teaser/Belgium_blur.jpg', '/images/photography/teaser/Berlin_blur.jpg', '/images/photography/teaser/Copenhagen_blur.jpg', '/images/photography/teaser/Dresden_blur.jpg', '/images/photography/teaser/Hamburg_blur.jpg', '/images/photography/teaser/Leipzig_blur.jpg', '/images/photography/teaser/Norway_blur.jpg', '/images/photography/teaser/Paris_blur.jpg', '/images/photography/teaser/Prague_blur.jpg', '/images/photography/teaser/Stralsund_blur.jpg', '/images/photography/teaser/UK_blur.jpg', '/images/photography/teaser/Weimar_blur.jpg'];
 
 function preload() {
 	for (var i = 0; i < imageFiles.length; i += 1) {
@@ -183,7 +187,6 @@ $(function () {
 
   for (var i = toggles.length - 1; i >= 0; i -= 1) {
     var toggle = toggles[i];
-
     toggleHandler(toggle);
   }
 
@@ -229,6 +232,93 @@ $(function () {
 },{}],10:[function(require,module,exports){
 'use strict';
 
+$(document).ready(function () {
+  if ($(window).width() <= 800) {
+    $(window).scroll(function () {
+      $('.gallery-wrapper').each(function () {
+        var image = $(this).children(':nth-child(3)');
+        var timeDelay = 1600;
+
+        if ($(this).visible(true)) {
+          $(image).addClass('hover', timeDelay);
+        } else {
+          $(image).removeClass('hover', timeDelay);
+        };
+      });
+    });
+  };
+});
+
+},{}],11:[function(require,module,exports){
+'use strict';
+
+(function ($) {
+
+    /**
+     * Copyright 2012, Digital Fusion
+     * Licensed under the MIT license.
+     * http://teamdf.com/jquery-plugins/license/
+     *
+     * @author Sam Sehnert
+     * @desc A small plugin that checks whether elements are within
+     *       the user visible viewport of a web browser.
+     *       can accounts for vertical position, horizontal, or both
+     */
+    var $w = $(window);
+    $.fn.visible = function (partial, hidden, direction, container) {
+
+        if (this.length < 1) return;
+
+        // Set direction default to 'both'.
+        direction = direction || 'both';
+
+        var $t = this.length > 1 ? this.eq(0) : this,
+            isContained = typeof container !== 'undefined' && container !== null,
+            $c = isContained ? $(container) : $w,
+            wPosition = isContained ? $c.position() : 0,
+            t = $t.get(0),
+            vpWidth = $c.outerWidth(),
+            vpHeight = $c.outerHeight(),
+            clientSize = hidden === true ? t.offsetWidth * t.offsetHeight : true;
+
+        if (typeof t.getBoundingClientRect === 'function') {
+
+            // Use this native browser method, if available.
+            var rec = t.getBoundingClientRect(),
+                tViz = isContained ? rec.top - wPosition.top >= 0 && rec.top < vpHeight + wPosition.top : rec.top >= 0 && rec.top < vpHeight,
+                bViz = isContained ? rec.bottom - wPosition.top > 0 && rec.bottom <= vpHeight + wPosition.top : rec.bottom > 0 && rec.bottom <= vpHeight,
+                lViz = isContained ? rec.left - wPosition.left >= 0 && rec.left < vpWidth + wPosition.left : rec.left >= 0 && rec.left < vpWidth,
+                rViz = isContained ? rec.right - wPosition.left > 0 && rec.right < vpWidth + wPosition.left : rec.right > 0 && rec.right <= vpWidth,
+                vVisible = partial ? tViz || bViz : tViz && bViz,
+                hVisible = partial ? lViz || rViz : lViz && rViz,
+                vVisible = rec.top < 0 && rec.bottom > vpHeight ? true : vVisible,
+                hVisible = rec.left < 0 && rec.right > vpWidth ? true : hVisible;
+
+            if (direction === 'both') return clientSize && vVisible && hVisible;else if (direction === 'vertical') return clientSize && vVisible;else if (direction === 'horizontal') return clientSize && hVisible;
+        } else {
+
+            var viewTop = isContained ? 0 : wPosition,
+                viewBottom = viewTop + vpHeight,
+                viewLeft = $c.scrollLeft(),
+                viewRight = viewLeft + vpWidth,
+                position = $t.position(),
+                _top = position.top,
+                _bottom = _top + $t.height(),
+                _left = position.left,
+                _right = _left + $t.width(),
+                compareTop = partial === true ? _bottom : _top,
+                compareBottom = partial === true ? _top : _bottom,
+                compareLeft = partial === true ? _right : _left,
+                compareRight = partial === true ? _left : _right;
+
+            if (direction === 'both') return !!clientSize && compareBottom <= viewBottom && compareTop >= viewTop && compareRight <= viewRight && compareLeft >= viewLeft;else if (direction === 'vertical') return !!clientSize && compareBottom <= viewBottom && compareTop >= viewTop;else if (direction === 'horizontal') return !!clientSize && compareRight <= viewRight && compareLeft >= viewLeft;
+        }
+    };
+})(jQuery);
+
+},{}],12:[function(require,module,exports){
+'use strict';
+
 $(function () {
   var images = $('.lb-trigger').map(function () {
     return $(this).attr('src');
@@ -245,21 +335,21 @@ $(function () {
   });
 
   $('.nav-arrow-next-lb, .nav-arrow-next-lb--mobile, #lb-image').click(function () {
-    imgLeft();
+    imgRight();
   });
 
   $('.nav-arrow-prev-lb, .nav-arrow-prev-lb--mobile').click(function () {
-    imgRight();
+    imgLeft();
   });
 
   $(document).keydown(function (e) {
     switch (e.which) {
       case 37:
-        imgRight();
+        imgLeft();
         break;
 
       case 39:
-        imgLeft();
+        imgRight();
         break;
 
       default:
@@ -269,7 +359,7 @@ $(function () {
     e.preventDefault();
   });
 
-  function imgLeft() {
+  function imgRight() {
     var current = $('#lb-image').attr('src');
     var currentloc = jQuery.inArray(current, images);
 
@@ -285,15 +375,16 @@ $(function () {
     }).fadeIn(500);
   }
 
-  function imgRight() {
+  function imgLeft() {
     var current = $('#lb-image').attr('src');
     var currentloc = jQuery.inArray(current, images);
 
-    if (currentloc === '0') {
+    if (currentloc === 0) {
       var replace = images.length - 1;
     } else {
 
       var replace = currentloc - 1;
+      console.log(replace);
     }
 
     $('#lb-image').fadeOut(500, function () {
@@ -308,7 +399,7 @@ $(function () {
   });
 });
 
-},{}],11:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 'use strict';
 
 $(function () {
@@ -327,7 +418,7 @@ $(function () {
   });
 });
 
-},{}],12:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 'use strict';
 
 $(function () {
@@ -345,7 +436,7 @@ $(function () {
 	});
 });
 
-},{}],13:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 'use strict';
 
 $(function () {

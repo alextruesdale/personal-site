@@ -102,12 +102,6 @@ a {
       font-size: 5.8vw;
       margin: 4vw 0 0 2vw; } }
 
-.intro-list-about {
-  margin-top: 2vw; }
-  @media (max-width: 1099px) {
-    .intro-list-about {
-      width: 95%; } }
-
 .intro-leadtext {
   color: #fff;
   font-size: 1.8vw;
@@ -148,7 +142,8 @@ a {
       margin: 0 0 0 2.45vw; } }
 
 .intro-list {
-  margin: 2vw 0 1vw 2vw; }
+  margin: 2vw 0 1vw 2vw;
+  width: 100%; }
   @media (max-width: 1099px) {
     .intro-list {
       font-size: 4.2vw;
@@ -1034,9 +1029,6 @@ nav {
       margin: 170px 0 80px; } }
 
 .content-main-about {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1056,19 +1048,45 @@ nav {
   .content-main-about {
     width: 82%; } }
 
-.portrait {
-  width: 30vw; }
+.image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   @media (max-width: 1099px) {
-    .portrait {
+    .image-container {
+      margin-left: -.5em; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .image-container {
+    margin-left: 2.2em; } }
+
+.portrait,
+.photo_photo {
+  width: 30vw;
+  margin: 0 0 0 10px;
+  -webkit-box-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.15); }
+  @media (max-width: 1099px) {
+    .portrait,
+    .photo_photo {
       margin-bottom: 25px;
       width: 87vw; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .portrait {
-    width: 81vw; } }
+  .portrait,
+  .photo_photo {
+    width: 73vw; } }
   @media (min-width: 1801px) {
-    .portrait {
+    .portrait,
+    .photo_photo {
       width: 28vw; } }
+
+.portrait {
+  margin-bottom: 10px; }
 
 .bio-content {
   margin: -1.25vw 3vw 0 2.5vw; }
@@ -1168,7 +1186,19 @@ nav {
       zoom: 1.4; } }
   @media (max-width: 1099px) {
     .container-resume br {
-      line-height: 2em; } }
+      display: none; } }
+
+.resume-unbold, .task-children li::before {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 400; }
+
+.responsibilities, .complang p,
+.education p,
+.personaldata p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6em; }
 
 .resume-header {
   -webkit-box-align: center;
@@ -1318,13 +1348,13 @@ nav {
 .section-title {
   font-size: 35px;
   font-weight: 300;
-  margin: 30px 0 0; }
+  margin: 22px 0 0; }
 
 .resume-h3 {
   color: #8b9792;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 18px 0 3px; }
+  font-size: 21px;
+  font-weight: 600;
+  margin: 16.5px 0 1px; }
   .resume-h3 a:visited {
     color: #8b9792; }
 
@@ -1333,18 +1363,22 @@ nav {
   font-weight: 400;
   margin: 2.5px 0; }
 
+.bold-unbold {
+  margin: 4px 0 4.5px; }
+
 .resume-bold {
-  font-size: 14.7px;
+  font-size: 16px;
   font-weight: 700; }
+  @media (max-width: 1099px) {
+    .resume-bold {
+      display: inline-block; } }
 
 .resume-semi {
   font-size: 13.7px;
-  font-weight: 500; }
+  font-weight: 500;
+  margin-left: 5px; }
 
 .resume-unbold {
-  color: #8c8c8c;
-  font-size: 13px;
-  font-weight: 400;
   margin-left: 3px; }
 
 .btn-wrapper,
@@ -1381,13 +1415,14 @@ nav {
       background-color: #f9f9f9;
       border-radius: 2px;
       max-width: 500px;
-      padding: 25px 15px 20px;
+      padding: 30px 35px 30px;
+      text-align: left;
       width: 100%; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
   .inner {
     margin-left: none;
-    max-width: 620px;
+    max-width: 560px;
     width: 100%; } }
 
 @media (max-width: 1099px) {
@@ -1398,6 +1433,8 @@ nav {
   #compinfo,
   #datascience,
   #logrhythm,
+  #humboldt,
+  #cuboulder,
   #pythondev {
     display: none; } }
 
@@ -1407,6 +1444,8 @@ nav {
   #eduinfobtn,
   #datasciencebtn,
   #logrhythmbtn,
+  #humboldtbtn,
+  #cuboulderbtn,
   #pythondevbtn {
     margin-bottom: 15px;
     margin-top: 15px; } }
@@ -1422,7 +1461,7 @@ nav {
 .leftcolumn {
   float: left;
   margin-left: 60px;
-  width: 50%; }
+  width: 50.3%; }
   @media (max-width: 1099px) {
     .leftcolumn {
       -webkit-box-align: center;
@@ -1444,14 +1483,19 @@ nav {
       width: 90%; } }
 
 .responsibilities {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6em;
-  margin: 18px 0;
+  margin: 16px 0;
   width: 95%; }
   @media (max-width: 1099px) {
     .responsibilities {
-      margin: 18px 0 18px 2.5%; } }
+      margin: 18px 0 18px 2.5%;
+      text-align: left; } }
+  @media (max-width: 749px) {
+    .responsibilities {
+      padding: 19px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .responsibilities {
+    padding: 25px; } }
 
 .bullet-diamond {
   background-color: #d9d9d9;
@@ -1466,8 +1510,33 @@ nav {
     .bullet-diamond {
       margin: 0 10px 0 0; } }
 
+@media (max-width: 749px) {
+  .task-text {
+    display: block;
+    margin: -22px 0 5px 20px; } }
+
+@media (min-width: 751px) and (max-width: 1099px) {
+  .task-text {
+    display: block;
+    margin: -20px 0 5px 20px; } }
+
+.task-children {
+  list-style: none;
+  counter-reset: custom-counter;
+  margin: 6px 0 6px 11px; }
+  .task-children li {
+    counter-increment: custom-counter; }
+    @media (max-width: 1099px) {
+      .task-children li {
+        margin-left: 20px; } }
+    .task-children li::before {
+      content: counter(custom-counter) ". "; }
+      @media (max-width: 1099px) {
+        .task-children li::before {
+          margin-left: -15px; } }
+
 .extra-br {
-  margin-bottom: 20px; }
+  margin-bottom: 19px; }
 
 @media (max-width: 1099px) {
   .ub-linebreak::before {
@@ -1475,15 +1544,11 @@ nav {
     white-space: pre; } }
 
 .job-summary {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6em;
   margin-bottom: 15px;
   width: 96%; }
   @media (max-width: 1099px) {
     .job-summary {
       margin-left: 4px;
-      text-align: center;
       width: 97%; } }
 
 #compinfo {
@@ -1514,12 +1579,7 @@ nav {
       width: 90%; } }
 
 .school {
-  margin: 15px 0; }
-
-.complang p,
-.education p,
-.personaldata p {
-  margin-top: 3px; }
+  margin: 12px 0; }
 
 .container-download {
   -webkit-box-align: center;
@@ -2227,6 +2287,10 @@ nav {
 
 .location-background {
   opacity: 0; }
+
+.hover {
+  -webkit-filter: saturate(100%);
+          filter: saturate(100%); }
 
 .location-background:hover {
   -webkit-filter: saturate(100%);

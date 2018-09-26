@@ -9,84 +9,91 @@ experience:
   section_title: Experience
 
   positions:
-    - pos_title: "Python Development Research Assistant"
+    - pos_title: "Engineering Research Assistant"
       company: "Leeds Natural Language Processing Lab"
-      duration: " – September 2017 to Present"
+      duration: "  Sep. 2017 – Aug. 2018"
       location: "Boulder, CO | United States"
-      job_sum: "Creation of a Python tool to prepare a large set of scanned images (Moody’s industry investment documents; early 1900s to 1990s) for digitisation and organisation as queryable data."
+      job_sum: "Iterative creation of a suite of Python tools to operate upon a large set of scanned microfiche documents (Moody’s investment docs; 1920s to '90s) and OCR scanning output of those images."
       tasks:
-        - "Design preliminary SQL database / table structure"
-        - "Documentation of code and processes for current and future contributors"
-        - "Develop object-oriented image processing algorithms to dynamically correct for scanning errors: rotation, scaling, cropping"
+        - main: "Developed object-oriented image and text processing algorithms to:"
+          children:
+            - "Dynamically correct for image scanning errors (rotation, cropping)"
+            - "Manually zone text and tables using OCR XML and text output"
+            - "Organise and analyse unstructured / error-prone OCR text output"
+
+        - main: "Remotely managed production jobs, input files, and final output on the university computing cluster via SSH and Slurm"
 
       mobile_expand: pythondev
 
-    - pos_title: "Data Science Research Assistant – Team Lead"
+    - pos_title: "Data Science Research Assistant"
       company: "CU Boulder, Leeds School of Business"
-      duration: " – May 2017 to September 2017"
+      duration: "  May 2017 – Sep. 2018"
       location: "Boulder, CO | United States"
-      job_sum: "Preparation of open-source Kaggle datasets to be used as case studies in machine learning publication using the auto machine learning app, DataRobot. Includes complete editing of book text and content."
+      job_sum: "Partnered with Dr. Kai Larsen in producing a publication on automated machine learning as an application / product (DataRobot)."
       tasks:
-        - "Clean datasets with missing / incomplete data"
-        - "Write case briefs for each dataset, guiding readers through exercises"
-        - "Organise team project deliverable specifications and deadlines"
+        - "Edited entirety of book text for content and copy refinement"
+        - "Prepared open-source Kaggle datasets as case studies"
+        - "Wrote case briefs and walkthroughs for readers"
 
       mobile_expand: datascience
 
     - pos_title: "Digital Marketing & Web Development Intern"
       company: "LogRhythm, inc."
-      duration: " – February 2017 to June 2017"
+      duration: "  Feb. 2017 – June 2017"
       location: "Boulder, CO | United States"
-      job_sum: "Part of a small digital team working with marketing sub-units (content, product, ops). Operational focus on website admin and scalable site architecture to accommodate business growth and market expansion."
+      job_sum: "Part of a small digital team responsible for website administration and scalable site architecture with input from other internal business units."
       tasks:
-        - "Web development technologies used: HTML, CSS, Jekyll, Liquid, Git"
-        - "Web analytics and tracking in Google Analytics / Tag Manager"
-        - "Workflow managed in Trello and weekly cross-functional Scrums"
+        - "Web dev. technologies used: HTML, CSS (SCSS), Jekyll, Liquid, Git"
+        - "Performed web analytics and tracking in Google Analytics / Tag Manager"
+        - "Managed workflow in Trello and weekly, cross-functional Scrum stand-ups"
 
       mobile_expand: logrhythm
 
     - pos_title: "Digital Marketing & Project Management Intern"
       company: "ctrl QS, GmbH"
-      duration: " – May 2016 to December 2016"
+      duration: "  May 2016 to Dec. 2016"
       location: "Berlin, Berlin | Germany"
-      job_sum: "Member of an international, multi-lingual team managing global digital marketing operations for NIVEA (Beiersdorf). Business focus on project management and client brand stewardship across 30+ markets globally."
+      job_sum: "Member of an international, multi-lingual team managing global digital marketing operations for NIVEA brands. Tasks focused on project management and client brand stewardship across 30+ markets globally."
       tasks:
-        - "Provided support for digital marketing systems to markets world-wide"
-        - "Project management communications involved aligning multiple stakeholders for high-budget projects; corporate client, partner agencies"
+        - "Provided internal client support for digital marketing systems world-wide"
+        - "Facilitated project mgmt. communications, aligning multiple stakeholders (corporate client & partner agencies) for high-budget projects."
 
       mobile_expand: ctrlqs
 
 education:
   section_title: "Education"
 
-  cu_boulder:
-    university: "University of Colorado, Boulder"
-    location: "Boulder, CO | United States"
+  institutions:
+    - university: "Humboldt-Universität zu Berlin"
+      location: "Berlin, Berlin | Germany"
 
-    school_data:
-      - school: "Leeds School of Business"
-        duration: " – Grad. December 2017"
-        degree: "Double BS-BA | Marketing & Information Management"
-        gpa:
-          gpa_text: "GPA"
-          gpa_num: " | 3.65 ( USA )"
+      mobile_expand: humboldt
 
-        linebreak: true
+      school_data:
+        - school: "Interdisciplinary | Business & Informatics"
+          duration: " – Current"
+          detail: "M.Sc. Wirtschaftsinformatik (Business Informatics)"
 
-      - school: "ATLAS Institute for Design"
-        duration: " – Completed May 2016"
-        degree: "Certificate | Technology, Arts & Media"
+    - university: "University of Colorado, Boulder"
+      location: "Boulder, CO | United States"
 
-        linebreak: true
+      mobile_expand: cuboulder
 
-  other_edu:
-    - school: "University of Wollongong"
-      location: "Wollongong, NSW | Australia"
-      desc: "Semester Abroad"
-      duration: " – February 2014 to July 2014"
+      school_data:
+        - school: "Leeds School of Business"
+          duration: " – Grad. Dec. 2017"
+          detail: "B.Sc. Double-Emphasis | Marketing & Information Mgmt."
+
+        - school: "ATLAS School of Design"
+          duration: " – Completed May 2016"
+          detail: "Certificate | Technology, Arts & Media"
+
+        - school: "Semester Abroad"
+          duration: " – Spring / Summer 2014"
+          detail: "University of Wollongong, NSW, Australia"
 
 comp_lang:
-  section_title: "Computer & Language"
+  section_title: "Language & Computer"
 
   skills:
     lang:
@@ -94,26 +101,21 @@ comp_lang:
         - skill: "English  "
           level: "native speaker"
         - skill: "German  "
-          level: "advanced beginner (A2.2)"
+          level: "intermediate (B2)"
 
     digital:
       title: "Design & Front-End"
       details:
         - skill: "Adobe Photoshop / Illustrator  "
           level: "proficient"
-        - skill: "HTML5  "
+        - skill: "HTML / CSS"
+          desc:  "(SCSS & Flexbox)  "
           level: "proficient"
-        - skill: "CSS3 "
-          desc:  "(SCSS)  "
-          level: "proficient"
-        - skill: "Liquid "
+        - skill: "Javascript "
+          level: "competent"
+        - skill: "Liquid"
           desc:  "(Templating Language)  "
           level: "competent"
-        - skill: "Javascript "
-          desc:  "(JQuery)  "
-          level: "competent"
-        - skill: "Google Analytics Certification"
-          level: false
 
     data_prog:
       title: "Programming & Data Analysis"
@@ -144,12 +146,12 @@ personal_data:
       content: " 08 October, 1993"
     - data: "Nationality  "
       content: "  United States"
-    - data: "Address  "
-      content: " 1711 W. Barberry Cir. | 80027 Louisville, CO, USA"
     - data: "Phone  "
-      content: " EU +44 07957 528587"
-      content_second: " US +1 303 594 5068"
+      content: " +44 7957 528587"
+      hyperlink: "tel:+447957528587"
     - data: "Email  "
       content: " alex.truesdale@colorado.edu"
+      hyperlink: "mailto:alex.truesdale@colorado.edu"
     - data: "Skype  "
       content: " awtruesdale"
+      hyperlink: "https://join.skype.com/invite/cf5e849C80xt"

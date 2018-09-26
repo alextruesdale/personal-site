@@ -14,21 +14,21 @@ $(function() {
   });
 
   $('.nav-arrow-next-lb, .nav-arrow-next-lb--mobile, #lb-image').click(function() {
-    imgLeft()
+    imgRight()
   });
 
   $('.nav-arrow-prev-lb, .nav-arrow-prev-lb--mobile').click(function() {
-    imgRight()
+    imgLeft()
   });
 
   $(document).keydown(function(e) {
     switch (e.which) {
         case 37:
-        imgRight()
+        imgLeft()
         break;
 
         case 39:
-        imgLeft()
+        imgRight()
         break;
 
         default: return;
@@ -37,7 +37,7 @@ $(function() {
         e.preventDefault();
   });
 
-  function imgLeft() {
+  function imgRight() {
     var current = $('#lb-image').attr('src')
     var currentloc = jQuery.inArray(current, images)
 
@@ -55,16 +55,17 @@ $(function() {
     .fadeIn(500);
   }
 
-  function imgRight() {
+  function imgLeft() {
     var current = $('#lb-image').attr('src')
     var currentloc = jQuery.inArray(current, images)
 
-    if (currentloc === '0') {
+    if (currentloc === 0) {
       var replace = images.length - 1
 
     } else {
 
       var replace = currentloc - 1
+      console.log(replace);
     }
 
     $('#lb-image').fadeOut(500, function() {
