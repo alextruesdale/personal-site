@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  if ($(window).width() <= 800) {
+  if ($(window).width() <= 1100) {
     $(window).scroll(function() {
       $('.gallery-wrapper').each(function() {
         var image = $(this).children(':nth-child(3)')
