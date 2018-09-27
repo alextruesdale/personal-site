@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Berlin
-description: Alex Truesdale | Development & design for business applications.. and photos on occasion.
+description: Alex Truesdale | Development & design.. and photos.
 permalink: /photography/galleries/berlin_6/
 foot_includes:
   - gallery_preload

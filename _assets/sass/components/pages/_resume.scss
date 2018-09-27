@@ -224,18 +224,34 @@
 
   @include media('<1100px') {
     display: inline-block;
-	}
+    margin-bottom: 4px;
+  }
+}
+
+.rightcolumn .resume-bold {
+    @include media('<1100px') {
+      display: inline-block;
+      margin: 0 5px 0 0px;
+  	}
 }
 
 .resume-semi {
   font-size: 13.7px;
   font-weight: 500;
   margin-left: 5px;
+
+  @include media('<1100px') {
+    margin-left: 0;
+  }
 }
 
 .resume-unbold {
   @extend %light-gray-text;
   margin-left: 3px;
+
+  @include media('<1100px') {
+    margin-left: 0;
+  }
 }
 
 .btn-wrapper,

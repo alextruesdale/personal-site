@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Dresden
-description: Alex Truesdale | Development & design for business applications.. and photos on occasion.
+description: Alex Truesdale | Development & design.. and photos.
 permalink: /photography/galleries/dresden_2/
 foot_includes:
   - gallery_preload

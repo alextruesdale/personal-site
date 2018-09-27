@@ -147,7 +147,8 @@ a {
   @media (max-width: 1099px) {
     .intro-list {
       font-size: 4.2vw;
-      width: 95%; } }
+      width: 95%;
+      margin: 0; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
   .intro-list {
@@ -1371,15 +1372,27 @@ nav {
   font-weight: 700; }
   @media (max-width: 1099px) {
     .resume-bold {
-      display: inline-block; } }
+      display: inline-block;
+      margin-bottom: 4px; } }
+
+@media (max-width: 1099px) {
+  .rightcolumn .resume-bold {
+    display: inline-block;
+    margin: 0 5px 0 0px; } }
 
 .resume-semi {
   font-size: 13.7px;
   font-weight: 500;
   margin-left: 5px; }
+  @media (max-width: 1099px) {
+    .resume-semi {
+      margin-left: 0; } }
 
 .resume-unbold {
   margin-left: 3px; }
+  @media (max-width: 1099px) {
+    .resume-unbold {
+      margin-left: 0; } }
 
 .btn-wrapper,
 .expbutton {
@@ -2153,7 +2166,7 @@ nav {
   @media (max-width: 1099px) {
     .location-title {
       font-size: 15vw;
-      margin-top: 55px 0 0;
+      margin: 55px 0 0 0;
       text-align: center; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
