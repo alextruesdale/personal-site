@@ -19,50 +19,11 @@
           {% endif %}
         {% endfor %}
       </ul>
+      <h3 class="site-link"><a href="http://{{ resume.head.website.url }}">{{ resume.head.website.url }}</a></h3>
     </div>
   </div>
 
   <div class="leftcolumn">
-    <div class="experience">
-      <h2 class="section-title">{{ resume.experience.section_title }}</h2>
-
-      {% for position in resume.experience.positions %}
-        <h3 class="resume-h3">{{ position.pos_title }}</h3>
-        <p class="bold-unbold"><span class="resume-bold">{{ position.company }}</span><span class="resume-unbold ub-linebreak">{{ position.duration }}</span></p>
-        <h5 class="resume-h5">{{ position.location }}</h5>
-
-        <div class="btn-wrapper">
-          <div id="{{ position.mobile_expand }}btn" class="expbutton">
-            Expand
-          </div>
-        </div>
-
-        <div id="{{ position.mobile_expand }}" class="responsibilities inner">
-          <p class="job-summary">{{ position.job_sum }}</p>
-          {% for task in position.tasks %}
-
-            {% if task.main %}
-              {% if task.children %}
-                <div class="bullet-diamond"></div><span class="task-text">{{ task.main }}</span><br>
-                  <ol class="task-children">
-                    {% for child in task.children %}
-                      <li>{{ child }}</li>
-                    {% endfor %}
-                  </ol>
-              {% else %}
-                <div class="bullet-diamond"></div><span class="task-text">{{ task.main }}</span><br>
-              {% endif %}
-
-            {% else %}
-              <div class="bullet-diamond"></div><span class="task-text">{{ task }}</span><br>
-            {% endif %}
-          {% endfor %}
-        </div>
-      {% endfor%}
-    </div>
-  </div>
-
-  <div class="rightcolumn">
     <div class="education">
       <h2 class="section-title">{{ resume.education.section_title }}</h2>
       {% for institution in resume.education.institutions %}
@@ -91,7 +52,24 @@
         <p><span class="resume-bold">{{ uni.desc }}</span><span class="resume-unbold {% if uni.linebreak %}ub-linebreak{% endif %}">{{ uni.duration }}</span></p>
       {% endfor %}
     </div>
+    <div class="projects">
+      <h2 class="section-title">{{ resume.projects.section_title }}</h2>
 
+      {% for project in resume.projects.projects %}
+        <h3 class="resume-h3">{{ project.name }}<a href="{{ project.url }}" target="blank"><img class="code-link-img" src="/images/resume_images/to_code.png"></a></h3>
+
+        <div class="btn-wrapper">
+          <div id="{{ project.mobile_expand }}btn" class="expbutton">
+            Expand
+          </div>
+        </div>
+
+        <div id="{{ project.mobile_expand }}" class="project inner">
+          <p class="bold-unbold"><span class="resume-bold">Technologies: </span><span class="resume-unbold"> {{ project.technologies }}</span></p>
+          <p class="project-summary">{{ project.description }}</p>
+        </div>
+      {% endfor%}
+    </div>
     <div class="complang">
       <h2 class="section-title">{{ resume.comp_lang.section_title }}</h2>
 
@@ -122,9 +100,50 @@
         {% endfor %}
       </div>
     </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="experience">
+      <h2 class="section-title">{{ resume.experience.section_title }}</h2>
+
+      {% for position in resume.experience.positions %}
+        <h3 class="resume-h3">{{ position.pos_title }}</h3>
+        <p class="bold-unbold"><span class="resume-bold">{{ position.company }}</span><span class="resume-unbold ub-linebreak">{{ position.duration }}</span></p>
+        <h5 class="resume-h5">{{ position.location }}</h5>
+
+        <div class="btn-wrapper">
+          <div id="{{ position.mobile_expand }}btn" class="expbutton">
+            Expand
+          </div>
+        </div>
+
+        <div id="{{ position.mobile_expand }}" class="responsibilities inner">
+          <p class="job-summary">{{ position.job_sum }}</p>
+          {% for task in position.tasks %}
+
+            {% if task.main %}
+              {% if task.children %}
+                <div class="bullet-diamond"></div><span class="task-text">{{ task.main }}</span><br>
+                  <ol class="task-children">
+                    {% for child in task.children %}
+                      <li>{{ child }}</li>
+                    {% endfor %}
+                  </ol>
+              {% elsif task.multiline %}
+                <div class="bullet-diamond"></div><span class="task-text-multi">{{ task.multiline }}</span><br>
+              {% else %}
+                <div class="bullet-diamond"></div><span class="task-text">{{ task.main }}</span><br>
+              {% endif %}
+
+            {% else %}
+              <div class="bullet-diamond"></div><span class="task-text">{{ task }}</span><br>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endfor%}
+    </div>
     <div class="personaldata">
       <h2 class="section-title">{{ resume.personal_data.section_title }}</h2>
-      <h3 class="resume-h3 extra-br">{{ resume.personal_data.website.lead }}<a href="http://{{ resume.personal_data.website.url }}">{{ resume.personal_data.website.url }}</a></h3>
 
       <div class="btn-wrapper">
         <div id="persinfobtn" class="expbutton">
@@ -132,7 +151,7 @@
         </div>
       </div>
 
-      <div id="persinfo" class="inner">
+      <div id="persinfo" class="responsibilities inner">
         {% for data in resume.personal_data.data %}
           <p><span class="resume-bold">{{ data.data }}</span>{% if data.hyperlink %}<a href="{{ data.hyperlink }}"><span class="resume-unbold">{{ data.content }}</span></a>{% else %}<span class="resume-unbold">{{ data.content }}</span>{% endif %}</p>
         {% endfor %}

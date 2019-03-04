@@ -3,7 +3,10 @@ head:
   areas:
     - Development
     - Design
-    - Analytics
+    - Data
+
+  website:
+    url: "www.alextruesdale.net"
 
 experience:
   section_title: Experience
@@ -21,7 +24,8 @@ experience:
             - "Manually zone text and tables using OCR XML and text output"
             - "Organise and analyse unstructured / error-prone OCR text output"
 
-        - main: "Remotely managed production jobs, input files, and final output on the university computing cluster via SSH and Slurm"
+        - main: ""
+          multiline: "Remotely managed production jobs, input files, and final output on the university computing cluster via SSH and Slurm"
 
       mobile_expand: pythondev
 
@@ -44,8 +48,7 @@ experience:
       job_sum: "Part of a small digital team responsible for website administration and scalable site architecture with input from other internal business units."
       tasks:
         - "Web dev. technologies used: HTML, CSS (SCSS), Jekyll, Liquid, Git"
-        - "Performed web analytics and tracking in Google Analytics / Tag Manager"
-        - "Managed workflow in Trello and weekly, cross-functional Scrum stand-ups"
+        - "Managed workflow in Trello and weekly, cross-functional stand-ups"
 
       mobile_expand: logrhythm
 
@@ -54,9 +57,6 @@ experience:
       duration: "  May 2016 to Dec. 2016"
       location: "Berlin, Berlin | Germany"
       job_sum: "Member of an international, multi-lingual team managing global digital marketing operations for NIVEA brands. Tasks focused on project management and client brand stewardship across 30+ markets globally."
-      tasks:
-        - "Provided internal client support for digital marketing systems world-wide"
-        - "Facilitated project mgmt. communications, aligning multiple stakeholders (corporate client & partner agencies) for high-budget projects."
 
       mobile_expand: ctrlqs
 
@@ -70,8 +70,8 @@ education:
       mobile_expand: humboldt
 
       school_data:
-        - school: "Interdisciplinary | Business & Informatics"
-          duration: " – Current"
+        - school: "School of Business & Economics"
+          duration: " – Oct. 2018 to Current"
           detail: "M.Sc. Wirtschaftsinformatik (Business Informatics)"
 
     - university: "University of Colorado, Boulder"
@@ -92,6 +92,28 @@ education:
           duration: " – Spring / Summer 2014"
           detail: "University of Wollongong, NSW, Australia"
 
+projects:
+  section_title: "Projects"
+
+  projects:
+    - name: "Berlin Property Social Analysis"
+      url: "https://github.com/alextruesdale/berlin-property-social-analysis"
+      technologies: "Python, Pandas, MongoDB, HTML, JS"
+      description: "Constructed class-based data pipeline for extraction and storage of data
+                    from multiple sources (APIs / Web scraping) to be used in price-effect
+                    correlation analysis."
+
+      mobile_expand: berlinanalysis
+
+    - name: "Clothing Returns Prediction"
+      url: "https://github.com/alextruesdale/clothing-returns-prediction"
+      technologies: "Python, Pandas, scikit-learn, XGBoost"
+      description: "Applied cost-sensitive, machine learning classification of online retail
+                    returns following extensive data cleaning and feature engineering for
+                    preparation of raw data."
+
+      mobile_expand: clothingreturns
+
 comp_lang:
   section_title: "Language & Computer"
 
@@ -101,28 +123,28 @@ comp_lang:
         - skill: "English  "
           level: "native speaker"
         - skill: "German  "
-          level: "intermediate (B2)"
+          level: "proficient (B2 / C1)"
 
     digital:
       title: "Design & Front-End"
       details:
-        - skill: "Adobe Photoshop / Illustrator  "
-          level: "proficient"
-        - skill: "HTML / CSS"
-          desc:  "(SCSS & Flexbox)  "
-          level: "proficient"
         - skill: "Javascript "
           level: "competent"
+        - skill: "HTML / CSS"
+          desc:  "(SCSS)  "
+          level: "proficient"
         - skill: "Liquid"
-          desc:  "(Templating Language)  "
+          desc:  "(Templating)  "
           level: "competent"
 
     data_prog:
       title: "Programming & Data Analysis"
       details:
         - skill: "Python  "
-          level: "competent"
+          level: "proficient"
         - skill: "SQL  "
+          level: "competent"
+        - skill: "MongoDB  "
           level: "competent"
 
     work_vcontrol:
@@ -137,11 +159,9 @@ comp_lang:
 
 personal_data:
   section_title: "Personal Data"
-  website:
-    lead: "Website | "
-    url: "www.alextruesdale.net"
-
   data:
+    - data: "Address  "
+      content: "Lichtenrader Straße 16a, 12049 Berlin"
     - data: "Date of Birth  "
       content: " 08 October, 1993"
     - data: "Nationality  "

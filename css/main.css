@@ -838,7 +838,7 @@ nav {
   -webkit-filter: saturate(0%) brightness(160%) contrast(80%);
           filter: saturate(0%) brightness(160%) contrast(80%);
   height: auto;
-  position: absolute;
+  position: fixed;
   right: 8px;
   top: 10px;
   -webkit-transition: all .17s ease-in-out;
@@ -847,7 +847,6 @@ nav {
   z-index: 1100; }
   @media (max-width: 1099px) {
     .menu-bird {
-      position: fixed;
       right: 5px;
       top: 10px;
       width: 55px; } }
@@ -1165,13 +1164,13 @@ nav {
   overflow: auto;
   padding: 50px 0 60px;
   position: relative;
-  width: 72%;
+  width: 78%;
   z-index: 950; }
   @media (max-width: 1099px) {
     .container-resume {
       margin: 25px auto 0;
       padding: 20px 0 30px;
-      width: 90%;
+      width: 92%;
       zoom: .9; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
@@ -1194,12 +1193,12 @@ nav {
   font-size: 14px;
   font-weight: 400; }
 
-.responsibilities, .complang p,
+.responsibilities, .project, .complang p,
 .education p,
 .personaldata p {
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.6em; }
+  line-height: 1.5em; }
 
 .resume-header {
   -webkit-box-align: center;
@@ -1304,8 +1303,8 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: -14px;
-  width: 89%; }
+  margin: 0px 0 -5px -8px;
+  width: 70%; }
   @media (max-width: 1099px) {
     .reshead-areas {
       display: -webkit-box;
@@ -1347,16 +1346,21 @@ nav {
   width: 6px; }
 
 .section-title {
-  font-size: 35px;
+  font-size: 31px;
   font-weight: 300;
-  margin: 22px 0 0; }
+  margin: 22px 0 0 -1px; }
 
-.resume-h3 {
+.resume-h3, .site-link {
   color: #8b9792;
   font-size: 21px;
   font-weight: 600;
-  margin: 16.5px 0 1px; }
-  .resume-h3 a:visited {
+  margin: 12px 0 1px; }
+  .resume-h3 a:visited, .site-link a:visited {
+    color: #8b9792; }
+
+.site-link {
+  font-weight: 400; }
+  .site-link a:visited {
     color: #8b9792; }
 
 .resume-h5 {
@@ -1369,7 +1373,7 @@ nav {
 
 .resume-bold {
   font-size: 16px;
-  font-weight: 700; }
+  font-weight: 600; }
   @media (max-width: 1099px) {
     .resume-bold {
       display: inline-block;
@@ -1390,9 +1394,6 @@ nav {
 
 .resume-unbold {
   margin-left: 3px; }
-  @media (max-width: 1099px) {
-    .resume-unbold {
-      margin-left: 0; } }
 
 .btn-wrapper,
 .expbutton {
@@ -1448,7 +1449,10 @@ nav {
   #logrhythm,
   #humboldt,
   #cuboulder,
-  #pythondev {
+  #pythondev,
+  #berlinanalysis,
+  #clothingreturns,
+  #persinfo {
     display: none; } }
 
 @media (max-width: 1099px) {
@@ -1459,9 +1463,13 @@ nav {
   #logrhythmbtn,
   #humboldtbtn,
   #cuboulderbtn,
-  #pythondevbtn {
-    margin-bottom: 15px;
-    margin-top: 15px; } }
+  #pythondevbtn,
+  #berlinanalysisbtn,
+  #clothingreturnsbtn,
+  #persinfobtn,
+  #compinfobtn {
+    margin-bottom: 10px;
+    margin-top: 10px; } }
 
 @media (max-width: 1099px) {
   #compinfobtn {
@@ -1474,7 +1482,7 @@ nav {
 .leftcolumn {
   float: left;
   margin-left: 60px;
-  width: 50.3%; }
+  width: 42%; }
   @media (max-width: 1099px) {
     .leftcolumn {
       -webkit-box-align: center;
@@ -1495,48 +1503,62 @@ nav {
       text-align: center;
       width: 90%; } }
 
-.responsibilities {
-  margin: 16px 0;
+.responsibilities, .project {
+  margin: 13px 0;
   width: 95%; }
   @media (max-width: 1099px) {
-    .responsibilities {
+    .responsibilities, .project {
       margin: 18px 0 18px 2.5%;
       text-align: left; } }
   @media (max-width: 749px) {
-    .responsibilities {
+    .responsibilities, .project {
       padding: 19px; } }
 
 @media (min-width: 751px) and (max-width: 1099px) {
-  .responsibilities {
+  .responsibilities, .project {
     padding: 25px; } }
+
+.project {
+  margin: 0; }
 
 .bullet-diamond {
   background-color: #d9d9d9;
   display: inline-block;
   height: 7px;
-  margin: 0 12px 1.7px -19.5px;
+  margin: 0 12px 1.7px 0px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   width: 7px; }
   @media (max-width: 1099px) {
     .bullet-diamond {
-      margin: 0 10px 0 0; } }
+      margin: 0 10px 4px 0; } }
 
-@media (max-width: 749px) {
-  .task-text {
-    display: block;
-    margin: -22px 0 5px 20px; } }
+.code-link-img {
+  width: 20px;
+  margin-left: 7px;
+  -webkit-filter: opacity(40%);
+          filter: opacity(40%); }
 
-@media (min-width: 751px) and (max-width: 1099px) {
-  .task-text {
-    display: block;
-    margin: -20px 0 5px 20px; } }
+.task-text {
+  margin: 0 0 0 -2px; }
+  @media (max-width: 1099px) {
+    .task-text {
+      display: block;
+      margin: -22px 0 5px 20px; } }
+
+.task-text-multi {
+  display: inline-block;
+  margin: -100px 0 0 20px; }
+  @media (max-width: 1099px) {
+    .task-text-multi {
+      display: block;
+      margin: -22px 0 5px 20px; } }
 
 .task-children {
   list-style: none;
   counter-reset: custom-counter;
-  margin: 6px 0 6px 11px; }
+  margin: 6px 0 6px 20px; }
   .task-children li {
     counter-increment: custom-counter; }
     @media (max-width: 1099px) {
@@ -1548,20 +1570,24 @@ nav {
         .task-children li::before {
           margin-left: -15px; } }
 
-.extra-br {
-  margin-bottom: 19px; }
-
 @media (max-width: 1099px) {
   .ub-linebreak::before {
     content: '\a';
     white-space: pre; } }
 
 .job-summary {
-  margin-bottom: 15px;
-  width: 96%; }
+  margin-bottom: 7px;
+  width: 100%; }
   @media (max-width: 1099px) {
     .job-summary {
       margin-left: 4px;
+      width: 97%; } }
+
+.project-summary {
+  margin-bottom: 15px;
+  width: 96%; }
+  @media (max-width: 1099px) {
+    .project-summary {
       width: 97%; } }
 
 #compinfo {
@@ -1570,7 +1596,7 @@ nav {
 .rightcolumn {
   float: right;
   margin-right: 25px;
-  width: 40%; }
+  width: 49%; }
   @media (max-width: 1099px) {
     .rightcolumn {
       -webkit-box-align: center;
@@ -1592,7 +1618,7 @@ nav {
       width: 90%; } }
 
 .school {
-  margin: 12px 0; }
+  margin: 10px 0; }
 
 .container-download {
   -webkit-box-align: center;

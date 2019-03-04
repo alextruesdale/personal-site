@@ -227,7 +227,7 @@ nav {
 .menu-bird {
   filter: saturate(0%) brightness(160%) contrast(80%);
   height: auto;
-  position: absolute;
+  position: fixed;
   right: 8px;
   top: 10px;
   transition: all .17s ease-in-out;
@@ -235,7 +235,6 @@ nav {
   z-index: 1100;
 
   @include media('<1100px') {
-    position: fixed;
     right: 5px;
     top: 10px;
     width: 55px;
