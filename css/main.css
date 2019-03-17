@@ -1259,14 +1259,14 @@ nav {
           filter: saturate(75%) brightness(105%);
   height: auto;
   margin-left: -24px;
-  width: 216px; }
+  width: 220px; }
   @media (max-width: 1099px) {
     .reshead-profile {
       margin: 0;
       width: 250px; } }
 
 .reshead-text {
-  margin: -20px 0 0 5px; }
+  margin: -13px 0 0 5px; }
   @media (max-width: 1099px) {
     .reshead-text {
       -webkit-box-align: center;
@@ -1286,7 +1286,7 @@ nav {
 
 .resume-name {
   color: #8b9792;
-  font-size: 60px;
+  font-size: 58.5px;
   font-weight: 300;
   margin: 0 0 -6px 0; }
   @media (max-width: 1099px) {
@@ -1316,7 +1316,7 @@ nav {
 .site-link {
   font-size: 18px;
   font-weight: 400;
-  margin: 3px 0 4px 0; }
+  margin: 1px 0 5px 0; }
   .site-link a:visited {
     color: #8b9792; }
   @media (max-width: 1099px) {
