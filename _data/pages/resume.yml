@@ -1,12 +1,16 @@
 head:
   name: Alex Truesdale
-  areas:
-    - Development
-    - Design
-    - Data
-
   website:
     url: "www.alextruesdale.net"
+  personal_data:
+    - data: "Email  "
+      content: " alex.truesdale@colorado.edu"
+      hyperlink: "mailto:alex.truesdale@colorado.edu"
+    - data: "Phone  "
+      content: " +44 7957 528587"
+      hyperlink: "tel:+447957528587"
+    - data: "Location  "
+      content: "Berlin, Germany"
 
 experience:
   section_title: Experience
@@ -114,64 +118,50 @@ projects:
 
       mobile_expand: clothingreturns
 
-comp_lang:
-  section_title: "Language & Computer"
+tech:
+  section_title: "Technical Skills"
 
   skills:
-    lang:
-      details:
-        - skill: "English  "
-          level: "native speaker"
-        - skill: "German  "
-          level: "proficient (B2 / C1)"
 
     digital:
-      title: "Design & Front-End"
+      title: "Web Development"
       details:
         - skill: "Javascript "
-          level: "competent"
+          level: 2
         - skill: "HTML / CSS"
-          desc:  "(SCSS)  "
-          level: "proficient"
+          desc:  "(SCSS)"
+          level: 4
         - skill: "Liquid"
-          desc:  "(Templating)  "
-          level: "competent"
+          desc:  "(Templating)"
+          level: 3
 
     data_prog:
-      title: "Programming & Data Analysis"
+      title: "Programming & Databases"
       details:
-        - skill: "Python  "
-          level: "proficient"
-        - skill: "SQL  "
-          level: "competent"
-        - skill: "MongoDB  "
-          level: "competent"
+        - skill: "Python"
+          level: 3
+        - skill: "R"
+          level: 2
+        - skill: "SQL"
+          level: 2
+        - skill: "MongoDB"
+          level: 2
 
     work_vcontrol:
       title: "Workflow & Version Control"
       details:
-        - skill: "Git  "
-          level: "competent"
-        - skill: "Jekyll  "
-          level: "competent"
-        - skill: "Gulp  "
-          level: "advanced beginner"
+        - skill: "Git"
+          level: 3
+        - skill: "Jekyll"
+          level: 3
+        - skill: "Gulp"
+          level: 2
 
-personal_data:
-  section_title: "Personal Data"
-  data:
-    - data: "Address  "
-      content: "Lichtenrader Straße 16a, 12049 Berlin"
-    - data: "Date of Birth  "
-      content: " 08 October, 1993"
-    - data: "Nationality  "
-      content: "  United States"
-    - data: "Phone  "
-      content: " +44 7957 528587"
-      hyperlink: "tel:+447957528587"
-    - data: "Email  "
-      content: " alex.truesdale@colorado.edu"
-      hyperlink: "mailto:alex.truesdale@colorado.edu"
-    - data: "Skype  "
-      content: " awtruesdale"
-      hyperlink: "https://join.skype.com/invite/cf5e849C80xt"
+language:
+  section_title: "Language"
+
+  languages:
+    - skill: "English  "
+      level: "native speaker"
+    - skill: "German  "
+      level: "proficient (B2 / C1)"

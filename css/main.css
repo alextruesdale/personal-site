@@ -1193,9 +1193,9 @@ nav {
   font-size: 14px;
   font-weight: 400; }
 
-.responsibilities, .project, .complang p,
+.responsibilities, .project, .tech p,
 .education p,
-.personaldata p {
+.language p {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5em; }
@@ -1249,7 +1249,7 @@ nav {
 .reshead-graphic {
   height: auto;
   margin: -8px 0 0;
-  width: 70px; }
+  width: 72px; }
   @media (max-width: 1099px) {
     .reshead-graphic {
       display: none; } }
@@ -1258,15 +1258,15 @@ nav {
   -webkit-filter: saturate(75%) brightness(105%);
           filter: saturate(75%) brightness(105%);
   height: auto;
-  margin: 0 10px 0 -15px;
-  width: 210px; }
+  margin-left: -24px;
+  width: 216px; }
   @media (max-width: 1099px) {
     .reshead-profile {
       margin: 0;
       width: 250px; } }
 
 .reshead-text {
-  margin: -15px 0 0; }
+  margin: -20px 0 0 5px; }
   @media (max-width: 1099px) {
     .reshead-text {
       -webkit-box-align: center;
@@ -1286,64 +1286,16 @@ nav {
 
 .resume-name {
   color: #8b9792;
-  font-size: 75px;
+  font-size: 60px;
   font-weight: 300;
-  margin: 0; }
+  margin: 0 0 -6px 0; }
   @media (max-width: 1099px) {
     .resume-name {
       font-size: 40px;
       font-weight: 300; } }
 
-.reshead-areas {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0px 0 -5px -8px;
-  width: 70%; }
-  @media (max-width: 1099px) {
-    .reshead-areas {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      margin-left: 0;
-      margin-top: 20px;
-      text-align: center;
-      width: 90%; }
-      .reshead-areas li {
-        font-size: 20px;
-        font-weight: 200;
-        letter-spacing: 0;
-        line-height: 1.5em; } }
-  .reshead-areas li {
-    font-size: 22px;
-    font-weight: 300;
-    letter-spacing: .0175em; }
-
-.divider-cube {
-  background-color: #d9d9d9;
-  display: inline-block;
-  height: 10px;
-  margin-bottom: 1.5px;
-  width: 10px; }
-  @media (max-width: 1099px) {
-    .divider-cube {
-      display: none; } }
-
-.bullet-diamond-min {
-  background-color: #d9d9d9;
-  display: inline-block;
-  height: 6px;
-  margin: 0 3px 2px 4px;
-  width: 6px; }
+.reshead-data {
+  margin-top: 1px; }
 
 .section-title {
   font-size: 31px;
@@ -1358,10 +1310,18 @@ nav {
   .resume-h3 a:visited, .site-link a:visited {
     color: #8b9792; }
 
+.resume-h3-skills {
+  margin: 12px 0 4px; }
+
 .site-link {
-  font-weight: 400; }
+  font-size: 18px;
+  font-weight: 400;
+  margin: 3px 0 4px 0; }
   .site-link a:visited {
     color: #8b9792; }
+  @media (max-width: 1099px) {
+    .site-link {
+      margin: 10px 0; } }
 
 .resume-h5 {
   font-size: 14px;
@@ -1369,7 +1329,7 @@ nav {
   margin: 2.5px 0; }
 
 .bold-unbold {
-  margin: 4px 0 4.5px; }
+  margin: 5px 0 4.5px; }
 
 .resume-bold {
   font-size: 16px;
@@ -1452,7 +1412,8 @@ nav {
   #pythondev,
   #berlinanalysis,
   #clothingreturns,
-  #persinfo {
+  #persinfo,
+  #skillsinfo {
     display: none; } }
 
 @media (max-width: 1099px) {
@@ -1467,17 +1428,16 @@ nav {
   #berlinanalysisbtn,
   #clothingreturnsbtn,
   #persinfobtn,
-  #compinfobtn {
+  #skillsinfobtn {
     margin-bottom: 10px;
     margin-top: 10px; } }
 
 @media (max-width: 1099px) {
-  #compinfobtn {
+  #skillsinfobtn {
     margin-top: 15px; } }
 
-@media (max-width: 1099px) {
-  #persinfobtn {
-    margin-bottom: 20px; } }
+.leftcolumn, .rightcolumn {
+  margin-top: -10px; }
 
 .leftcolumn {
   float: left;
@@ -1485,6 +1445,30 @@ nav {
   width: 42%; }
   @media (max-width: 1099px) {
     .leftcolumn {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      float: none;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-left: 5%;
+      text-align: center;
+      width: 90%; } }
+
+.rightcolumn {
+  float: right;
+  margin-right: 25px;
+  width: 49%; }
+  @media (max-width: 1099px) {
+    .rightcolumn {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -1522,17 +1506,46 @@ nav {
   margin: 0; }
 
 .bullet-diamond {
-  background-color: #d9d9d9;
+  background-color: #e5e4e4;
   display: inline-block;
   height: 7px;
   margin: 0 12px 1.7px 0px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  width: 7px; }
+  width: 7px;
+  border: solid rgba(0, 0, 0, 0.17) 1px; }
   @media (max-width: 1099px) {
     .bullet-diamond {
       margin: 0 10px 4px 0; } }
+
+.skill-bold {
+  margin-right: 8px; }
+
+.skill-block-empty, .skill-block-full {
+  background-color: #efeded;
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+  margin-right: 1px;
+  border: solid rgba(0, 0, 0, 0.17) 1px; }
+
+.skill-block-full {
+  background: rgba(131, 141, 138, 0.75);
+  border: solid #ebebeb 2px;
+  position: relative; }
+
+.skill-block-full:before {
+  background: none;
+  border: solid rgba(0, 0, 0, 0.22) 1px;
+  content: '';
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: 2px;
+  bottom: 2px; }
 
 .code-link-img {
   width: 20px;
@@ -1590,35 +1603,15 @@ nav {
     .project-summary {
       width: 97%; } }
 
-#compinfo {
-  margin-top: 18px; }
-
-.rightcolumn {
-  float: right;
-  margin-right: 25px;
-  width: 49%; }
-  @media (max-width: 1099px) {
-    .rightcolumn {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      float: none;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      margin-left: 5%;
-      text-align: center;
-      width: 90%; } }
-
 .school {
   margin: 10px 0; }
+
+.language-top {
+  margin-top: 12px; }
+
+@media (max-width: 1099px) {
+  .language {
+    margin-bottom: 20px; } }
 
 .container-download {
   -webkit-box-align: center;

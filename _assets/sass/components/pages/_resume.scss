@@ -93,7 +93,7 @@
 .reshead-graphic {
   height: auto;
   margin: -8px 0 0;
-  width: 70px;
+  width: 72px;
 
   @include media('<1100px') {
     display: none;
@@ -103,8 +103,8 @@
 .reshead-profile {
   filter: saturate(75%) brightness(105%);
   height: auto;
-  margin: 0 10px 0 -15px;
-  width: 210px;
+  margin-left: -24px;
+  width: 216px;
 
 
   @include media('<1100px') {
@@ -114,7 +114,7 @@
 }
 
 .reshead-text {
-  margin: -15px 0 0;
+  margin: -20px 0 0 5px;
 
   @include media('<1100px') {
     align-items: center;
@@ -128,9 +128,9 @@
 
 .resume-name {
   color: #8b9792;
-  font-size: 75px;
+  font-size: 60px;
   font-weight: 300;
-  margin: 0;
+  margin: 0 0 -6px 0;
 
   @include media('<1100px') {
     font-size: 40px;
@@ -138,55 +138,8 @@
 	}
 }
 
-.reshead-areas {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  margin: 0px 0 -5px -8px;
-  width: 70%;
-
-  @include media('<1100px') {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-    margin-top: 20px;
-    text-align: center;
-    width: 90%;
-
-    li {
-      font-size: 20px;
-      font-weight: 200;
-      letter-spacing: 0;
-      line-height: 1.5em;
-		}
-	}
-
-  li {
-    font-size: 22px;
-    font-weight: 300;
-    letter-spacing: .0175em;
-	}
-}
-
-.divider-cube {
-  background-color: #d9d9d9;
-  display: inline-block;
-  height: 10px;
-  margin-bottom: 1.5px;
-  width: 10px;
-
-  @include media('<1100px') {
-    display: none;
-	}
-}
-
-.bullet-diamond-min {
-  background-color: #d9d9d9;
-  display: inline-block;
-  height: 6px;
-  margin: 0 3px 2px 4px;
-  width: 6px;
-
+.reshead-data {
+  margin-top: 1px;
 }
 
 .section-title {
@@ -208,14 +161,23 @@
 	}
 }
 
+.resume-h3-skills {
+  margin: 12px 0 4px;
+}
+
 .site-link {
   @extend .resume-h3;
+  font-size: 18px;
   font-weight: 400;
+  margin: 3px 0 4px 0;
 
   a {
     &:visited {
       color: #8b9792;
 		}
+	}
+  @include media('<1100px') {
+    margin: 10px 0;
 	}
 }
 
@@ -226,7 +188,7 @@
 }
 
 .bold-unbold {
-  margin: 4px 0 4.5px;
+  margin: 5px 0 4.5px;
 }
 
 .resume-bold {
@@ -322,7 +284,8 @@
 #pythondev,
 #berlinanalysis,
 #clothingreturns,
-#persinfo {
+#persinfo,
+#skillsinfo {
   @include media('<1100px') {
     display: none;
 	}
@@ -339,29 +302,44 @@
 #berlinanalysisbtn,
 #clothingreturnsbtn,
 #persinfobtn,
-#compinfobtn {
+#skillsinfobtn {
   @include media('<1100px') {
     margin-bottom: 10px;
     margin-top: 10px;
 	}
 }
 
-#compinfobtn {
+#skillsinfobtn {
   @include media('<1100px') {
     margin-top: 15px;
 	}
 }
 
-#persinfobtn {
-  @include media('<1100px') {
-    margin-bottom: 20px;
-	}
+.leftcolumn, .rightcolumn {
+    margin-top: -10px;
 }
 
 .leftcolumn {
   float: left;
   margin-left: 60px;
   width: 42%;
+
+  @include media('<1100px') {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    float: none;
+    justify-content: center;
+    margin-left: 5%;
+    text-align: center;
+    width: 90%;
+	}
+}
+
+.rightcolumn {
+  float: right;
+  margin-right: 25px;
+  width: 49%;
 
   @include media('<1100px') {
     align-items: center;
@@ -400,16 +378,51 @@
 }
 
 .bullet-diamond {
-  background-color: #d9d9d9;
+  background-color: #e5e4e4;
   display: inline-block;
   height: 7px;
   margin: 0 12px 1.7px 0px;
   transform: rotate(45deg);
   width: 7px;
+  border: solid rgba(0, 0, 0, 0.17) 1px;
 
   @include media('<1100px') {
     margin: 0 10px 4px 0;
 	}
+}
+
+.skill-bold {
+  margin-right: 8px;
+}
+
+.skill-block-empty {
+  background-color: #efeded;
+  display: inline-block;
+  // position: relative;
+  height: 11px;
+  width: 11px;
+  margin-right: 1px;
+  border: solid rgba(0, 0, 0, 0.17) 1px;
+}
+
+.skill-block-full {
+  @extend .skill-block-empty;
+  background: rgba(131, 141, 138, .75);
+  border: solid #ebebeb 2px;
+  position: relative;
+}
+
+.skill-block-full:before {
+  background: none;
+  border: solid rgba(0, 0, 0, 0.22) 1px;
+  content: '';
+  width: 11px;
+  height: 11px;
+  position:absolute;
+  top: -2px;
+  left: -2px;
+  right: 2px;
+  bottom: 2px;
 }
 
 .code-link-img {
@@ -484,36 +497,25 @@
 	}
 }
 
-#compinfo {
-  margin-top: 18px;
-}
-
-.rightcolumn {
-  float: right;
-  margin-right: 25px;
-  width: 49%;
-
-  @include media('<1100px') {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    float: none;
-    justify-content: center;
-    margin-left: 5%;
-    text-align: center;
-    width: 90%;
-	}
-}
-
 .school {
   margin: 10px 0;
 }
 
-.complang,
+.tech,
 .education,
-.personaldata {
+.language {
   p {
     @extend %modified-p;
+	}
+}
+
+.language-top {
+  margin-top: 12px;
+}
+
+.language {
+  @include media('<1100px') {
+    margin-bottom: 20px;
 	}
 }
 

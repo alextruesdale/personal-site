@@ -59,6 +59,8 @@ gulp.task('watch', function() {
     '_assets/sass/**/*.scss'
   ], ['sass']);
 
+  gulp.watch('_includes/**/*.html').on('change', browsersync.reload);
+
   gulp.watch([
     '_assets/js/**/*.js'
   ], ['build:scripts']);
@@ -66,4 +68,3 @@ gulp.task('watch', function() {
 
 gulp.task('jekyll:watch', shell.task(['bundle exec jekyll build --watch --incremental --limit_posts 30 --config _config.yml,_assets/_config.development.yml']));
 gulp.task('default', ['jekyll:watch', 'watch']);
-

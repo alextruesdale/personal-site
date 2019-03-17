@@ -9,17 +9,10 @@
 
     <div class="reshead-text">
       <h1 class="resume-name">{{ resume.head.name }}</h1>
-      <ul class="reshead-areas">
-        {% for item in resume.head.areas %}
-          {% if forloop.index < 3 %}
-            <li>{{ item }}</li>
-            <li><div class="divider-cube"></div></li>
-          {% else %}
-            <li>{{ item }}</li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      <h3 class="site-link"><a href="http://{{ resume.head.website.url }}">{{ resume.head.website.url }}</a></h3>
+      <h3 class="site-link"><a href="http://{{ resume.head.website.url }}">›› {{ resume.head.website.url }}</a></h3>
+      {% for data in resume.head.personal_data %}
+        <p class="reshead-data"><span class="resume-bold">{{ data.data }}</span>{% if data.hyperlink %}<a href="{{ data.hyperlink }}"><span class="resume-unbold">{{ data.content }}</span></a>{% else %}<span class="resume-unbold">{{ data.content }}</span>{% endif %}</p>
+      {% endfor %}
     </div>
   </div>
 
@@ -70,33 +63,59 @@
         </div>
       {% endfor%}
     </div>
-    <div class="complang">
-      <h2 class="section-title">{{ resume.comp_lang.section_title }}</h2>
+    <div class="tech">
+      <h2 class="section-title">{{ resume.tech.section_title }}</h2>
 
       <div class="btn-wrapper">
-        <div id="compinfobtn" class="expbutton">
+        <div id="skillsinfobtn" class="expbutton">
           Expand
         </div>
       </div>
 
-      <div id="compinfo" class="inner">
-        {% for skill in resume.comp_lang.skills.lang.details %}
-          <p><span class="resume-bold">{{ skill.skill }}</span>{% if skill.level %}<span class="resume-unbold">{{ skill.level }}</span>{% endif %}</p>
+      <div id="skillsinfo" class="inner">
+        <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.digital.title }}</h3>
+        {% for skill in resume.tech.skills.digital.details %}
+          {% assign skillcount = skill.level %}
+          <p>
+            <span class="resume-bold skill-bold">{{ skill.skill }}</span>
+            {% for i in (1..4) %}
+              {% if forloop.index <= skillcount %}
+                <span class="skill-block-full"></span>
+              {% else %}
+                <span class="skill-block-empty"></span>
+              {% endif %}
+            {% endfor %}
+          </p>
         {% endfor %}
 
-        <h3 class="resume-h3">{{ resume.comp_lang.skills.digital.title }}</h3>
-        {% for skill in resume.comp_lang.skills.digital.details %}
-          <p><span class="resume-bold">{{ skill.skill }}</span>{% if skill.desc %}<span class="resume-semi">{{ skill.desc }}</span>{% endif %}{% if skill.level %}<span class="resume-unbold">{{ skill.level }}</span>{% endif %}</p>
+        <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.data_prog.title }}</h3>
+        {% for skill in resume.tech.skills.data_prog.details %}
+          {% assign skillcount = skill.level %}
+          <p>
+            <span class="resume-bold skill-bold">{{ skill.skill }}</span>
+            {% for i in (1..4) %}
+              {% if forloop.index <= skillcount %}
+                <span class="skill-block-full"></span>
+              {% else %}
+                <span class="skill-block-empty"></span>
+              {% endif %}
+            {% endfor %}
+          </p>
         {% endfor %}
 
-        <h3 class="resume-h3">{{ resume.comp_lang.skills.data_prog.title }}</h3>
-        {% for skill in resume.comp_lang.skills.data_prog.details %}
-          <p><span class="resume-bold">{{ skill.skill }}</span>{% if skill.level %}<span class="resume-unbold">{{ skill.level }}</span>{% endif %}</p>
-        {% endfor %}
-
-        <h3 class="resume-h3">{{ resume.comp_lang.skills.work_vcontrol.title }}</h3>
-        {% for skill in resume.comp_lang.skills.work_vcontrol.details %}
-          <p><span class="resume-bold">{{ skill.skill }}</span>{% if skill.level %}<span class="resume-unbold">{{ skill.level }}</span>{% endif %}</p>
+        <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.work_vcontrol.title }}</h3>
+        {% for skill in resume.tech.skills.work_vcontrol.details %}
+          {% assign skillcount = skill.level %}
+          <p>
+            <span class="resume-bold skill-bold">{{ skill.skill }}</span>
+            {% for i in (1..4) %}
+              {% if forloop.index <= skillcount %}
+                <span class="skill-block-full"></span>
+              {% else %}
+                <span class="skill-block-empty"></span>
+              {% endif %}
+            {% endfor %}
+          </p>
         {% endfor %}
       </div>
     </div>
@@ -142,18 +161,11 @@
         </div>
       {% endfor%}
     </div>
-    <div class="personaldata">
-      <h2 class="section-title">{{ resume.personal_data.section_title }}</h2>
-
-      <div class="btn-wrapper">
-        <div id="persinfobtn" class="expbutton">
-          Expand
-        </div>
-      </div>
-
-      <div id="persinfo" class="responsibilities inner">
-        {% for data in resume.personal_data.data %}
-          <p><span class="resume-bold">{{ data.data }}</span>{% if data.hyperlink %}<a href="{{ data.hyperlink }}"><span class="resume-unbold">{{ data.content }}</span></a>{% else %}<span class="resume-unbold">{{ data.content }}</span>{% endif %}</p>
+    <div class="language">
+      <h2 class="section-title">{{ resume.language.section_title }}</h2>
+      <div class="language-top">
+        {% for lang in resume.language.languages %}
+          <p><span class="resume-bold">{{ lang.skill }}</span>{% if lang.level %}<span class="resume-unbold">{{ lang.level }}</span>{% endif %}</p>
         {% endfor %}
       </div>
     </div>
