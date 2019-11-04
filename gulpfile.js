@@ -9,9 +9,7 @@ var gulp           = require('gulp'),
     buffer         = require('vinyl-buffer'),
     jekyllProc;
 
-
 // GULP TASK(S)
-
 
 gulp.task('sass', function() {
   return gulp.src('_assets/sass/**/*.scss')

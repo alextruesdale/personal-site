@@ -11,7 +11,7 @@
     "browser-sync": "^2.26.3",
     "browserify": "^14.5.0",
     "eslint": "^4.19.1",
-    "gulp": "^3.9.1",
+    "gulp": "^3.9.0",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-sass": "^3.2.1",
     "gulp-shell": "^0.6.5",
@@ -23,5 +23,7 @@
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^1.1.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "npm-check-updates": "^3.0.12"
+  }
 }

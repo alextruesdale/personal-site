@@ -1339,8 +1339,16 @@ nav {
       display: inline-block;
       margin-bottom: 4px; } }
 
+.resume-bold-min {
+  font-size: 15px;
+  font-weight: 600; }
+  @media (max-width: 1099px) {
+    .resume-bold-min {
+      display: inline-block;
+      margin-bottom: 4px; } }
+
 @media (max-width: 1099px) {
-  .rightcolumn .resume-bold {
+  .rightcolumn .resume-bold .resume-bold-min {
     display: inline-block;
     margin: 0 5px 0 0px; } }
 
@@ -1412,6 +1420,7 @@ nav {
   #pythondev,
   #berlinanalysis,
   #clothingreturns,
+  #mediumclaps,
   #persinfo,
   #skillsinfo {
     display: none; } }
@@ -1427,6 +1436,7 @@ nav {
   #pythondevbtn,
   #berlinanalysisbtn,
   #clothingreturnsbtn,
+  #mediumclapsbtn,
   #persinfobtn,
   #skillsinfobtn {
     margin-bottom: 10px;
@@ -1518,6 +1528,18 @@ nav {
   @media (max-width: 1099px) {
     .bullet-diamond {
       margin: 0 10px 4px 0; } }
+
+.resume-hr {
+  margin: 25px 150px 23px 0px;
+  opacity: 35%; }
+
+@media (max-width: 1099px) {
+  .resume-skills-no-show-mobile {
+    display: none; } }
+
+@media (min-width: 1101px) {
+  .resume-skills-no-show-full {
+    display: none; } }
 
 .skill-bold {
   margin-right: 8px; }

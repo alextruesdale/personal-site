@@ -201,7 +201,17 @@
   }
 }
 
-.rightcolumn .resume-bold {
+.resume-bold-min {
+  font-size: 15px;
+  font-weight: 600;
+
+  @include media('<1100px') {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+}
+
+.rightcolumn .resume-bold .resume-bold-min {
     @include media('<1100px') {
       display: inline-block;
       margin: 0 5px 0 0px;
@@ -284,6 +294,7 @@
 #pythondev,
 #berlinanalysis,
 #clothingreturns,
+#mediumclaps,
 #persinfo,
 #skillsinfo {
   @include media('<1100px') {
@@ -301,6 +312,7 @@
 #pythondevbtn,
 #berlinanalysisbtn,
 #clothingreturnsbtn,
+#mediumclapsbtn,
 #persinfobtn,
 #skillsinfobtn {
   @include media('<1100px') {
@@ -389,6 +401,23 @@
   @include media('<1100px') {
     margin: 0 10px 4px 0;
 	}
+}
+
+.resume-hr {
+  margin: 25px 150px 23px 0px;
+  opacity: 35%;
+}
+
+.resume-skills-no-show-mobile {
+  @include media('<1100px') {
+    display: none;
+  }
+}
+
+.resume-skills-no-show-full {
+  @include media('>1100px') {
+    display: none;
+  }
 }
 
 .skill-bold {

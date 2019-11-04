@@ -63,6 +63,16 @@
         </div>
       {% endfor%}
     </div>
+
+    <div class="language">
+      <h2 class="section-title">{{ resume.language.section_title }}</h2>
+      <div class="language-top">
+        {% for lang in resume.language.languages %}
+          <p><span class="resume-bold">{{ lang.skill }}</span>{% if lang.level %}<span class="resume-unbold">{{ lang.level }}</span>{% endif %}</p>
+        {% endfor %}
+      </div>
+    </div>
+
     <div class="tech">
       <h2 class="section-title">{{ resume.tech.section_title }}</h2>
 
@@ -72,51 +82,58 @@
         </div>
       </div>
 
+
       <div id="skillsinfo" class="inner">
-        <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.digital.title }}</h3>
-        {% for skill in resume.tech.skills.digital.details %}
-          {% assign skillcount = skill.level %}
-          <p>
-            <span class="resume-bold skill-bold">{{ skill.skill }}</span>
-            {% for i in (1..4) %}
-              {% if forloop.index <= skillcount %}
-                <span class="skill-block-full"></span>
-              {% else %}
-                <span class="skill-block-empty"></span>
-              {% endif %}
-            {% endfor %}
-          </p>
-        {% endfor %}
+        <div class="resume-skills-no-show-full">
+          <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.digital.title }}</h3>
+          {% for skill in resume.tech.skills.digital.details %}
+            {% assign skillcount = skill.level %}
+            <p>
+              <span class="resume-bold skill-bold">{{ skill.skill }}</span>{% if skill.desc %}<span class="resume-bold-min skill-bold">{{ skill.desc }}</span>{% endif %}
+              {% for i in (1..4) %}
+                {% if forloop.index <= skillcount %}
+                  <span class="skill-block-full"></span>
+                {% else %}
+                  <span class="skill-block-empty"></span>
+                {% endif %}
+              {% endfor %}
+            </p>
+          {% endfor %}
+        </div>
 
-        <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.data_prog.title }}</h3>
-        {% for skill in resume.tech.skills.data_prog.details %}
-          {% assign skillcount = skill.level %}
-          <p>
-            <span class="resume-bold skill-bold">{{ skill.skill }}</span>
-            {% for i in (1..4) %}
-              {% if forloop.index <= skillcount %}
-                <span class="skill-block-full"></span>
-              {% else %}
-                <span class="skill-block-empty"></span>
-              {% endif %}
-            {% endfor %}
-          </p>
-        {% endfor %}
+        <div class="">
+          <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.data_prog.title }}</h3>
+          {% for skill in resume.tech.skills.data_prog.details %}
+            {% assign skillcount = skill.level %}
+            <p>
+              <span class="resume-bold skill-bold">{{ skill.skill }}</span>
+              {% for i in (1..4) %}
+                {% if forloop.index <= skillcount %}
+                  <span class="skill-block-full"></span>
+                {% else %}
+                  <span class="skill-block-empty"></span>
+                {% endif %}
+              {% endfor %}
+            </p>
+          {% endfor %}
+        </div>
 
-        <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.work_vcontrol.title }}</h3>
-        {% for skill in resume.tech.skills.work_vcontrol.details %}
-          {% assign skillcount = skill.level %}
-          <p>
-            <span class="resume-bold skill-bold">{{ skill.skill }}</span>
-            {% for i in (1..4) %}
-              {% if forloop.index <= skillcount %}
-                <span class="skill-block-full"></span>
-              {% else %}
-                <span class="skill-block-empty"></span>
-              {% endif %}
-            {% endfor %}
-          </p>
-        {% endfor %}
+        <div class="resume-skills-no-show-full">
+          <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.work_vcontrol.title }}</h3>
+          {% for skill in resume.tech.skills.work_vcontrol.details %}
+            {% assign skillcount = skill.level %}
+            <p>
+              <span class="resume-bold skill-bold">{{ skill.skill }}</span>
+              {% for i in (1..4) %}
+                {% if forloop.index <= skillcount %}
+                  <span class="skill-block-full"></span>
+                {% else %}
+                  <span class="skill-block-empty"></span>
+                {% endif %}
+              {% endfor %}
+            </p>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
@@ -161,13 +178,37 @@
         </div>
       {% endfor%}
     </div>
-    <div class="language">
-      <h2 class="section-title">{{ resume.language.section_title }}</h2>
-      <div class="language-top">
-        {% for lang in resume.language.languages %}
-          <p><span class="resume-bold">{{ lang.skill }}</span>{% if lang.level %}<span class="resume-unbold">{{ lang.level }}</span>{% endif %}</p>
-        {% endfor %}
-      </div>
+    <hr class="resume-skills-no-show-mobile resume-hr">
+    <div id="skillsinfo" class="inner resume-skills-no-show-mobile">
+      <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.digital.title }}</h3>
+      {% for skill in resume.tech.skills.digital.details %}
+        {% assign skillcount = skill.level %}
+        <p>
+          <span class="resume-bold skill-bold">{{ skill.skill }}</span>{% if skill.desc %}<span class="resume-bold-min skill-bold">{{ skill.desc }}</span>{% endif %}
+          {% for i in (1..4) %}
+            {% if forloop.index <= skillcount %}
+              <span class="skill-block-full"></span>
+            {% else %}
+              <span class="skill-block-empty"></span>
+            {% endif %}
+          {% endfor %}
+        </p>
+      {% endfor %}
+
+      <h3 class="resume-h3 resume-h3-skills">{{ resume.tech.skills.work_vcontrol.title }}</h3>
+      {% for skill in resume.tech.skills.work_vcontrol.details %}
+        {% assign skillcount = skill.level %}
+        <p>
+          <span class="resume-bold skill-bold">{{ skill.skill }}</span>
+          {% for i in (1..4) %}
+            {% if forloop.index <= skillcount %}
+              <span class="skill-block-full"></span>
+            {% else %}
+              <span class="skill-block-empty"></span>
+            {% endif %}
+          {% endfor %}
+        </p>
+      {% endfor %}
     </div>
   </div>
 </div>

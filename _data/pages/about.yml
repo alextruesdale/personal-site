@@ -8,44 +8,31 @@ intro:
              a space to share my photos. A little about me... I am interested in:"
 
   list:
-    - "International business & technology"
-    - "Pastries & warm beverages from around the world"
+    - "Design in any form (software, visual, sound, etc.)"
+    - "Travelling as often as possible"
     - "Film photography and taking it easy"
 
 content:
   - class: bh1
     header: Development, Business & An International Career
     text:
-      - "My interests have always lain someplace in the space between creativity and logic. When I
-        was younger, I spent much of my time drawing intricate art pieces in a very meticulous manner,
-        spending hours making, re-making, and re-re-making perfectly clean lines and angles."
+      - "My personal interests have always landed someplace between creativity and logic. In the process
+         of searching for a careerpath in which both of these could be expressed, I've explored disciplines at various points on the logic / creativity continuum: artist, data scientist, web developer, digital marketing guy (of different flavours). Each time I tried something new, I moved toward work at the center of this spectrum, where structure and fluidity meet."
 
-      - "When searching for a fulfilling careerpath, I've courted, alongside studies at business
-        school, disciplines on either end of the spectrum: artist, data scientist, and digital
-        marketing guy (of different flavours). With each exposure, professionally or at university,
-        I've continued to move toward the center – where business meets technology, where creativity
-        meets structure. Though I no longer make the drawings that I used to, I still like working with
-        my hands and making beautiful things, which has led me to discover the wonders of programming.
-        I have worked in both visual (front-end) and functional (data-processing / analysis) capacities
-        with expertise gathered from self-teaching and professional working experience."
+      - "At a basic level, I like working with my hands and creating. When I was younger, this was
+         through artwork and music. These days, this takes shape in building digital tools of all sorts – some for fun, others professionally, though I try to avoid dsitinguishing the two when possible. I have worked in both web (front & back-end) and data (processing / analysis) capacities with expertise gathered through self teaching, university projects, and professional working experience."
 
-      - "A career in business and tech, however, is just one component to an exciting life; I am also
-        drawn to the challenges and learnings that come with getting out there – traveling and living
-        amongst new cultures. Combining this with career ambitions, I have spent much of the last years
-        living and working in Berlin, Germany and am now putting down more permanent roots."
+      - "A career in business and tech, however, is just one part of my life; I am also specifically
+         drawn to the challenges that come with travelling / living abroad. Combining this with professional ambitions, I have spent the last three years living and working in Berlin, Germany with the intent now to stay permanently after finishing university studies."
 
   - class: bh2
     header: Why Move to Germany?
     text:
-      - "At first, I chose Berlin somewhat at random. I originally moved here for an internship
-        two-and-a-half years ago and have since bounced back and forth between Berlin and Boulder,
-        Colorado. Over this time, I grew to feel more comfortable in Berlin, where I've developed
-        meaningful relationships, a fondness for the unique city culture, and a feeling of home."
+      - "At first, I chose Berlin somewhat at random. I originally moved here for an internship three
+        years ago and then bounced back and forth between Berlin and Boulder, Colorado, finishing my bachelor's studies. Over this time, I grew more comfortable in Berlin, forming meaningful relationships, finding a fondness for the unique city culture, and developing a feeling of home."
 
-      - "I finished my undergraduate studies in Colorado and decided to move back to this fabulous
-        city with the intent to stay. Now, as a master's student in Wirtschaftsinformatik at the
-        Humboldt-Universität zu Berlin, I look forward to contining to work and study with colleagues
-        from all over the world, laying the foundation for future ambitions in Germany and beyond."
+      - "I finished my undergraduate studies in Colorado in 2017 and decided to move back to Berlin with
+        the intent to build a future here. Now, as a 3rd semester master's student in Wirtschaftsinformatik at the Humboldt-Universität zu Berlin, I am enjoying the challenge of learning both fundamental and cutting-edge techniques in a range of technical areas alongside colleagues from all over the world."
 
   - class: bh3
     header: Photography

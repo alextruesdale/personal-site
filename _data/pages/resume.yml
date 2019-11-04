@@ -20,7 +20,8 @@ experience:
       company: "Leeds Natural Language Processing Lab"
       duration: "  Sep. 2017 – Aug. 2018"
       location: "Boulder, CO | United States"
-      job_sum: "Iterative creation of a suite of Python tools to operate upon a large set of scanned microfiche documents (Moody’s investment docs; 1920s to '90s) and OCR scanning output of those images."
+      job_sum: "Iterative creation of a suite of Python tools to operate upon a large set of scanned
+                microfiche documents (Moody’s investment docs; 1920s to '90s) and OCR scanning output of those images."
       tasks:
         - main: "Developed object-oriented image and text processing algorithms to:"
           children:
@@ -29,7 +30,8 @@ experience:
             - "Organise and analyse unstructured / error-prone OCR text output"
 
         - main: ""
-          multiline: "Remotely managed production jobs, input files, and final output on the university computing cluster via SSH and Slurm"
+          multiline: "Remotely managed production jobs, input files, and final output on the university
+                      computing cluster via SSH and Slurm"
 
       mobile_expand: pythondev
 
@@ -37,7 +39,8 @@ experience:
       company: "CU Boulder, Leeds School of Business"
       duration: "  May 2017 – Sep. 2018"
       location: "Boulder, CO | United States"
-      job_sum: "Partnered with Dr. Kai Larsen in producing a publication on automated machine learning as an application / product (DataRobot)."
+      job_sum: "Partnered with Dr. Kai Larsen in producing a publication on automated machine learning
+               as an application / product (DataRobot)."
       tasks:
         - "Edited entirety of book text for content and copy refinement"
         - "Prepared open-source Kaggle datasets as case studies"
@@ -49,7 +52,8 @@ experience:
       company: "LogRhythm, inc."
       duration: "  Feb. 2017 – June 2017"
       location: "Boulder, CO | United States"
-      job_sum: "Part of a small digital team responsible for website administration and scalable site architecture with input from other internal business units."
+      job_sum: "Part of a small digital team responsible for website administration and scalable site
+                architecture with input from other internal business units."
       tasks:
         - "Web dev. technologies used: HTML, CSS (SCSS), Jekyll, Liquid, Git"
         - "Managed workflow in Trello and weekly, cross-functional stand-ups"
@@ -60,7 +64,9 @@ experience:
       company: "ctrl QS, GmbH"
       duration: "  May 2016 to Dec. 2016"
       location: "Berlin, Berlin | Germany"
-      job_sum: "Member of an international, multi-lingual team managing global digital marketing operations for NIVEA brands. Tasks focused on project management and client brand stewardship across 30+ markets globally."
+      job_sum: "Member of an international, multi-lingual team managing global digital marketing
+                operations for NIVEA brands. Tasks focused on project management and client brand
+                stewardship across 30+ markets globally."
 
       mobile_expand: ctrlqs
 
@@ -112,11 +118,19 @@ projects:
     - name: "Clothing Returns Prediction"
       url: "https://github.com/alextruesdale/clothing-returns-prediction"
       technologies: "Python, Pandas, scikit-learn, XGBoost"
-      description: "Applied cost-sensitive, machine learning classification of online retail
+      description: "Applied cost-sensitive, machine learning classification  of online retail
                     returns following extensive data cleaning and feature engineering for
                     preparation of raw data."
 
       mobile_expand: clothingreturns
+
+    - name: "Medium Claps Prediction"
+      url: "https://github.com/alextruesdale/medium-claps-rnn"
+      technologies: "Python, Pandas, scikit-learn, Keras"
+      description: "Built a Recurrent Neural Network regression model to estimate the count of claps
+                    (rating points) for a given article from Medium.com based on article text content."
+
+      mobile_expand: mediumclaps
 
 tech:
   section_title: "Technical Skills"
