@@ -14,13 +14,13 @@ intro:
 
 content:
   - class: bh1
-    header: Development, Business & An International Career
+    header: Development & Design
     text:
-      - "My personal interests have always landed someplace between creativity and logic. In the process
-         of searching for a careerpath in which both of these could be expressed, I've explored disciplines at various points on the logic / creativity continuum: artist, data scientist, web developer, digital marketing guy (of different flavours). Each time I tried something new, I moved toward work at the center of this spectrum, where structure and fluidity meet."
+      - "My personal interests have always landed someplace between creativity and logic. In the
+         process of searching for a careerpath in which both of these could be expressed, I've explored disciplines at various points on the logic / creativity continuum: artist, data scientist, web developer, digital marketing guy (of different flavours). Each time I've tried something new, I've moved toward work at the center of this spectrum, where structure and fluidity meet."
 
-      - "At a basic level, I like working with my hands and creating. When I was younger, this was
-         through artwork and music. These days, this takes shape in building digital tools of all sorts – some for fun, others professionally, though I try to avoid dsitinguishing the two when possible. I have worked in both web (front & back-end) and data (processing / analysis) capacities with expertise gathered through self teaching, university projects, and professional working experience."
+      - "At a basic level, I like working with my hands and creating things. When I was younger, this
+         was through artwork and music. These days, this takes shape in building digital tools of all sorts – some for fun, others professionally, though I try to avoid dsitinguishing the two, when possible. I have worked in both web (front & back-end) and data (processing / analysis) capacities with expertise gathered through self teaching, university projects, and professional working experience."
 
       - "A career in business and tech, however, is just one part of my life; I am also specifically
          drawn to the challenges that come with travelling / living abroad. Combining this with professional ambitions, I have spent the last three years living and working in Berlin, Germany with the intent now to stay permanently after finishing university studies."
@@ -28,16 +28,14 @@ content:
   - class: bh2
     header: Why Move to Germany?
     text:
-      - "At first, I chose Berlin somewhat at random. I originally moved here for an internship three
-        years ago and then bounced back and forth between Berlin and Boulder, Colorado, finishing my bachelor's studies. Over this time, I grew more comfortable in Berlin, forming meaningful relationships, finding a fondness for the unique city culture, and developing a feeling of home."
+      - "At first, I chose Berlin somewhat at random (where I could find work). I originally moved
+         here for an internship three years ago and then bounced back and forth between Berlin and Boulder, Colorado, finishing my bachelor's studies. Over this time, I grew more comfortable in Berlin, forming meaningful relationships, finding a fondness for the unique city culture, and developing a feeling of home."
 
-      - "I finished my undergraduate studies in Colorado in 2017 and decided to move back to Berlin with
-        the intent to build a future here. Now, as a 3rd semester master's student in Wirtschaftsinformatik at the Humboldt-Universität zu Berlin, I am enjoying the challenge of learning both fundamental and cutting-edge techniques in a range of technical areas alongside colleagues from all over the world."
+      - "I finished my undergraduate studies in Colorado in 2017 and decided to move back to Berlin
+         with the intent to build a future here. Now, as a 3rd semester master's student in Wirtschaftsinformatik at the Humboldt-Universität zu Berlin, I am enjoying the challenge of learning both fundamental and cutting-edge techniques in a range of technical areas alongside colleagues from all over the world."
 
   - class: bh3
     header: Photography
     text:
       - "Outside of professional life, film photography is a pleasant change of pace from the digital
-        world. Unlike when working with code, the live-medium of film allows for a less rigid creative
-        experience where errors in process or materials have the potential to produce interesting and
-        unexpected results."
+         world. Unlike when working with code, the live-medium of film allows for a less rigid creative experience where errors in process or materials have the potential to produce interesting and unexpected results."
